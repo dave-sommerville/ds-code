@@ -15,6 +15,8 @@ function listen(event, element, callback) {
 
 const navBar = select(".nav-wrapper");
 const heroBanner = select(".hero-banner");
+const contactButton = select(".contact-btn");
+const contactModal = select(".contact");
 
 const headerSwitch = heroBanner.offsetHeight;
 
@@ -27,3 +29,9 @@ listen("scroll", window, () => {
 		navBar.classList.remove("visible");
 	}
 });
+
+listen('click', contactButton, () => {
+	contactModal.classList.add("visible");
+});
+
+
