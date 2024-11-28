@@ -47,3 +47,5 @@ listen('click', showContact, () => {
 			showContact.innerText = "Contact";  // Change to Contact when modal is hidden
 	}
 });
+
+
