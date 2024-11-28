@@ -17,6 +17,8 @@ const navBar = select(".nav-wrapper");
 const heroBanner = select(".hero-banner");
 const contactButton = select(".contact-btn");
 const contactModal = select(".contact");
+const showContact = select(".show-contact");
+
 
 const headerSwitch = heroBanner.offsetHeight;
 
@@ -34,4 +36,14 @@ listen('click', contactButton, () => {
 	contactModal.classList.add("visible");
 });
 
+listen('click', showContact, () => {
+	contactModal.classList.toggle("visible");
+	
+	// Toggle inner text
+	if (contactModal.classList.contains("visible")) {
+			showContact.innerText = "Close";  // Change to Close when modal is visible
+	} else {
+			showContact.innerText = "Contact";  // Change to Contact when modal is hidden
+	}
+});
 
