@@ -330,6 +330,14 @@ nav {
 	opacity: 1;
 	transform: scale(1.03); 
 }
+
+footer {
+	text-align: center;
+	padding: var(--app-spacing);
+	justify-content: center;
+	align-items: center;
+}
+
 /*----------------------------------------------------------->
 	Media Queries 
 <------------------------------------------------------------*/
