@@ -1,6 +1,6 @@
 'use strict';
 /*----------------------------------------------------------->
-
+	Utility Functions
 <------------------------------------------------------------*/
 
 function select(selector, scope = document) {
@@ -14,7 +14,7 @@ function listen(event, element, callback) {
 }
 
 /*----------------------------------------------------------->
-
+	Selectors 
 <------------------------------------------------------------*/
 
 const navBar = select(".nav-wrapper");
@@ -24,7 +24,7 @@ const showContact = select(".show-contact");
 const headerSwitch = heroBanner.offsetHeight;
 
 /*----------------------------------------------------------->
-
+	Listeners 
 <------------------------------------------------------------*/
 
 listen("scroll", window, () => {
@@ -40,11 +40,10 @@ listen("scroll", window, () => {
 listen('click', showContact, () => {
 	contactModal.classList.toggle("visible");
 	
-	// Toggle inner text
 	if (contactModal.classList.contains("visible")) {
-			showContact.innerText = "Close";  // Change to Close when modal is visible
+			showContact.innerText = "Close"; 
 	} else {
-			showContact.innerText = "Contact";  // Change to Contact when modal is hidden
+			showContact.innerText = "Contact";
 	}
 });
 
