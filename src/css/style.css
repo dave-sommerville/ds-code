@@ -15,7 +15,7 @@ button {
 }
 
 :root {
-	--clr-bg: #006875;
+	--clr-bg: #002b30;
 	--clr-primary: #ff8c00;
 	--clr-secondary: #dd6900;
 	--clr-text: #fefefe;
@@ -24,9 +24,9 @@ button {
 	--app-spacing: 25px;
 	--app-gradient: linear-gradient(
 		135deg, 
-		rgb(0 5 15 / 0.2) 0%,
-		rgb(0 5 15 / 0.6) 50%,
-		rgb(0 5 15 / 0.2) 100%
+		rgb(255 250 245 / 0.1) 0%,
+		rgb(255 250 245 / 0.3) 50%,
+		rgb(255 250 245 / 0.1) 100%
 	);
 }
 
