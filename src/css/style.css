@@ -126,14 +126,15 @@ main::before {
 <------------------------------------------------------------*/
 
 h1 {
-	font-size: 6rem;
-  line-height: 90px;
+  width: 850px;
+	font-size: 8rem;
+  line-height: 110px;
   padding: 10px 25px;
   margin-top: 20svh;
   background-color: var(--clr-bg);
 
   span {
-    font-size: 8rem;
+    font-size: 9rem;
   }
 }
 
@@ -141,7 +142,8 @@ h2 {
 	font-size: 1.6rem;
 	justify-content: space-between;
   font-weight: 400;
-  margin-left: 50px;
+  margin-left: 30px;
+  margin-top: -10px;
   background-color: var(--clr-bg);
   padding: 0 5px;
 }
@@ -182,7 +184,7 @@ header {
 .button-wrapper {
   width: 100%;
   height: fit-content;
-  padding-left: 240px;
+  justify-content: center;
 
   div {
     display: flex;
@@ -225,20 +227,6 @@ header {
 i {
 	color: var(--clr-text);
 	font-size: 2.2rem;
-}
-
-.mini-btn {
-	height: 60px;
-	width: 60px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: var(--clr-primary);
-}
-
-.social-wrapper {
-	width: 100%;
-	justify-content: space-evenly;
 }
 
 /*----------------------------------------------------------->
@@ -295,6 +283,7 @@ nav {
 		width: auto;
 	}
 }
+
 .laptop {
   width: 100%;
   width: 300px;
@@ -366,6 +355,32 @@ footer {
 <------------------------------------------------------------*/
 
 
+@media (max-width: 9800px) {
+  h2 {
+
+  }
+  .button-wrapper {
+    div {
+
+    }
+  }
+  .about {
+
+  }
+  .contact {
+
+  }
+}
+
+@media (max-width: 7860px) {
+
+}
+
+@media (max-width: 580px) {
+
+}
+
+/* 
 @media (max-width: 580px) {
 	.grid-r {
 			grid-template-columns: 1fr; 
@@ -380,4 +395,4 @@ footer {
 	.contact {
 		font-size: 1rem;
 	}
-}
+} */
