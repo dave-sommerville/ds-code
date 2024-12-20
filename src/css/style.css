@@ -15,7 +15,7 @@ button {
 }
 
 :root {
-	--clr-bg: #002b30;
+	--clr-bg: #001622;
 	--clr-primary: #fe521d;;
 	--clr-secondary: #dd6900;
 	--clr-text: #fefefe;
@@ -302,13 +302,6 @@ nav {
 }
 
 
-.box {
-	height: 275px;
-	width: auto;
-	position: relative;
-	overflow: hidden;
-	border-radius: var(--app-border-rad);
-}
 
 /*----------------------------------------------------------->
 	Bottom Grid 
@@ -343,12 +336,6 @@ nav {
 	transform: scale(1.03); 
 }
 
-footer {
-	text-align: center;
-	padding: var(--app-spacing);
-	justify-content: center;
-	align-items: center;
-}
 
 /*----------------------------------------------------------->
 	Media Queries 
@@ -370,13 +357,103 @@ footer {
   .contact {
 
   }
+  .info {
+
+  }
+  .profile {
+
+  }
+  .laptop {
+
+  }
+  .text-box {
+
+  }
+  .portfolio-container {
+
+    div {
+
+    }
+  }
+
 }
 
+
 @media (max-width: 7860px) {
+  h2 {
+
+  }
+  .button-wrapper {
+    div {
+
+    }
+  }
+  .about {
+
+  }
+  .contact {
+
+  }
+  .nav-wrapper {
+
+  }
+  .info {
+
+  }
+  .profile {
+
+  }
+  .laptop {
+
+  }
+  .text-box {
+
+  }
+  .portfolio-container {
+
+    div {
+
+    }
+  }
 
 }
 
 @media (max-width: 580px) {
+  h2 {
+
+  }
+  .button-wrapper {
+    div {
+
+    }
+  }
+  .about {
+
+  }
+  .contact {
+
+  }
+  .nav-wrapper {
+    
+  }
+  .info {
+
+  }
+  .profile {
+
+  }
+  .laptop {
+
+  }
+  .text-box {
+
+  }
+  .portfolio-container {
+
+    div {
+
+    }
+  }
 
 }
 
