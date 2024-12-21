@@ -4,12 +4,6 @@
 - Links made active
 - Screenshot displays set to hexes 
 - Info section formatted and made responsive 
-  - Responsive
-    - 1000px 
-      - Text size
-    - 780px
-      - 
-  - Clip/improve profile image
   - Image next to "other fields" 
   - Some type of effect applied to skills list
   - Bring in the width of cta
@@ -315,6 +309,48 @@ nav {
 
 .item4 {
   grid-column: 2 / span 2
+}
+
+.info-annex {
+  margin: 50px auto;
+  justify-content: center;
+  align-items: center;
+  
+  p {
+    width: 500px;
+  }
+
+  a {
+    display: inline-block;
+  }
+
+}
+
+.cta-contact {
+  width: 100px; 
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  clip-path: var(--app-clip-hex);
+  background-color: var(--clr-primary);
+  color: var(--clr-text);
+  font-size: 1.2rem;
+  transition: all 0.25s ease-in-out;
+  margin: var(--app-spacing);
+
+}
+
+.cta-cv {
+  width: 60px; 
+  height: 60px;
+  line-height: 60px;
+  clip-path: var(--app-clip-hex);
+  background-color: var(--clr-secondary);
+  color: var(--clr-text);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.25s ease-in-out;
 }
 
 .profile {
