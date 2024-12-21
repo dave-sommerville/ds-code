@@ -31,9 +31,9 @@ button {
     0 25%);
 	--app-gradient: linear-gradient(
 		135deg, 
-		rgb(255 250 245 / 0.1) 0%,
-		rgb(255 250 245 / 0.3) 50%,
-		rgb(255 250 245 / 0.1) 100%
+		rgb(64 64 64 / 0.1) 0%,
+		rgb(64 64 96 / 0.3) 50%,
+		rgb(64 64 64 / 0.1) 100%
 	);
 }
 
@@ -98,15 +98,12 @@ body {
 	font-family: "Poppins", "Noto Sans", Arial, sans-serif;
 	font-size: 1.8rem;
 	color: var(--clr-text);
-	background: var(--clr-bg) url('../img/hexa-vector.png') no-repeat left center;
-  background-size: contain;
-  background-attachment: fixed;
 	scroll-behavior: smooth;
+  background-color: var(--clr-bg);
 }
 
 main {
 	position: relative;
-
 }
 
 main::before {
@@ -117,7 +114,7 @@ main::before {
 	width: 100%;
 	height: 100%;
 	background: var(--app-gradient);
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(10px);
 	z-index: -1; 
 }
 
@@ -167,15 +164,11 @@ header {
 	width: 100%;
 	position: relative;
 	align-items: center;
-	/* background: var(--clr-bg) url('../img/hexa-vector.png') no-repeat left center;
-  background-size: contain;
-  background-attachment: fixed; */
   color: var(--clr-primary);
+  background: var(--clr-bg) url('../img/hexa-vector.png') no-repeat left center;
+  background-size: contain;
+  background-attachment: fixed;
 
-  img {
-    height: 100%;
-    width: 300px;
-  }
 }
 
 /*----------------------------------------------------------->
@@ -193,7 +186,7 @@ header {
     width: 120px; 
     height: 120px;
     clip-path: var(--app-clip-hex);
-    background-color: #dd6900;
+    background-color: var(--clr-primary);
     color: var(--clr-text);
     font-size: 1.2rem;
     transition: all 0.25s ease-in-out;
@@ -235,15 +228,16 @@ i {
 
 .nav-wrapper {
 	width: 100%;
-	height: 10svh;
-	line-height: 10svh;
+	height: 70px;
 	justify-content: center;
-	background-color: var(--clr-bg);
+	background: var(--app-gradient);
+  backdrop-filter: blur(5px) brightness(0.4);
 	transform: translateY(-100%); /* Catch before Andre does */
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 5000; 
+  transition: all 0.5s ease-in-out;
 }
 
 .nav-wrapper.visible {
@@ -252,11 +246,22 @@ i {
 
 nav {
 	width: 100%;
-	height: 10svh;
+	height: 70px;
+  line-height: 70px;
 	position: relative;
-	line-height: 10svh;
 	padding: 0 var(--app-spacing);
 	justify-content: space-between;
+  font-size: 2rem;
+  color: var(--clr-primary);
+}
+
+.link-wrapper {
+  width: 450px;
+  justify-content: space-between;
+
+  a {
+  font-size: 2rem;
+  }
 }
 
 /*----------------------------------------------------------->
@@ -310,7 +315,7 @@ nav {
 .portfolio-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
-  grid-template-rows: repeat(3, 2fr); 
+  grid-template-rows: repeat(2, 2fr); 
   gap: 40px;
 
   div {

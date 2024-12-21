@@ -21,8 +21,8 @@
   <script src="./src/js/app.js" defer></script>  
 </head>
 <body>
-	<header class="hero-banner container flex f-col">
-    <section class="flex f-col">
+	<header class="hero-banner flex f-col">
+    <section class="flex f-col container">
 			<h1><span>D</span>ave <span>S</span>ommerville</h1>
 			<h2>&lt;code&gt;</code></h2>
 		</section>
@@ -34,10 +34,24 @@
 	</header>
 	<main class="flex f-col">
     <section class="nav-wrapper">
-      <nav>
+      <nav class="container flex">
+        <h3>
+          Dave Sommerville
+        </h3>
+        <div class="link-wrapper flex">
+          <a class="pointer">
+            About
+          </a>
+          <a class="pointer">
+            Contact
+          </a>
+          <a class="pointer">
+            Work
+          </a>
+        </div>
       </nav>
     </section>
-    <h3>My story</h3>
+    <h4 id="story">About</h4>
 		<section class="info m-top-50 container">
 			<div class="profile circle flex">
 				<img src="./src/img/profile.svg">
@@ -72,7 +86,8 @@
 				</p>
 			</div>
 		</section>
-		<section class="portfolio-container container grid-r">
+    <h4>Work</h4>
+		<section class="portfolio-container container">
 			<div class="box ease-quick cursor-pointer">
 				<a 
 					href="https://dave-sommerville.github.io/script-scavengers/" 
@@ -107,23 +122,42 @@
 					>
 				</a>
 			</div>
+		</section> 
+    <section class="portfolio-container container grid-r">
 			<div class="box ease-quick cursor-pointer">
 				<a 
-				href="https://dave-sommerville.github.io/social-media-app/"
-				target="_blank">
+					href="https://dave-sommerville.github.io/script-scavengers/" 
+					target="_blank">
 					<img 
-						src="./src/img/scrnshot04.png" 
-						alt="Me, Myself, and Eye | Fake Social Networking Site"					
-						title="Me, Myself, and Eye | Fake Social Networking Site"
+						src="./src/img/scrnshot01.png" 
+						alt="Script Scavengers | Typing Game"
+						title="Script Scavengers | Typing Game"				
 					>
 				</a>
 			</div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-
+			<div class="box ease-quick cursor-pointer">
+				<a 
+					href="https://dave-sommerville.github.io/switches-and-styles/" 
+					target="_blank">
+					<img 
+						src="./src/img/scrnshot02.jpg" 
+						alt="Shapes and Controls | Web Dev Tutorial"
+						title="Shapes and Controls | Web Dev Tutorial"				
+					>
+				</a>
+			</div>
+			<div class="box ease-quick cursor-pointer">
+				<a 
+					href="https://dave-sommerville.github.io/unreal-city/"
+					target="_blank"
+				>
+					<img 
+						src="./src/img/scrnshot03.png" 
+						alt="Unreal City | Art Portfolio"
+						title="Unreal City | Art Portfolio"				
+					>
+				</a>
+			</div>
 		</section> 
 	</main>
 </body>
