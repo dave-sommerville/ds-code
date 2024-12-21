@@ -1,4 +1,14 @@
 @charset "utf-8";
+/*
+
+- Links made active
+- Screenshot displays set to hexes 
+- Info section formatted and made responsive 
+- Contact area 
+- Eventually changing the portfolio reposniveness
+
+*/
+
 /*----------------------------------------------------------->
 	Local Resets and Roots
 <------------------------------------------------------------*/
@@ -145,9 +155,6 @@ h2 {
   padding: 0 5px;
 }
 
-h3 {
-	font-size: 2rem;
-}
 
 h4 {
 	font-size: 3rem;
@@ -228,7 +235,7 @@ i {
 
 .nav-wrapper {
 	width: 100%;
-	height: 70px;
+	height: 50px;
 	justify-content: center;
 	background: var(--app-gradient);
   backdrop-filter: blur(5px) brightness(0.4);
@@ -243,15 +250,16 @@ i {
 .nav-wrapper.visible {
 	transform: translateY(0);
 }
-
+h3 {
+  font-size: 1.8rem;
+}
 nav {
 	width: 100%;
-	height: 70px;
-  line-height: 70px;
+	height: 50px;
+  line-height: 50px;
 	position: relative;
 	padding: 0 var(--app-spacing);
 	justify-content: space-between;
-  font-size: 2rem;
   color: var(--clr-primary);
 }
 
@@ -260,7 +268,7 @@ nav {
   justify-content: space-between;
 
   a {
-  font-size: 2rem;
+  font-size: 1.6rem;
   }
 }
 
@@ -269,7 +277,7 @@ nav {
 <------------------------------------------------------------*/
 .info {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 5px;
   place-items: center;
   padding: 0 25px;
@@ -303,7 +311,6 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  padding: 0 100px;
 }
 
 
@@ -347,134 +354,100 @@ nav {
 <------------------------------------------------------------*/
 
 
-@media (max-width: 9800px) {
-  h2 {
+@media (max-width: 980px) {
+  h1 {
+    width: 700px;
+    font-size: 6rem;
+    line-height: 100px;
 
-  }
-  .button-wrapper {
-    div {
-
+    span {
+      font-size: 7rem;
     }
   }
-  .about {
 
+  h2 {
+    font-size: 1.4rem;
+    margin-top: -25px;
+    margin-left: 25px;
   }
-  .contact {
 
+  .link-wrapper {
+    width: 350px;
   }
-  .info {
 
-  }
-  .profile {
-
-  }
-  .laptop {
-
-  }
-  .text-box {
-
-  }
   .portfolio-container {
 
     div {
-
+      &:nth-of-type(3) {
+      margin-top: -100px;
+      }
     }
   }
-
 }
 
 
-@media (max-width: 7860px) {
-  h2 {
+@media (max-width: 780px) {
+  h1 {
+    width: 550px;
+    font-size: 4.5rem;
+    line-height: 90px;
 
-  }
-  .button-wrapper {
-    div {
-
+    span {
+      font-size: 5.5rem;
     }
   }
-  .about {
 
+  .button-wrapper div {
+      width: 100px;
+      height: 100px;
   }
-  .contact {
 
+  h3 {
+    font-size: 1.6rem;
   }
-  .nav-wrapper {
+  .link-wrapper {
+    width: 280px;
+    a {
+    font-size: 1.2rem;
+    }
+  }
+  .portfolio-container div {
+      &:nth-of-type(3) {
+        margin-top: -80px;
+      }
+  }
+}
 
+@media (max-width: 600px) {
+  h1 {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 60px;
+    span {
+      font-size: 3.5rem;
+    }
   }
-  .info {
 
+  h2 {
+    font-size: 1.2rem;
+    margin-top: -10px;
   }
-  .profile {
+  .button-wrapper div {
+      width: 80px;
+      height: 80px;
+  }
 
+  .link-wrapper {
+    display: none;
   }
-  .laptop {
 
-  }
-  .text-box {
-
-  }
   .portfolio-container {
 
     div {
-
+      &:nth-of-type(3) {
+      margin-top: -70px;
+      }
     }
   }
-
 }
 
-@media (max-width: 580px) {
-  h2 {
-
-  }
-  .button-wrapper {
-    div {
-
-    }
-  }
-  .about {
-
-  }
-  .contact {
-
-  }
-  .nav-wrapper {
-    
-  }
-  .info {
-
-  }
-  .profile {
-
-  }
-  .laptop {
-
-  }
-  .text-box {
-
-  }
-  .portfolio-container {
-
-    div {
-
-    }
-  }
-
-}
-
-/* 
-@media (max-width: 580px) {
-	.grid-r {
-			grid-template-columns: 1fr; 
-			grid-template-rows: auto auto; 
-	}
-	h1 {
-		font-size: 3rem;
-	}
-	h3 {
-		font-size: 1.4rem;
-	}
-	.contact {
-		font-size: 1rem;
-	}
-} */
