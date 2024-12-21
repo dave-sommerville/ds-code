@@ -4,10 +4,21 @@
 - Links made active
 - Screenshot displays set to hexes 
 - Info section formatted and made responsive 
+  - Responsive
+    - 1000px 
+      - Text size
+    - 780px
+      - 
+  - Clip/improve profile image
+  - Image next to "other fields" 
+  - Some type of effect applied to skills list
+  - Bring in the width of cta
+  - Stylized cta buttons 
+- Hex filter applied 
 - Contact area 
-- Eventually changing the portfolio reposniveness
 - Title for preview hovers 
 - Preview modals 
+- Code clean up / Moving utils 
 
 */
 
@@ -283,6 +294,19 @@ nav {
   gap: 40px;
   place-items: center;
   padding: 0 25px;
+  font-size: 1.8rem;
+}
+.item1 {
+  background-color: #dd6900;
+  clip-path: var(--app-clip-hex);
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+
+  }
 }
 
 .item1, .item2, .item3, .item5 {
@@ -386,6 +410,7 @@ nav {
     width: 350px;
   }
 
+
   .portfolio-container {
 
     div {
@@ -422,6 +447,28 @@ nav {
     font-size: 1.2rem;
     }
   }
+
+  .info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 40px;
+    place-items: center;
+    padding: 0 25px;
+    font-size: 1.6rem;
+  }
+  .item1 {
+    grid-column: 2 / span 2;
+  }
+  .item2, .item3 {
+    grid-column: span 2;
+  }
+  .item4 {
+    grid-column: span 4;
+  }
+  .item5 {
+    grid-column: 2 / span 2
+  }
+
   .portfolio-container div {
       &:nth-of-type(3) {
         margin-top: -80px;
@@ -451,6 +498,18 @@ nav {
   .link-wrapper {
     display: none;
   }
+
+  .info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
+    place-items: center;
+    padding: 0 25px;
+  }
+  .item1, .item2, .item3, .item4, .item5 {
+    grid-column: span 2;
+  }
+
 
   .portfolio-container {
 
