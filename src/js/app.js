@@ -19,9 +19,10 @@ function listen(event, element, callback) {
 
 const navBar = select(".nav-wrapper");
 const heroBanner = select(".hero-banner");
-const contactModal = select(".contact");
-const showContact = select(".show-contact");
 const headerSwitch = heroBanner.offsetHeight;
+const burgerMenu = select('.burger');
+const linkWrapper = select('.link-wrapper');
+const navTitle = select('h3');
 
 /*----------------------------------------------------------->
 	Listeners 
@@ -37,14 +38,9 @@ listen("scroll", window, () => {
 	}
 });
 
-listen('click', showContact, () => {
-	contactModal.classList.toggle("visible");
-	
-	if (contactModal.classList.contains("visible")) {
-			showContact.innerText = "Close"; 
-	} else {
-			showContact.innerText = "Contact";
-	}
+listen('click', burgerMenu, () => {
+	linkWrapper.classList.toggle("visible");
+  navTitle.classList.toggle("visible");
 });
 
 

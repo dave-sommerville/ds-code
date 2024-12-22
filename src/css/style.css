@@ -1,19 +1,17 @@
 @charset "utf-8";
-/*
-- Reword things a little bit 
-- Take better profile picture and update 
-- Hamburger nav menu
-- Possibly different hover on nav
-- Some type of effect applied to skills list
-- Possibly animate page elements 
-- Contact area 
-- Preview modals 
-*/
-
 /*----------------------------------------------------------->
 	Local Resets and Roots
 <------------------------------------------------------------*/
 
+/*
+Portfolio
+- Reword things a little bit 
+- Hamburger nav menu
+- Some type of effect applied to skills list
+- Preview modals 
+- Order of buttons
+  - Color of hero buttons
+*/
 a, button {
 	text-decoration: none;
 	font-style: inherit;
@@ -235,8 +233,17 @@ i {
 	transform: translateY(0);
 }
 h3 {
+  width: 300px;
   font-size: 1.8rem;
+  position: absolute;
+  left: 0;
+  transition: all 0.5s ease-in-out;
 }
+
+h3.visible {
+  width: 300px;
+}
+
 nav {
 	width: 100%;
 	height: 50px;
@@ -247,9 +254,28 @@ nav {
   color: var(--clr-primary);
 }
 
+.burger { 
+  height: 50px;
+  display: none;
+  position: absolute;
+  right: 0;
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  i {
+    line-height: 50px;
+    color: var(--clr-primary);
+  }
+}
+
+
 .link-wrapper {
-  width: 450px;
+  width: 300px;
   justify-content: space-between;
+  position: absolute;
+  right: 0;
+  transition: all 0.5s ease-in-out;
 
   a {
   font-size: 1.6rem;
@@ -260,6 +286,10 @@ nav {
     backdrop-filter: brightness(1.2);
   }
   }
+}
+
+.link-wrapper.visible {
+  width: 240px;
 }
 
 /*----------------------------------------------------------->
@@ -295,13 +325,10 @@ nav {
 }
 
 .info-annex {
-  margin: 50px auto;
+  max-width: 500px;
   justify-content: center;
   align-items: center;
   
-  p {
-    width: 500px;
-  }
 
   a {
     display: inline-block;
@@ -456,7 +483,7 @@ footer {
     align-items: center;
     height: 60px;
     width: 60px;
-    line-height: 60px;
+    line-height: 60px; 
     clip-path: var(--app-clip-hex);
     margin: 5px;
     transition: all 0.25s ease-in-out;
@@ -465,7 +492,7 @@ footer {
       filter: brightness(1.2);
       transform: scale(1.05);
     }
-  }
+ }
 }
 
 /*----------------------------------------------------------->
@@ -488,10 +515,6 @@ footer {
     font-size: 1.4rem;
     margin-top: -25px;
     margin-left: 25px;
-  }
-
-  .link-wrapper {
-    width: 350px;
   }
 
 
@@ -526,7 +549,7 @@ footer {
     font-size: 1.6rem;
   }
   .link-wrapper {
-    width: 280px;
+    width: 240px;
     a {
     font-size: 1.2rem;
     }
@@ -574,13 +597,28 @@ footer {
     font-size: 1.2rem;
     margin-top: -10px;
   }
+
+
   .button-wrapper div {
       width: 80px;
       height: 80px;
   }
 
+  h3 {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .burger {
+    display: block;
+  }
+
   .link-wrapper {
-    display: none;
+    position: absolute;
+    right: 75px;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .info {
