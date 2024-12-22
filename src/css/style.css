@@ -2,15 +2,6 @@
 /*----------------------------------------------------------->
 	Local Resets and Roots
 <------------------------------------------------------------*/
-
-/*
-Portfolio
-- Reword things a little bit 
-- Some type of effect applied to skills list
-- Preview modals 
-- Order of buttons
-  - Color of hero buttons
-*/
 a, button {
 	text-decoration: none;
 	font-style: inherit;
@@ -26,6 +17,7 @@ button {
 	--clr-bg: #001622;
 	--clr-primary: #fe521d;
 	--clr-secondary: #dd6900;
+	--clr-teretiary: #ce3101;
 	--clr-text: #fefefe;
 	--clr-dark: #012;
 	--app-border-rad: 14px;
@@ -172,7 +164,6 @@ header {
     width: 120px; 
     height: 120px;
     clip-path: var(--app-clip-hex);
-    background-color: var(--clr-primary);
     color: var(--clr-text);
     font-size: 1.2rem;
     transition: all 0.25s ease-in-out;
@@ -181,15 +172,7 @@ header {
 }
 
 .about {
-  &:hover {
-    filter: brightness(1.2);
-    transform: scale(1.05);
-  }
-}
-
-.contact {
-  margin: 30px 0 0 15px;
-
+  background-color: var(--clr-secondary);
   &:hover {
     filter: brightness(1.2);
     transform: scale(1.05);
@@ -197,7 +180,18 @@ header {
 }
 
 .work {
-  margin: 60px 0 0 15px;
+  margin: 18px 0 0 15px;
+  background-color: var(--clr-teretiary);
+
+  &:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+  }
+}
+
+.contact {
+  margin: 36px 0 0 15px;
+  background-color: var(--clr-primary);
 
   &:hover {
     filter: brightness(1.2);
@@ -438,8 +432,8 @@ footer {
 }
 
 .contact-container {
-  height: 400px;
-  width: 400px;
+  height: 360px;
+  width: 360px;
   clip-path: var(--app-clip-hex);
   justify-content: center;
   align-items: center;
