@@ -1,15 +1,13 @@
 @charset "utf-8";
 /*
-
-- Screenshot displays set to hexes 
-- Image next to "other fields" 
+- Reword things a little bit 
+- Take better profile picture and update 
+- Hamburger nav menu
+- Possibly different hover on nav
 - Some type of effect applied to skills list
-- Hex filter applied 
+- Possibly animate page elements 
 - Contact area 
-- Title for preview hovers 
 - Preview modals 
-- Code clean up / Moving utils 
-
 */
 
 /*----------------------------------------------------------->
@@ -59,19 +57,12 @@ button {
 	margin-inline: auto;
 }
 
-.m-top-50{
-	margin-top: 50px;
-}
-
-.pad-50 {
-	padding: 50px;
-}
-
 .flex {
 	display: flex;
 }
 
 .f-col {
+  display: flex;
 	flex-direction: column;
 }
 
@@ -96,13 +87,6 @@ button {
 	cursor: pointer;
 }
 
-.w-100 {
-	width: 100%;
-}
-
-.h-100 {
-	height: 100%;
-}
 
 /*----------------------------------------------------------->
 	Main Page Settings 
@@ -116,19 +100,7 @@ body {
 }
 
 main {
-	position: relative;
-}
-
-main::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: var(--app-gradient);
-	backdrop-filter: blur(10px);
-	z-index: -1; 
+background-color: #01263b;
 }
 
 /*----------------------------------------------------------->
@@ -162,7 +134,7 @@ h2 {
 h4 {
 	font-size: 3rem;
 	text-align: center;
-	line-height: 30svh;
+	line-height: 200px;
   color: var(--clr-primary);
 }
 
@@ -209,8 +181,6 @@ header {
     transition: all 0.25s ease-in-out;
 
   }
-
-
 }
 
 .about {
@@ -429,6 +399,63 @@ nav {
 	transform: scale(1.03); 
 }
 
+/*----------------------------------------------------------->
+	Contact Section
+<------------------------------------------------------------*/
+footer {
+  justify-content: center;
+  align-items: center;
+  background-color: #01263b;
+}
+
+.contact-container {
+  height: 400px;
+  width: 400px;
+  clip-path: var(--app-clip-hex);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 25px;
+  margin-bottom: 25px;
+  background-color: var(--clr-bg);  
+  font-size: 1.2rem;
+  color: var(--clr-primary);
+}
+
+.email {
+  font-weight: 700;
+}
+
+.email:hover{
+  text-decoration: underline;
+  filter: brightness(1.2);
+}
+
+.social-wrapper {
+  width: 150px;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+  div {
+    background-color: var(--clr-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    clip-path: var(--app-clip-hex);
+    margin: 5px;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+      filter: brightness(1.2);
+      transform: scale(1.05);
+    }
+  }
+}
 
 /*----------------------------------------------------------->
 	Media Queries 
