@@ -186,6 +186,7 @@ header {
 .about {
   &:hover {
     filter: brightness(1.2);
+    transform: scale(1.05);
   }
 }
 
@@ -194,6 +195,7 @@ header {
 
   &:hover {
     filter: brightness(1.2);
+    transform: scale(1.05);
   }
 }
 
@@ -202,6 +204,7 @@ header {
 
   &:hover {
     filter: brightness(1.2);
+    transform: scale(1.05);
   }
 }
 
@@ -317,7 +320,10 @@ nav {
   font-size: 1.2rem;
   transition: all 0.25s ease-in-out;
   margin: var(--app-spacing);
-
+  &:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+  }
 }
 
 .cta-cv {
@@ -331,6 +337,11 @@ nav {
   font-size: 1.2rem;
   font-weight: 500;
   transition: all 0.25s ease-in-out;
+
+  &:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+  }
 }
 
 .profile {
