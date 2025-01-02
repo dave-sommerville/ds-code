@@ -1,13 +1,15 @@
 # Dave Sommerville | Developer && Creator 
 ## Overview
-This webpage is my new and improved personal landing site. I'm happy with its appearance for now, although I hope to add more content soon. 
+This webpage is my new and improved personal landing site. Please reach out 
+if you might be interested in a collaboration or acquiring my work
 ## Features
 - Home Page: A sleek introduction to my development skills.
-- Projects: A collection of front-end and back-end projects.
-- Contact: Get in touch with me for collaborations or inquiries.
-- Responsive Design: Looks good on mobile as well as desktop. 
+- About: A brief summary of my journey so far
+- Portfolio: Several examples of my work from the past year
+- Contact: Area to contact me via email or socials 
 
-![Website Preview](./src/img/)
+![Website Preview](./src/img/scrnsht-preview.png)
+
 ### Languages Used 
 ![HTML](https://img.shields.io/badge/WEB-HTML-%2391D5E8?style=for-the-badge&logo=html5&logoColor=white&labelColor=grey)
 
