@@ -163,6 +163,7 @@ header {
     align-items: center;
     width: 120px; 
     height: 120px;
+    -webkit-clip-path: var(--app-clip-hex);
     clip-path: var(--app-clip-hex);
     color: var(--clr-text);
     font-size: 1.2rem;
@@ -303,6 +304,7 @@ nav {
 
 .item1 {
   background-color: #dd6900;
+  -webkit-clip-path: var(--app-clip-hex);
   clip-path: var(--app-clip-hex);
   width: 80%;
   height: auto;
@@ -358,6 +360,7 @@ nav {
   height: 100px;
   line-height: 100px;
   text-align: center;
+  -webkit-clip-path: var(--app-clip-hex);
   clip-path: var(--app-clip-hex);
   background-color: var(--clr-primary);
   color: var(--clr-text);
@@ -374,6 +377,7 @@ nav {
   width: 60px; 
   height: 60px;
   line-height: 60px;
+  -webkit-clip-path: var(--app-clip-hex);
   clip-path: var(--app-clip-hex);
   background-color: var(--clr-secondary);
   color: var(--clr-text);
@@ -400,6 +404,7 @@ nav {
   gap: 40px;
 
   div {
+    -webkit-clip-path: var(--app-clip-hex);
     clip-path: var(--app-clip-hex);
     width: 100%;
     height: 100%;
@@ -434,6 +439,7 @@ footer {
 .contact-container {
   height: 360px;
   width: 360px;
+  -webkit-clip-path: var(--app-clip-hex);
   clip-path: var(--app-clip-hex);
   justify-content: center;
   align-items: center;
@@ -469,6 +475,7 @@ footer {
     height: 60px;
     width: 60px;
     line-height: 60px; 
+    -webkit-clip-path: var(--app-clip-hex);
     clip-path: var(--app-clip-hex);
     margin: 5px;
     transition: all 0.25s ease-in-out;
