@@ -20,9 +20,34 @@
   <link rel="stylesheet" href="./src/css/reset.css" media="all">
   <link rel="stylesheet" href="./src/css/utils.css" media="all">
   <link rel="stylesheet" href="./src/css/ds-creation.css" media="all">
-  <script src="./src/js/app.js" defer></script>  
+  <script src="./src/js/ds-creation.js" defer></script>  
 </head>
 <body>
-  
+  <main class="container">
+    <section class="desktop">
+      
+    </section>
+    <section class="pop-out-window">
+      <div class="top-bar flex">
+        <p class="exit-chat pointer">
+          <i class="fa-solid fa-xmark"></i>
+        </p>
+      </div>
+      <div class="hangman-display flex">
+        <div>
+          <p class="gallows"></p>
+        </div>
+        <div>
+          <p>Phrase to Guess:</p>
+          <p class="word-display"></p>
+          <p></p>
+          <p class="wrong-letters"></p>
+          <input class="letter-guess hidden">
+          <button class="hangman-start btn-style">
+            Start Game
+          </button>
+
+    </section>
+  </main>
 </body>
 </html>

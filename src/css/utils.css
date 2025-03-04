@@ -26,6 +26,17 @@
 		rgb(64 64 96 / 0.3) 50%,
 		rgb(64 64 64 / 0.1) 100%
 	);
+	--clr-body-bg: #f0f0f0;
+  --clr-light: #fefefe;
+  --clr-dark-text: #012;
+  --clr-box-bg-grey: #bbb;
+  --clr-box-bg-drk-grey: #999;
+  --clr-titlebar: #125;
+  --clr-close-red: #d12;
+  --bdr-ex-lt-int-rb: solid 2px #ddd;
+  --bdr-ex-rb-int-lt: solid 2px #222;
+  --box-shad: -4px 4px 3px 0 rgb(10 10 10 / 0.7);
+
 }
 
 /*----------------------------------------------------------->
@@ -65,4 +76,29 @@
 
 .pointer {
 	cursor: pointer;
+}
+
+.pop-out-window {
+  background-color: var(--clr-box-bg-grey);
+  border-left: var(--bdr-ex-lt-int-rb);
+  border-top: var(--bdr-ex-lt-int-rb);
+  border-right: var(--bdr-ex-rb-int-lt);
+  border-bottom: var(--bdr-ex-rb-int-lt);
+  box-shadow: var(--box-shad);
+}
+
+.btn-style {
+  background-color: var(--clr-box-bg-grey);
+  border-left: var(--bdr-ex-lt-int-rb);
+  border-top: var(--bdr-ex-lt-int-rb);
+  border-right: var(--bdr-ex-rb-int-lt);
+  border-bottom: var(--bdr-ex-rb-int-lt);
+}
+
+.window-inside-shad {
+  background-color: var(--clr-box-bg-drk-grey); 
+  border-left: var(--bdr-ex-rb-int-lt);
+  border-top: var(--bdr-ex-rb-int-lt);
+  border-right: var(--bdr-ex-lt-int-rb);
+  border-bottom: var(--bdr-ex-lt-int-rb);
 }

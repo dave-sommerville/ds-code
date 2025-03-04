@@ -40,7 +40,7 @@ body {
   image-rendering: pixelated;
 
 }
-
+/*Should be in reset*/
 ul {
   text-decoration: none;
   list-style-type: none;
@@ -52,34 +52,6 @@ main {
 	justify-content: center;
 	align-items: center;
   position: relative;
-}
-
-.icons {
-  height: fit-content;
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  font-size: 3.6rem;
-  color: var(--clr-titlebar);
-
-  img {
-    height: 60px;
-    width: auto;
-    margin: 5px 0;
-  }
-}
-
-.chat-box {
-  height: fit-content;
-  width: 600px;
-  position: absolute;
-  margin: auto;
-  background-color: var(--clr-box-bg-grey);
-  border-left: var(--bdr-ex-lt-int-rb);
-  border-top: var(--bdr-ex-lt-int-rb);
-  border-right: var(--bdr-ex-rb-int-lt);
-  border-bottom: var(--bdr-ex-rb-int-lt);
-  box-shadow: var(--box-shad);
 }
 
 .top-bar { 
@@ -97,118 +69,6 @@ main {
   }
 }
 
-.display {
-  height: 150px;
-  width: 100%;
-}
-.chat {
-  width: 540px;
-  height: 120px;
-  background-color: var(--clr-light);
-  border-left: var(--bdr-ex-rb-int-lt);
-  border-top: var(--bdr-ex-rb-int-lt);
-  border-right: var(--bdr-ex-lt-int-rb);
-  border-bottom: var(--bdr-ex-lt-int-rb);
-  resize: none;
-  margin: 5px auto;
-}
-
-.button {
-  height: 50px;
-  width: 90px;
-  background-color: var(--clr-box-bg-grey);
-  border-left: var(--bdr-ex-lt-int-rb);
-  border-top: var(--bdr-ex-lt-int-rb);
-  border-right: var(--bdr-ex-rb-int-lt);
-  border-bottom: var(--bdr-ex-rb-int-lt);
-  margin: 30px;
-}
-
-.card-wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  grid-template-rows: repeat(3, 1fr);    
-  gap: 10px; 
-  height: 600px;
-  width: 500px;
-  padding: 30px;
-}
-
-.game-grid {
-  background-color: var(--clr-box-bg-grey);
-  border-left: var(--bdr-ex-lt-int-rb);
-  border-top: var(--bdr-ex-lt-int-rb);
-  border-right: var(--bdr-ex-rb-int-lt);
-  border-bottom: var(--bdr-ex-rb-int-lt);
-  box-shadow: var(--box-shad);
-}
-.secret-panels::before {
-  height: 100%;
-  z-index: 500;
-  background-color: var(--clr-box-bg-grey);
-}
-
-.padding-20 {
-  padding: 10px;
-}
-
-.card {
-  background: var(--clr-box-bg-drk-grey) url('') no-repeat center center; 
-  border-left: var(--bdr-ex-rb-int-lt);
-  border-top: var(--bdr-ex-rb-int-lt);
-  border-right: var(--bdr-ex-lt-int-rb);
-  border-bottom: var(--bdr-ex-lt-int-rb);
-}
-
-.profile-main {
-  background-color: var(--clr-box-bg-grey);
-  border-left: var(--bdr-ex-lt-int-rb);
-  border-top: var(--bdr-ex-lt-int-rb);
-  border-right: var(--bdr-ex-rb-int-lt);
-  border-bottom: var(--bdr-ex-rb-int-lt);
-  box-shadow: var(--box-shad);
-}
-
-.profile {
-  height: fit-content;
-  width: 650px;
-  padding: 25px;
-
-  div {
-    flex-grow: 1;
-  }
-}
-
-.profile-wrapper {
-  overflow: hidden;
-}
-
-.logo {
-  align-self: center;
-  height: 40px;
-  width: auto;
-}
-
-.friend {
-  width: 30px;
-  height: auto;
-  margin: 5px;
-  align-self: center;
-}
-
-.hangman {
-  height: fit-content;
-  width: 600px;
-  position: absolute;
-  margin: auto;
-  background-color: var(--clr-box-bg-grey);
-  border-left: var(--bdr-ex-lt-int-rb);
-  border-top: var(--bdr-ex-lt-int-rb);
-  border-right: var(--bdr-ex-rb-int-lt);
-  border-bottom: var(--bdr-ex-rb-int-lt);
-  box-shadow: var(--box-shad);
-}
-
 .hangman-display {
   height: 400px;
   font-size: 2.2rem;
@@ -218,7 +78,7 @@ main {
   }
 }
 
-.letter-guess, .hangman-start {
+.letter-guess {
   width: 100px;
   height: 80px;
   margin: 30px;
@@ -243,3 +103,5 @@ main {
   background: var(--clr-light) url(../img/monster1.png) no-repeat center center;
   background-size: contain;
 }
+
+
