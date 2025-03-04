@@ -1,83 +1,5 @@
 @charset "utf-8";
 /*----------------------------------------------------------->
-	Local Resets and Roots
-<------------------------------------------------------------*/
-a, button {
-	text-decoration: none;
-	font-style: inherit;
-	color: inherit;
-}
-
-button {
-	border: none;
-	outline: none;
-}
-
-:root {
-	--clr-bg: #001622;
-	--clr-primary: #fe521d;
-	--clr-secondary: #dd6900;
-	--clr-teretiary: #ce3101;
-	--clr-text: #fefefe;
-	--clr-dark: #012;
-	--app-border-rad: 14px;
-	--app-spacing: 25px;
-  --app-clip-hex: polygon(
-    50% 0, 
-    100% 25%, 
-    100% 75%, 
-    50% 100%, 
-    0 75%, 
-    0 25%);
-	--app-gradient: linear-gradient(
-		135deg, 
-		rgb(64 64 64 / 0.1) 0%,
-		rgb(64 64 96 / 0.3) 50%,
-		rgb(64 64 64 / 0.1) 100%
-	);
-}
-
-/*----------------------------------------------------------->
-	Utility Classes 
-<------------------------------------------------------------*/
-
-.container {
-	width: min(100% - 30px, 1200px);
-	margin-inline: auto;
-}
-
-.flex {
-	display: flex;
-}
-
-.f-col {
-  display: flex;
-	flex-direction: column;
-}
-
-.ease-quick {
-	transition: all 0.3s ease-in-out;
-}
-
-.ease-slow {
-	transition: all 0.8s ease-in-out;
-}
-
-.hidden {
-	display: none;
-	opacity: 0;
-}
-
-.circle {
-	border-radius: 50%;
-}
-
-.pointer {
-	cursor: pointer;
-}
-
-
-/*----------------------------------------------------------->
 	Main Page Settings 
 <------------------------------------------------------------*/
 body {
@@ -89,7 +11,7 @@ body {
 }
 
 main {
-background-color: #01263b;
+background-color: var(--clr-main-bg);
 }
 
 /*----------------------------------------------------------->

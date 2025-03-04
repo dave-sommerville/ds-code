@@ -1,0 +1,41 @@
+DS-Code
+- Set up "business"
+- Purchase domain and look into hosting
+- Review/Update content
+- Update Profile Pictures 
+- Add Forms/Analytics as needed 
+- Sub pages (details below)
+	- Y2K 
+		- Shop
+		- Games
+		- Phots
+		- Poetry
+
+
+Active Projects 
+- Prep for skills competition 
+- Leet Code practice 
+- Menu/Grocery list app
+- Boggle screen
+- Cactus Theatre  Co.
+
+Other Accounts 
+- Linked In
+- Bluesky
+- Symplicity 
+
+Later
+- Haunted House (.exe)
+- Ship Attack
+- Cactus jumping game
+- BlackJack Split Enhancement
+- AI APIs 
+  - Familiar 
+  - Terms & Services Bot
+- Build computer/Install operating system 
+- Start Server (Fediverse or Minecraft)
+- Buy and program a Raspberry PI
+
+
+
+
