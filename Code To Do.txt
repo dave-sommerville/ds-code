@@ -1,30 +1,18 @@
-DS-Code
-- Set up "business"
-- Purchase domain and look into hosting
-- Review/Update content
-- Update Profile Pictures 
-- Add Forms/Analytics as needed 
-- Sub pages (details below)
-	- Y2K 
-		- Shop
-		- Games
-		- Phots
-		- Poetry
-
-
-Active Projects 
-- Prep for skills competition 
-- Leet Code practice 
-- Menu/Grocery list app
-- Boggle screen
+High Priority
+- Skills practice
+- Assignments
+  - 3 Individual 
+  - 2 Group
 - Cactus Theatre  Co.
+- DS-Code
 
-Other Accounts 
-- Linked In
-- Bluesky
-- Symplicity 
+Low Priority - Easy
+- Leet Code practice
+- Boogle
 
-Later
+
+Low Priority - Hard
+- Menu Grocery App
 - Haunted House (.exe)
 - Ship Attack
 - Cactus jumping game

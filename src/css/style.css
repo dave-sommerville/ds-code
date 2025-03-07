@@ -2,6 +2,40 @@
 /*----------------------------------------------------------->
 	Main Page Settings 
 <------------------------------------------------------------*/
+/*
+  - Simplify files
+  - Centralize and extract styles (clean up repo)
+  - Change profile photo
+  - Add more media
+  - Rewrite blurb
+    - Emphasize my interest in computers and love of early internet 
+  - Rewrite CV
+    - Not c++
+    - Extensive projects with JavaScript
+    - Actively working on several Entity Framework ASP.net web applications 
+    - 2025 Skills Competition
+    - MITT Open house 
+  - Install Addons from Netlify
+    - Poll
+    - DM to me
+  - Reformat display
+  - Refmort contact info (possibly new page)
+  - Logo Design
+  - T shirt design and distribution
+  - Look into google analytics 
+  - Other Websites 
+    - Cactus
+    - Boogle
+    - Unreal City
+    - User Preferences 
+      - Nickname
+      - Favourite (whatever)
+      - A secret 
+      - Colour scheme (accents? I don't want it to change too drastically)
+      - Birthday
+        - Horoscope
+      - Site engagement stats 
+*/
 body {
 	font-family: "Poppins", "Noto Sans", Arial, sans-serif;
 	font-size: 1.8rem;

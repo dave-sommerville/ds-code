@@ -78,15 +78,6 @@
 	cursor: pointer;
 }
 
-.pop-out-window {
-  background-color: var(--clr-box-bg-grey);
-  border-left: var(--bdr-ex-lt-int-rb);
-  border-top: var(--bdr-ex-lt-int-rb);
-  border-right: var(--bdr-ex-rb-int-lt);
-  border-bottom: var(--bdr-ex-rb-int-lt);
-  box-shadow: var(--box-shad);
-}
-
 .btn-style {
   background-color: var(--clr-box-bg-grey);
   border-left: var(--bdr-ex-lt-int-rb);

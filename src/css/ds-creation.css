@@ -54,8 +54,17 @@ main {
   position: relative;
 }
 
+.pop-out-window {
+  width: fit-content;
+  background-color: var(--clr-box-bg-grey);
+  border-left: var(--bdr-ex-lt-int-rb);
+  border-top: var(--bdr-ex-lt-int-rb);
+  border-right: var(--bdr-ex-rb-int-lt);
+  border-bottom: var(--bdr-ex-rb-int-lt);
+  box-shadow: var(--box-shad);
+}
+
 .top-bar { 
-  width: 100%;
   height: 25px;
   background-color: var(--clr-titlebar);
   justify-content: right;
@@ -70,12 +79,13 @@ main {
 }
 
 .hangman-display {
-  height: 400px;
-  font-size: 2.2rem;
-  div {
-    height: 100%;
-    width: 50%;
-  }
+  height: 600px;
+  width: 600px;
+  font-size: 2rem;
+  padding: 30px;
+}
+.gallows-container {
+
 }
 
 .letter-guess {
@@ -89,7 +99,6 @@ main {
   margin: 30px;
 }
 
-
 .gliitch {
   position: absolute;
   bottom: 80px;
@@ -97,7 +106,6 @@ main {
   height: 180px;
   object-fit: cover;
 }
-
 
 .pop-out {
   background: var(--clr-light) url(../img/monster1.png) no-repeat center center;
