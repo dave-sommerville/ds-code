@@ -66,3 +66,23 @@ const blurbs = {
   blackjack:
   `This website provides a simple and accessible online version of the classic card game Blackjack. Players can deal cards, hit, hold (stand), double down, or reset the game, with betting options of 10, 50, or 100 units. \nThe goal is to get a hand value as close to 21 as possible without exceeding it, while beating the dealer. The interface updates in real-time, displaying both the player's and dealer's hands. \nThe minimalist design ensures easy navigation, and the game runs directly in a browser without downloads, offering a smooth and enjoyable experience for casual play or practice.`
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Get all expandable headers
+  const headers = document.querySelectorAll('.expandable-header');
+
+  headers.forEach(header => {
+      header.addEventListener('click', function () {
+          // Toggle the expanded class on the parent element
+          const expandable = this.parentElement;
+          expandable.classList.toggle('expanded');
+
+          // Close other expanded sections (optional)
+          headers.forEach(otherHeader => {
+              if (otherHeader !== header) {
+                  otherHeader.parentElement.classList.remove('expanded');
+              }
+          });
+      });
+  });
+});

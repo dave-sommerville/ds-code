@@ -21,9 +21,5 @@ Low Priority - Hard
   - Familiar 
   - Terms & Services Bot
 - Build computer/Install operating system 
-- Start Server (Fediverse or Minecraft)
 - Buy and program a Raspberry PI
-
-
-
 

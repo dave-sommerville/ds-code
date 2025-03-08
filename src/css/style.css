@@ -6,7 +6,7 @@
   - Simplify files
   - Centralize and extract styles (clean up repo)
   - Change profile photo
-  - Add more media
+  - Add language graphic 
   - Rewrite blurb
     - Emphasize my interest in computers and love of early internet 
   - Rewrite CV
@@ -18,9 +18,8 @@
   - Install Addons from Netlify
     - Poll
     - DM to me
-  - Reformat display
-  - Refmort contact info (possibly new page)
-  - Logo Design
+  - Reformat display portfolio
+  - Reformat contact
   - T shirt design and distribution
   - Look into google analytics 
   - Other Websites 
@@ -99,11 +98,12 @@ header {
 	position: relative;
 	align-items: center;
   color: var(--clr-primary);
-  background: var(--clr-bg) url('../img/hexattempt2.jpg') no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-
-}
+  /* background: var(--clr-bg) url('../img/hexattempt2.jpg') no-repeat center center;
+  background-size: cover;*/
+  background-attachment: fixed; 
+  background-color: #01091c;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='252' height='441' viewBox='0 0 252 441'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23dd6900' fill-opacity='1' fill-rule='nonzero'%3E%3Cpath d='M125.91 83.25l117 67.5v135l-117 67.5L9 285.75v-135l116.91-67.5zM27 161.1v114.3l98.91 57.06 99-57.15V161.1l-99-57.06L27 161.1zM0 135l116.82-67.5V0h-18v57.15L0 114.21v20.7zm0 166.5l116.82 67.5V441h-18v-61.65L0 322.29v-20.7zM135 0v67.5L251.91 135H252v-20.79h-.09L153 57.15V0h-18zm0 441v-72l116.91-67.5H252v20.79h-.09L153 379.35V441h-18z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
 
 /*----------------------------------------------------------->
 	Hero Banner - Buttons 
@@ -441,6 +441,49 @@ footer {
       transform: scale(1.05);
     }
  }
+}
+
+/* Container for all expandable sections */
+.expandable-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Individual expandable section */
+.expandable {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+/* Header (clickable area) */
+.expandable-header {
+  padding: 10px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.expandable-header:hover {
+  background-color: #e0e0e0;
+}
+
+/* Content area (hidden by default) */
+.expandable-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+/* Expanded state */
+.expandable.expanded .expandable-content {
+  max-height: 500px; /* Adjust based on your content */
+  padding: 10px;
 }
 
 /*----------------------------------------------------------->
