@@ -99,8 +99,8 @@ header {
 	position: relative;
 	align-items: center;
   color: var(--clr-primary);
-  background: var(--clr-bg) url('../img/hexa-vector.png') no-repeat left center;
-  background-size: contain;
+  background: var(--clr-bg) url('../img/hexattempt2.jpg') no-repeat center center;
+  background-size: cover;
   background-attachment: fixed;
 
 }
