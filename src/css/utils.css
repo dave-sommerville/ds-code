@@ -13,13 +13,21 @@
 	--clr-dark: #012;
 	--app-border-rad: 14px;
 	--app-spacing: 25px;
-  --app-clip-hex: polygon(
+  /*--app-clip-hex: polygon(
     50% 0, 
     100% 25%, 
     100% 75%, 
     50% 100%, 
     0 75%, 
-    0 25%);
+    0 25%);*/
+    --app-clip-hex: polygon(
+      25% 0, 
+      75% 0, 
+      100% 50%, 
+      75% 100%, 
+      25% 100%, 
+      0 50%
+    );  
 	--app-gradient: linear-gradient(
 		135deg, 
 		rgb(64 64 64 / 0.1) 0%,

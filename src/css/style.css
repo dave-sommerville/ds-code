@@ -50,14 +50,6 @@ background-color: var(--clr-main-bg);
 h1 {
   width: 850px;
 	font-size: 8rem;
-  line-height: 110px;
-  padding: 10px 25px;
-  margin-top: 20svh;
-  background-color: var(--clr-bg);
-
-  span {
-    font-size: 9rem;
-  }
 }
 
 h2 {
@@ -91,19 +83,33 @@ h5 {
 header {
 	height: 100svh;
 	width: 100%;
-	position: relative;
 	align-items: center;
+  justify-content: center;
   color: var(--clr-primary);
+  background: #01091c url("../img/hex-bg.svg") no-repeat left center;
+  background-size: cover;
   background-attachment: fixed; 
-  background-color: #01091c;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='252' height='441' viewBox='0 0 252 441'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23dd6900' fill-opacity='1' fill-rule='nonzero'%3E%3Cpath d='M125.91 83.25l117 67.5v135l-117 67.5L9 285.75v-135l116.91-67.5zM27 161.1v114.3l98.91 57.06 99-57.15V161.1l-99-57.06L27 161.1zM0 135l116.82-67.5V0h-18v57.15L0 114.21v20.7zm0 166.5l116.82 67.5V441h-18v-61.65L0 322.29v-20.7zM135 0v67.5L251.91 135H252v-20.79h-.09L153 57.15V0h-18zm0 441v-72l116.91-67.5H252v20.79h-.09L153 379.35V441h-18z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
-  .logo {
-    height: 100px;
-    position: absolute;
-    left: 100px;
-    top: 100px;
-  }
+
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.logo {
+  height: 200px;
+  position: absolute;
+  left: -150px;
+  top: -50px;
+}
+.profile {
+  -webkit-clip-path: var(--app-clip-hex);
+  clip-path: var(--app-clip-hex);
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
 
 /*----------------------------------------------------------->
 	Floating Top Bar Nav
@@ -115,7 +121,7 @@ header {
 	justify-content: center;
 	background: var(--app-gradient);
   backdrop-filter: blur(5px) brightness(0.4);
-	transform: translateY(-100%); /* Catch before Andre does */
+	transform: translateY(-100%);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -202,13 +208,7 @@ nav {
   grid-column: span 2;
 }
 
-.item1 {
-  -webkit-clip-path: var(--app-clip-hex);
-  clip-path: var(--app-clip-hex);
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-}
+
 
 .item3 img, .item4 img {
   height: 140px;
