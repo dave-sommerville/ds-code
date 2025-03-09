@@ -18,7 +18,7 @@ function listen(event, element, callback) {
 <------------------------------------------------------------*/
 
 const navBar = select(".nav-wrapper");
-const heroBanner = select(".hero-banner");
+const heroBanner = select("header");
 const headerSwitch = heroBanner.offsetHeight;
 const burgerMenu = select('.burger');
 const linkWrapper = select('.link-wrapper');
