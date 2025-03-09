@@ -63,6 +63,24 @@
         </a>
       </p>
       <p>Or find me here</p>
+          <!-- Poll Form -->
+    <form name="poll" method="POST" data-netlify="true">
+      <h2>Which feature would you like most?</h2>
+      <label><input type="radio" name="feature" value="Dark Mode"> Dark Mode</label><br>
+      <label><input type="radio" name="feature" value="Live Chat"> Live Chat</label><br>
+      <label><input type="radio" name="feature" value="User Analytics"> User Analytics</label><br>
+      <label><input type="radio" name="feature" value="Other"> Other</label><br>
+      <button type="submit">Vote</button>
+  </form>
+
+  <!-- Contact Form -->
+  <form name="contact" method="POST" data-netlify="true">
+      <h2>Send Me a Message</h2>
+      <label>Name: <input type="text" name="name" required></label><br><br>
+      <label>Email: <input type="email" name="email" required></label><br><br>
+      <label>Message: <textarea name="message" rows="4" required></textarea></label><br><br>
+      <button type="submit">Send Message</button>
+  </form>
       <div class="social-wrapper">
         <a
           target="_blank"
