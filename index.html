@@ -11,9 +11,7 @@
   <!--  External stylesheets -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 	<!--    Local Stylesheets -->
   <link rel="stylesheet" href="./src/css/reset.css" media="all">
@@ -29,7 +27,7 @@
     </div>
 		<h1>Dave Sommerville</h1>
 	</header>
-	<main class="f-col">
+	<main class="f-col container">
     <section class="nav-wrapper">
       <nav class="container flex">
         <h3 class="visible">
@@ -51,20 +49,66 @@
         </div>
       </nav>
     </section>
-    <h4 id="about">About</h4>
+    <section class="about">
+      <div>
+        <img src="./src/img/languages.svg" class="graphic">
+        <p>
+          I was introduced to the internet as an awkward and solitary teenager in the final years of the 1990s, 
+          back when the internet screamed at you through the phone lines and being online meant being at an IRL location. 
+          Those early days shaped me into the person I am today. The web back then was clumsy, quirky, and a little 
+          cringey—much like myself—but it also held incredible potential. Programmers and designers were stitching 
+          together a new world, and I was hooked.
+        </p>
+      </div>
+      <div>
+        <div class="block">
+          <img src="./src/img/logo-one.PNG">
+        </div>
+        <p>
+          This past year, I've been diving headfirst into that world, learning new languages and technologies at a 
+          rapid pace. I've worked extensively with CSS and JavaScript on personal projects (check out my portfolio 
+          below) and am currently building several ASP.NET Entity Framework applications. I bring a mix of robust 
+          talents and experiences to the table, and I've taken to the field quickly. For more details, feel free to 
+          explore my CV or GitHub repositories.
+        </p>
+      </div>
+      <div>
+        <div class="side-ports">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p>
+          I'm open to work, but I'm also a huge fan of the cooperative and communal spirit that built the internet. 
+          If you're interested in collaboration or just want to chat about tech, creativity, or the good old days of 
+          dial-up, don't hesitate to reach out. You can email me at [your email] or connect with me on [platform]. 
+          Let's build something amazing together!
+        </p>
+      </div>
+    </section>
 		<section class="info container">
+      <div class="expandable-container">
+        <div class="expandable">
+            <div class="expandable-header">Section 1</div>
+            <div class="expandable-content">
+                <p>This is the content for Section 1. It will expand smoothly when clicked.</p>
+            </div>
+        </div>
+        <div class="expandable">
+            <div class="expandable-header">Section 2</div>
+            <div class="expandable-content">
+                <p>This is the content for Section 2. It will expand smoothly when clicked.</p>
+            </div>
+        </div>
+        <div class="expandable">
+            <div class="expandable-header">Section 3</div>
+            <div class="expandable-content">
+                <p>This is the content for Section 3. It will expand smoothly when clicked.</p>
+            </div>
+        </div>
 		</section> 
-	</main>
-  <footer class="f-col">
+    <section>
     <h4 id="contact">Contact</h4>
-    <div class="contact-container f-col">
-      <p>Send an email</p>
-      <p class="email">
-        <a href="mailto:dave.r.sommerville@outlook.com">
-          dave.r.sommerville@outlook.com
-        </a>
-      </p>
-      <p>Or find me here</p>
           <!-- Poll Form -->
     <form name="poll" method="POST" data-netlify="true">
       <h2>Which feature would you like most?</h2>
@@ -73,16 +117,14 @@
       <label><input type="radio" name="feature" value="User Analytics"> User Analytics</label><br>
       <label><input type="radio" name="feature" value="Other"> Other</label><br>
       <button type="submit">Vote</button>
-  </form>
-
-  <!-- Contact Form -->
-  <form name="contact" method="POST" data-netlify="true">
+    </form>
+    <form name="contact" method="POST" data-netlify="true">
       <h2>Send Me a Message</h2>
       <label>Name: <input type="text" name="name" required></label><br><br>
       <label>Email: <input type="email" name="email" required></label><br><br>
       <label>Message: <textarea name="message" rows="4" required></textarea></label><br><br>
       <button type="submit">Send Message</button>
-  </form>
+    </form>
       <div class="social-wrapper">
         <a
           target="_blank"
@@ -107,26 +149,6 @@
         </a>
       </div>
     </div>
-    <div class="expandable-container">
-      <div class="expandable">
-          <div class="expandable-header">Section 1</div>
-          <div class="expandable-content">
-              <p>This is the content for Section 1. It will expand smoothly when clicked.</p>
-          </div>
-      </div>
-      <div class="expandable">
-          <div class="expandable-header">Section 2</div>
-          <div class="expandable-content">
-              <p>This is the content for Section 2. It will expand smoothly when clicked.</p>
-          </div>
-      </div>
-      <div class="expandable">
-          <div class="expandable-header">Section 3</div>
-          <div class="expandable-content">
-              <p>This is the content for Section 3. It will expand smoothly when clicked.</p>
-          </div>
-      </div>
-    </div>
-  </footer>
+  </main>
 </body>
 </html>
