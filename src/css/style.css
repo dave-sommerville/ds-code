@@ -71,8 +71,8 @@ header {
 	align-items: center;
   justify-content: center;
   color: var(--clr-primary);
-  background: #01091c url("../img/hex-bg.svg") no-repeat left center;
-  background-size: cover;
+  background: #01091c url("../img/Untitled.jpg") no-repeat left center;
+  background-size: contain;
   background-attachment: fixed; 
 
 }
@@ -335,7 +335,9 @@ footer {
       font-size: 5.5rem;
     }
   }
-
+header {
+  background-size: cover;
+}
   .button-wrapper div {
       width: 100px;
       height: 100px;

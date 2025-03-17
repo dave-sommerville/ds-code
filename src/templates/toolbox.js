@@ -68,6 +68,23 @@ let randColor = ""; //Needs fixing
 randColor = Math.floor(Math.random()) * 0xffffff.toString(16);
 
 
+function getRandomItem(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+function getRandomInterval(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getDate() {
+  const options = {
+    year: 'numeric',
+    month: 'short',
+    day: '2-digit'
+  }
+
+  return new Date().toLocaleDateString('en-ca', options);
+}
 //		Fisher-Yates Shuffle (best practice)
 function shuffle() {
 	const deck = [...new Array(52).keys()];

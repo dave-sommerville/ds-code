@@ -1,25 +1,47 @@
-High Priority
-- Skills practice
-- Assignments
-  - 3 Individual 
-  - 2 Group
-- Cactus Theatre Co.
-- DS-Code
+LEET 
+- 2614
+- 1037
+- 3349
 
-Low Priority - Easy
-- Leet Code practice
+Assignments 
+- Dungeon Crawler
+- Superhero/Villain Group App
+- MOQ test Assignment
+- Adding authorization to Space Race
+- What ever the adventure works assignment is 
+- 1 Partner app
+- Topic presentation 
+
+Personal
+- Cactus Theatre Co
+  - Email about fonts/url/program
+  - Try to set up easy to apply layout 
+  - Add HTTPS redirect and add to Google Console 
 - Boogle
+- DS Code
+  - Header
+  - Layout
+    - Accordian sections 
+    - Contact Form/Poll/linktree design 
+  - Blurb and links 
+  - Footer
+  - Add HTTPS redirect and add to Google Console 
+- Hangman
 
-
-Low Priority - Hard
+Challenges 
+* Easy
 - Menu Grocery App
 - Haunted House (.exe)
 - Ship Attack
+- E Commerce/Financial website for portfolio 
+* Medium
 - Cactus jumping game
 - BlackJack Split Enhancement
+*Hard
 - AI APIs 
   - Familiar 
   - Terms & Services Bot
+*Expert
 - Build computer/Install operating system 
 - Buy and program a Raspberry PI
 
