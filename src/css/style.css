@@ -235,28 +235,18 @@ footer {
   float: right;
 }
 
-.about {
-  padding: 25px;
-  p {
-    margin: 25px;
-  }
-}
+
 .graphic {
   float: left;
-  max-width: 50%;
+  max-width: 400px;
   margin: 5px;
 }
+
 .block {
   height: 300px;
   width: 300px;
   float: right;
   margin: auto 25px;
-}
-
-.expandable-container {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 .expandable {
@@ -268,7 +258,9 @@ footer {
 
 .expandable-header {
   padding: 10px;
-  background-color: #f5f5f5;
+  background-color: var(--clr-light-bg);
+  color: var(--clr-primary);
+  text-align: center;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
@@ -280,14 +272,16 @@ footer {
 
 .expandable-content {
   max-height: 0;
+
   overflow: hidden;
   transition: max-height 0.5s ease, padding 0.5s ease;
   padding: 0 10px;
-  background-color: #fff;
+  font-size: 1.6rem;
+  background-color: var(--clr-bg);
 }
 
 .expandable.expanded .expandable-content {
-  max-height: 500px; /* Adjust based on your content */
+  max-height: 100%;
   padding: 10px;
 }
 
@@ -335,9 +329,7 @@ footer {
       font-size: 5.5rem;
     }
   }
-header {
-  background-size: cover;
-}
+
   .button-wrapper div {
       width: 100px;
       height: 100px;
