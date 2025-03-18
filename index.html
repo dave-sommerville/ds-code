@@ -30,7 +30,7 @@
 	<main class="f-col container">
     <section class="nav-wrapper">
       <nav class="container flex">
-        <h3 class="visible">
+        <h2 class="visible">
           Dave Sommerville
         </h3>
         <div class="burger pointer">
@@ -90,23 +90,23 @@
         <p>This is the content for Section 3. It will expand smoothly when clicked.</p>
       </div>
 		</section> 
-    <section class="expandable contact">
+    <section class="expandable">
       <div class="expandable-header">Section 3</div>
-      <div class="expandable-content flex">
-        <form name="contact" method="POST" data-netlify="true">
-          <h2>Send Me a Message</h2>
+      <div class="expandable-content contact flex">
+        <form class="message" name="contact" method="POST" data-netlify="true">
+          <h4>Send Me a Message</h4>
           <label>Name: <input type="text" name="name" required></label><br><br>
           <label>Email: <input type="email" name="email" required></label><br><br>
           <label>Message: <textarea name="message" rows="4" required></textarea></label><br><br>
           <button type="submit">Send Message</button>
         </form>
-        <div class="f-col">
+        <div class="f-col poll-social">
           <form name="poll" method="POST" data-netlify="true">
-            <h2>Which feature would you like most?</h2>
-            <label><input type="radio" name="feature" value="Dark Mode"> Dark Mode</label><br>
-            <label><input type="radio" name="feature" value="Live Chat"> Live Chat</label><br>
-            <label><input type="radio" name="feature" value="User Analytics"> User Analytics</label><br>
-            <label><input type="radio" name="feature" value="Other"> Other</label><br>
+            <h4>Which feature would you like most?</h4>
+            <label class="poll-option"><input type="radio" name="feature" value="Dark Mode"> Dark Mode</label><br>
+            <label class="poll-option"><input type="radio" name="feature" value="Live Chat"> Live Chat</label><br>
+            <label class="poll-option"><input type="radio" name="feature" value="User Analytics"> User Analytics</label><br>
+            <label class="poll-option"><input type="radio" name="feature" value="Other"> Other</label><br>
             <button type="submit">Vote</button>
           </form>  
           <div class="social-wrapper">

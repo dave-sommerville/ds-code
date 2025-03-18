@@ -7,9 +7,9 @@ Assignments
 - Dungeon Crawler
 - Superhero/Villain Group App
 - MOQ test Assignment
-- Adding authorization to Space Race
+
 - What ever the adventure works assignment is 
-- 1 Partner app
+- 1 Partner web api
 - Topic presentation 
 
 Personal
