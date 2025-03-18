@@ -21,7 +21,7 @@ Personal
 - DS Code
   - Header
   - Layout
-    - Accordian sections 
+    - Accordion sections 
     - Contact Form/Poll/linktree design 
   - Blurb and links 
   - Footer

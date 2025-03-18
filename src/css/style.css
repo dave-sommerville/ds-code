@@ -71,7 +71,7 @@ header {
 	align-items: center;
   justify-content: center;
   color: var(--clr-primary);
-  background: #01091c url("../img/Untitled.jpg") no-repeat left center;
+  background: #01091c url("../img/hive.png") no-repeat left top;
   background-size: contain;
   background-attachment: fixed; 
 
