@@ -207,8 +207,8 @@ footer {
   background-color: #01263b;
 }
 
-.social-wrapper, .side-ports {
-  width: 180px;
+.social-wrapper {
+  width: 200px;
   height: fit-content;
   display: flex;
   flex-wrap: wrap;
@@ -223,7 +223,7 @@ footer {
     line-height: 60px; 
     -webkit-clip-path: var(--app-clip-hex);
     clip-path: var(--app-clip-hex);
-    margin: -10px 15px;
+    margin: -15px 20px;
     transition: all 0.25s ease-in-out;
     &:hover {
       filter: brightness(1.2);
