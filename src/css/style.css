@@ -82,7 +82,7 @@ header {
   height: 400px;
 }
 
-/*
+
 .profile {
   -webkit-clip-path: var(--app-clip-hex);
   clip-path: var(--app-clip-hex);
@@ -91,7 +91,7 @@ header {
   overflow: hidden;
   margin-bottom: 50px;
 }
-*/
+
 
 /*----------------------------------------------------------->
 	Floating Top Bar Nav
