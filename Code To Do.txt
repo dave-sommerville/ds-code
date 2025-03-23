@@ -7,10 +7,9 @@ Assignments
 - Dungeon Crawler
 - Superhero/Villain Group App
 - MOQ test Assignment
-
-- What ever the adventure works assignment is 
+- SQL Procedures
 - 1 Partner web api
-- Topic presentation 
+- Topic presentation
 
 Personal
 - Cactus Theatre Co
@@ -21,11 +20,9 @@ Personal
 - DS Code
   - Header
   - Layout
-    - Accordion sections 
-    - Contact Form/Poll/linktree design 
   - Blurb and links 
   - Footer
-  - Add HTTPS redirect and add to Google Console 
+  - Figure out hosting
 - Hangman
 
 Challenges 

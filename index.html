@@ -21,12 +21,17 @@
 </head>
 <body>
 	<header class="f-col">
-    <div class="image-wrapper">
-      <img src="./src/img/profile.JPG" class="profile">
-      <img src="./src/img//logo-one.PNG" class="logo">    
-    </div>
-		<h1>Dave Sommerville</h1>
-	</header>
+    <img src="./src/img//logo-one.PNG" class="logo">
+    <div class="f-col poll-social">
+      <form name="poll" method="POST" data-netlify="true">
+        <h4>Which feature would you like most?</h4>
+        <label class="poll-option"><input type="radio" name="feature" value="Dark Mode"> Dark Mode</label><br>
+        <label class="poll-option"><input type="radio" name="feature" value="Live Chat"> Live Chat</label><br>
+        <label class="poll-option"><input type="radio" name="feature" value="User Analytics"> User Analytics</label><br>
+        <label class="poll-option"><input type="radio" name="feature" value="Other"> Other</label><br>
+        <button type="submit">Vote</button>
+      </form>  
+</header>
 	<main class="f-col container">
     <section class="nav-wrapper">
       <nav class="container flex">
@@ -100,15 +105,6 @@
           <label>Message: <textarea name="message" rows="4" required></textarea></label><br><br>
           <button type="submit">Send Message</button>
         </form>
-        <div class="f-col poll-social">
-          <form name="poll" method="POST" data-netlify="true">
-            <h4>Which feature would you like most?</h4>
-            <label class="poll-option"><input type="radio" name="feature" value="Dark Mode"> Dark Mode</label><br>
-            <label class="poll-option"><input type="radio" name="feature" value="Live Chat"> Live Chat</label><br>
-            <label class="poll-option"><input type="radio" name="feature" value="User Analytics"> User Analytics</label><br>
-            <label class="poll-option"><input type="radio" name="feature" value="Other"> Other</label><br>
-            <button type="submit">Vote</button>
-          </form>  
           <div class="social-wrapper">
             <a
               target="_blank"
