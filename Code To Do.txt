@@ -1,34 +1,38 @@
 LEET 
 - 2614
-- 1037
-- 3349
+- 3386
 
-Assignments 
-- Dungeon Crawler
-- Superhero/Villain Group App
-- MOQ test Assignment
-- SQL Procedures
-- 1 Partner web api
-- Topic presentation
+Assignments
+__________________
+Advanced Databases
+- SQL Procedures (Mar 27)
+- Group Project (Apr 17)
+Advanced C#
+- Dungeon Crawler (Mar 26)
+- Partner API (Outline Apr 2, Implementation Apr 11)
+- Personal Presentation 
+
+Skills Practice 
+- Design
+	- Figma, Adobe XD, or Photoshop**
+- PHP/SQL
+	- PHP for form handling
+	- MySQL database using PhpMyAdmin(If you're using XAMPP)
+	- PHP using MySQL (MySQL functions or PDO)
+	- Login and registration system
+- Consuming APIs
+- General frontend design (focus is on HTML, CSS, and JavaScript)
+
 
 Personal
 - Cactus Theatre Co
-  - Email about fonts/url/program
-  - Try to set up easy to apply layout 
-  - Add HTTPS redirect and add to Google Console 
 - Boogle
 - DS Code
-  - Header
-  - Layout
-  - Blurb and links 
-  - Footer
-  - Figure out hosting
 - Hangman
 
 Challenges 
 * Easy
 - Menu Grocery App
-- Haunted House (.exe)
 - Ship Attack
 - E Commerce/Financial website for portfolio 
 * Medium
