@@ -69,9 +69,27 @@ header {
   justify-content: center;
   color: var(--clr-primary);
   background: #01091c url("../img/hex-bg.svg") no-repeat center top;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed; 
 
+  button {
+    width: 160px;
+    height: 60px;
+    font-weight: 700;
+    background-color: var(--clr-primary);
+    color: var(--clr-main-bg);
+    border: solid 4px var(--clr-main-bg);
+    margin: 20px;
+    transition: all 0.25s ease-in-out;
+
+    span {
+      color: #fff;
+    }
+  }
+
+  button:hover {
+    filter: brightness(1.2);
+  }
 }
 
 .image-wrapper {
@@ -79,7 +97,7 @@ header {
 }
 
 .logo {
-  height: 400px;
+  height: 500px;
 }
 
 

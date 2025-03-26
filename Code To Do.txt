@@ -2,28 +2,6 @@ LEET
 - 2614
 - 3386
 
-Assignments
-__________________
-Advanced Databases
-- SQL Procedures (Mar 27)
-- Group Project (Apr 17)
-Advanced C#
-- Dungeon Crawler (Mar 26)
-- Partner API (Outline Apr 2, Implementation Apr 11)
-- Personal Presentation 
-
-Skills Practice 
-- Design
-	- Figma, Adobe XD, or Photoshop**
-- PHP/SQL
-	- PHP for form handling
-	- MySQL database using PhpMyAdmin(If you're using XAMPP)
-	- PHP using MySQL (MySQL functions or PDO)
-	- Login and registration system
-- Consuming APIs
-- General frontend design (focus is on HTML, CSS, and JavaScript)
-
-
 Personal
 - Cactus Theatre Co
 - Boogle
