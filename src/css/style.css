@@ -61,35 +61,51 @@ h2 {
 /*----------------------------------------------------------->
 	Hero Banner
 <------------------------------------------------------------*/
-
 header {
+  height: 100svh;
+  width: 100%;
+  position: relative;
+}
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 	height: 100svh;
-	width: 100%;
-	align-items: center;
-  justify-content: center;
+	width: 100svw;
   color: var(--clr-primary);
-  background: #01091c url("../img/hex-bg.svg") no-repeat center top;
-  background-size: contain;
+  background: #fff url("../img/hexagons-dark.svg") repeat;
   background-attachment: fixed; 
+  filter: blur(3px);
+}
+.banner-content {
+  margin: auto;
+  z-index: 1;
+}
+.hex-effect {
+  width: 300px;
+  height: 300px;
+  clip-path: var(--app-clip-hex);
+  background: var(--clr-bg) url("../img/hexagons-orange.svg") repeat;
+  background-attachment: fixed;
+}
+button {
+  width: 160px;
+  height: 60px;
+  font-weight: 700;
+  background-color: var(--clr-primary);
+  color: var(--clr-main-bg);
+  border: solid 4px var(--clr-main-bg);
+  margin: 20px;
+  transition: all 0.25s ease-in-out;
 
-  button {
-    width: 160px;
-    height: 60px;
-    font-weight: 700;
-    background-color: var(--clr-primary);
-    color: var(--clr-main-bg);
-    border: solid 4px var(--clr-main-bg);
-    margin: 20px;
-    transition: all 0.25s ease-in-out;
-
-    span {
-      color: #fff;
-    }
+  span {
+    color: #fff;
   }
+}
 
-  button:hover {
-    filter: brightness(1.2);
-  }
+button:hover {
+  filter: brightness(1.2);
 }
 
 .image-wrapper {
