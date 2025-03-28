@@ -17,31 +17,9 @@ function listen(event, element, callback) {
 	Selectors 
 <------------------------------------------------------------*/
 
-const navBar = select(".nav-wrapper");
 const heroBanner = select("header");
 const headerSwitch = heroBanner.offsetHeight;
-const burgerMenu = select('.burger');
-const linkWrapper = select('.link-wrapper');
-const navTitle = select('h3');
 
-/*----------------------------------------------------------->
-	Listeners 
-<-----------------------------------------------------------*/
-
-listen("scroll", window, () => {
-	const trigger = window.scrollY;
-
-	if (trigger > headerSwitch) {
-		navBar.classList.add("visible");
-	} else {
-		navBar.classList.remove("visible");
-	}
-});
-
-listen('click', burgerMenu, () => {
-	linkWrapper.classList.toggle("visible");
-  navTitle.classList.toggle("visible");
-});
 
 /*----------------------------------------------------------->
 	Preview Blurb Storage 

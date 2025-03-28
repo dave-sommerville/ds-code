@@ -3,26 +3,34 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
+ Properties 
+- Hex container
+* Margin-Auto (make a full util)
+- Hex shape
+* A util class with only clip-path
+- Background color/effect
+* Util classes
+- White/Blur dark pattern
+- Dark orange pattern
+- Dark only
 
-  - Rewrite CV
-    - Not c++
-    - Extensive projects with JavaScript
-    - Actively working on several Entity Framework ASP.net web applications 
-    - 2025 Skills Competition
-    - MITT Open house 
-  - Reformat contact
-  - Look into google analytics 
-  - Other Websites 
-    - Cactus
-    - Boogle
+- Mid-Hex
+* Margins with var doing logic
+* Media queries adjust var
+- Margin (Center only)
 
+- Character Containers
+* Line Height
+* Text-Align
+
+
+- Hover Effect
   - Later Possible Add Ons 
     - Gliitch 
     - User Preferences 
       - Nickname
       - Favourite (whatever)
       - A secret 
-      - Colour scheme (accents? I don't want it to change too drastically)
       - Birthday
         - Horoscope
       - Site engagement stats 
@@ -33,7 +41,7 @@ body {
 	font-size: 1.8rem;
 	color: var(--clr-text);
 	scroll-behavior: smooth;
-  background-color: var(--clr-bg);
+  background-color: #fefefe;
 }
 
 main {
@@ -76,19 +84,31 @@ header {
   color: var(--clr-primary);
   background: #fff url("../img/hexagons-dark.svg") repeat;
   background-attachment: fixed; 
-  filter: blur(3px);
+  filter: blur(3px) opacity(0.8);
 }
+
 .banner-content {
+  width: fit-content;
   margin: auto;
   z-index: 1;
+  position: relative;
+}
+
+.small {
+  width: 150px;
+  height: 150px;
+}
+.big{
+  width: 400px;
+  height: 400px;
 }
 .hex-effect {
-  width: 300px;
-  height: 300px;
+
   clip-path: var(--app-clip-hex);
   background: var(--clr-bg) url("../img/hexagons-orange.svg") repeat;
   background-attachment: fixed;
 }
+
 button {
   width: 160px;
   height: 60px;
@@ -111,11 +131,25 @@ button:hover {
 .image-wrapper {
   position: relative;
 }
-
-.logo {
-  height: 500px;
+:root {
+  --base-size: 400px;
+  --neg-base-size: calc(var(--base-size) * -1);
+  --tb-margin: calc(var(--neg-base-size) / 2);
+  --lr-margin: calc(var(--neg-base-size) / 4);
 }
-
+.logo {
+  height: var(--base-size);
+  width: var(--base-size);
+  background-color: #0056b3;
+  margin: var(--tb-margin) var(--lr-margin);
+  clip-path: var(--app-clip-hex);
+}
+.logo-not {
+  height: 400px;
+  width: 400px;
+  background-color: #0056b3;
+  clip-path: var(--app-clip-hex);
+}
 
 .profile {
   -webkit-clip-path: var(--app-clip-hex);
