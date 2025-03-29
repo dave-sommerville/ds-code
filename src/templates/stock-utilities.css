@@ -5,14 +5,22 @@
 
 :root {
 	--clr-bg: #01091c;
-  --clr-main-bg: #052f47;
-  --clr-light-bg: #01091c;
+  --clr-main-bg: #01263b;
+  --clr-light-bg: #052f47;
 	--clr-primary: #fe521d;
 	--clr-secondary: #dd6900;
+	--clr-teretiary: #ce3101;
 	--clr-text: #fefefe;
 	--clr-dark: #012;
 	--app-border-rad: 14px;
 	--app-spacing: 25px;
+  /*--app-clip-hex: polygon( other orientation
+    50% 0, 
+    100% 25%, 
+    100% 75%, 
+    50% 100%, 
+    0 75%, 
+    0 25%);*/
     --app-clip-hex: polygon(
       25% 0, 
       75% 0, 

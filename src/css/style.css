@@ -37,6 +37,7 @@
     - Unreal city
 */
 body {
+  /*  Add another mono font*/
 	font-family: "Noto Sans Mono", monospace;
 	font-size: 1.8rem;
 	color: var(--clr-text);
@@ -48,24 +49,29 @@ main {
 background-color: var(--clr-main-bg);
 }
 
-/*----------------------------------------------------------->
-	Titles 
-<------------------------------------------------------------*/
-h1 {
-  width: 850px;
-	font-size: 8rem;
+:root {
+  --base-size: 200px;
+  --neg-base-size: calc(var(--base-size) * -1);
+  --tb-margin: calc(var(--neg-base-size) / 2);
+  --lr-margin: calc(var(--neg-base-size) / 4);
 }
 
-h2 {
-	font-size: 1.6rem;
-	justify-content: space-between;
-  font-weight: 400;
-  margin-left: 30px;
-  margin-top: -10px;
-  background-color: var(--clr-bg);
-  padding: 0 5px;
+.small {
+  width: var(--base-size);
+  height: var(--base-size);
+  margin: 0 5px;
 }
 
+@media (max-width: 900px) {
+  :root{
+    --base-size: 100px;
+  }
+}
+
+
+.mid-hex {
+  margin: var(--tb-margin) var(--lr-margin);
+}
 /*----------------------------------------------------------->
 	Hero Banner
 <------------------------------------------------------------*/
@@ -82,11 +88,30 @@ header {
 	height: 100svh;
 	width: 100svw;
   color: var(--clr-primary);
-  background: #fff url("../img/hexagons-dark.svg") repeat;
+  background: #fefefe url("../img/hexagons-dark.svg") repeat;
   background-attachment: fixed; 
   filter: blur(3px) opacity(0.8);
 }
 
+.hex {
+  clip-path: var(--app-clip-hex);
+}
+
+.m-auto {
+  margin: auto;
+}
+.white-blur-dark-hex {
+  background: #fefefe url("../img/hexagons-dark.svg") repeat;
+}
+.dark-bg-orange-hex{
+  background: var(--clr-bg) url("../img/hexagons-orange.svg") repeat;
+}
+.dark-bg{
+  background-color: var(--clr-bg);
+}
+.orange-bg{
+  background-color: var(--clr-primary);
+}
 .banner-content {
   width: fit-content;
   margin: auto;
@@ -94,10 +119,6 @@ header {
   position: relative;
 }
 
-.small {
-  width: 150px;
-  height: 150px;
-}
 .big{
   width: 400px;
   height: 400px;
@@ -131,12 +152,7 @@ button:hover {
 .image-wrapper {
   position: relative;
 }
-:root {
-  --base-size: 400px;
-  --neg-base-size: calc(var(--base-size) * -1);
-  --tb-margin: calc(var(--neg-base-size) / 2);
-  --lr-margin: calc(var(--neg-base-size) / 4);
-}
+
 .logo {
   height: var(--base-size);
   width: var(--base-size);
