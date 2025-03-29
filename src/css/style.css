@@ -3,27 +3,6 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
- Properties 
-- Hex container
-* Margin-Auto (make a full util)
-- Hex shape
-* A util class with only clip-path
-- Background color/effect
-* Util classes
-- White/Blur dark pattern
-- Dark orange pattern
-- Dark only
-
-- Mid-Hex
-* Margins with var doing logic
-* Media queries adjust var
-- Margin (Center only)
-
-- Character Containers
-* Line Height
-* Text-Align
-
-
 - Hover Effect
   - Later Possible Add Ons 
     - Gliitch 
@@ -38,7 +17,7 @@
 */
 body {
   /*  Add another mono font*/
-	font-family: "Noto Sans Mono", monospace;
+	font-family: 'Courier New', Courier, monospace;
 	font-size: 1.8rem;
 	color: var(--clr-text);
 	scroll-behavior: smooth;
@@ -50,28 +29,47 @@ background-color: var(--clr-main-bg);
 }
 
 :root {
-  --base-size: 200px;
-  --neg-base-size: calc(var(--base-size) * -1);
-  --tb-margin: calc(var(--neg-base-size) / 2);
-  --lr-margin: calc(var(--neg-base-size) / 4);
+  --big-base-size: 360px;
+  --big-neg-base-size: calc(var(--big-base-size) * -1);
+  --big-tb-margin: calc(var(--big-neg-base-size) / 2);
+  --big-lr-margin: calc(var(--big-neg-base-size) / 4);
+
+  --small-base-size: 120px;
+  --small-neg-base-size: calc(var(--small-base-size) * -1);
+  --small-tb-margin: calc(var(--small-neg-base-size) / 2);
+  --small-lr-margin: calc(var(--small-neg-base-size) / 4);
 }
 
 .small {
-  width: var(--base-size);
-  height: var(--base-size);
+  width: var(--small-base-size);
+  height: var(--small-base-size);
+  text-align: center;
   margin: 0 5px;
 }
 
+.big {
+  width: var(--big-base-size);
+  height: var(--big-base-size);
+  text-align: center;
+  margin: 0 10px;
+}
+
+.small-mid-hex {
+  margin: var(--small-tb-margin) var(--small-lr-margin);
+}
+
+.big-mid-hex {
+  margin: var(--big-tb-margin) var(--big-lr-margin);
+}
+
+
+/* 
 @media (max-width: 900px) {
   :root{
-    --base-size: 100px;
+    --base-size: 300px;
   }
-}
+} */
 
-
-.mid-hex {
-  margin: var(--tb-margin) var(--lr-margin);
-}
 /*----------------------------------------------------------->
 	Hero Banner
 <------------------------------------------------------------*/
@@ -79,6 +77,7 @@ header {
   height: 100svh;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .banner-image {
   position: absolute;
@@ -102,9 +101,12 @@ header {
 }
 .white-blur-dark-hex {
   background: #fefefe url("../img/hexagons-dark.svg") repeat;
+  background-attachment: fixed;
+  filter: blur(3px) opacity(0.8);
 }
 .dark-bg-orange-hex{
   background: var(--clr-bg) url("../img/hexagons-orange.svg") repeat;
+  background-attachment: fixed;
 }
 .dark-bg{
   background-color: var(--clr-bg);
@@ -114,20 +116,28 @@ header {
 }
 .banner-content {
   width: fit-content;
-  margin: auto;
+  margin: 5 auto;
   z-index: 1;
   position: relative;
 }
 
-.big{
-  width: 400px;
-  height: 400px;
-}
 .hex-effect {
-
   clip-path: var(--app-clip-hex);
   background: var(--clr-bg) url("../img/hexagons-orange.svg") repeat;
   background-attachment: fixed;
+}
+.logo {
+  align-items: center;
+  justify-content: center;
+  h1 {
+    margin-top: -30px;
+    font-size: 6.2rem;
+  }
+  p {
+    color: #fff;
+    font-weight: 800;
+    margin-top: -30px;
+  }
 }
 
 button {
@@ -151,20 +161,6 @@ button:hover {
 
 .image-wrapper {
   position: relative;
-}
-
-.logo {
-  height: var(--base-size);
-  width: var(--base-size);
-  background-color: #0056b3;
-  margin: var(--tb-margin) var(--lr-margin);
-  clip-path: var(--app-clip-hex);
-}
-.logo-not {
-  height: 400px;
-  width: 400px;
-  background-color: #0056b3;
-  clip-path: var(--app-clip-hex);
 }
 
 .profile {
