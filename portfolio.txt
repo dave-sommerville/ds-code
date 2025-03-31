@@ -1,0 +1,27 @@
+Blackjack
+https://dave-sommerville.github.io/blackjack/
+
+Script Scavengers
+https://dave-sommerville.github.io/script-scavengers/
+
+Code Breaker
+https://dave-sommerville.github.io/code-breaker/
+
+Social Media App
+https://dave-sommerville.github.io/social-media-app/
+
+Tutorial
+https://dave-sommerville.github.io/switches-and-styles/
+
+C# 
+Case Collector
+https://github.com/dave-sommerville/Case_Collector
+Haunted House
+https://github.com/dave-sommerville/haunted-house
+
+Collabs
+HiveMind
+https://dave-sommerville.github.io/hivemind/
+
+Opal and Onyx
+https://dave-sommerville.github.io/opal-and-onyx/
