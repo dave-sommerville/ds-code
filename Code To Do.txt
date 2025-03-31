@@ -1,13 +1,3 @@
-LEET 
-- 680
-- 507
-
-Personal
-- Cactus Theatre Co
-- Boogle
-- DS Code
-- Hangman
-
 Challenges 
 * Easy
 - Menu Grocery App

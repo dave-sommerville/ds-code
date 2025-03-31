@@ -5,7 +5,7 @@
 
 :root {
 	--clr-bg: #01091c;
-  --clr-main-bg: #052f47;
+  --clr-main-bg: #042030;
   --clr-light-bg: #01091c;
 	--clr-primary: #fe521d;
 	--clr-secondary: #dd6900;
@@ -78,7 +78,9 @@
 .pointer {
 	cursor: pointer;
 }
-
+.m-auto {
+  margin: auto;
+}
 .btn-style {
   background-color: var(--clr-box-bg-grey);
   border-left: var(--bdr-ex-lt-int-rb);
