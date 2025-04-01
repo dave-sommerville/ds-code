@@ -176,8 +176,6 @@ header {
   }
 }
 
-
-
 .screenshot {
   width: 600px;
   height: 400px;
@@ -214,6 +212,19 @@ header {
     max-width: 400px;
     max-height: 400px;
     resize: none;
+  }
+}
+.play {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  figure {
+    margin: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  img {
+    width: 100px;
   }
 }
 
