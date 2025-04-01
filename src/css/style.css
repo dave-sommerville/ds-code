@@ -3,7 +3,16 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
-- Hover Effect
+- Hover Effect util
+- Rearranging hex content
+- Buttons
+- Content menu
+- Portfolio display containers
+- Contact page layout
+- Icons for Games room 
+  - Along with poll, rubber duckie, maybe one other thing? 
+- Visual content for about section 
+
   - Later Possible Add Ons 
     - Gliitch 
     - User Preferences 
@@ -26,9 +35,11 @@ body {
 
 main {
 background-color: var(--clr-main-bg);
+padding: 25px;
 }
 section {
   height: 100svh;
+  width: 100%;
 }
 
 /*----------------------------------------------------------->
@@ -64,7 +75,24 @@ section {
   --small-tb-margin: calc(var(--small-neg-base-size) / 2);
   --small-lr-margin: calc(var(--small-neg-base-size) / 4);
 }
-
+@media (max-width: 1200px) {
+  :root{
+    --big-base-size: 280px;
+    --small-base-size: 100px;
+  }
+}
+@media (max-width: 900px) {
+  :root{
+    --big-base-size: 240px;
+    --small-base-size: 80px;
+  }
+} 
+@media (max-width: 600px) {
+  :root{
+    --big-base-size: 200px;
+    --small-base-size: 70px;
+  }
+} 
 .hex {
   clip-path: var(--app-clip-hex);
 }
@@ -105,10 +133,12 @@ header {
   position: relative;
   overflow: hidden;
 }
+
 .photo {
   background: #fff url("../img/profile.JPG") no-repeat center center;
   background-size: contain;
 }
+
 .banner-image {
   position: absolute;
   top: 0;
@@ -121,7 +151,10 @@ header {
   background-attachment: fixed; 
   filter: blur(4px);
 }
-
+.banner-wrapper {
+  background-color: var(--clr-bg);
+  overflow: hidden;
+}
 .banner-content {
   width: fit-content;
   margin: 5 auto;
@@ -143,25 +176,22 @@ header {
   }
 }
 
-@media (max-width: 1200px) {
-  :root{
-    --big-base-size: 280px;
-    --small-base-size: 100px;
-  }
-}
-@media (max-width: 900px) {
-  :root{
-    --big-base-size: 240px;
-    --small-base-size: 80px;
-  }
-} 
-@media (max-width: 600px) {
-  :root{
-    --big-base-size: 200px;
-    --small-base-size: 70px;
-  }
-} 
 
+
+.screenshot {
+  width: 600px;
+  height: 400px;
+  float: right;
+}
+.vertical {
+  width: 400px;
+  height: 600px;
+}
+
+.contact {
+  height: 100svh;
+  align-items: center;
+}
 /*----------------------------------------------------------->
 	Contact Section
 <------------------------------------------------------------*/
