@@ -37,10 +37,6 @@ main {
 background-color: var(--clr-main-bg);
 padding: 25px;
 }
-section {
-  height: 100svh;
-  width: 100%;
-}
 
 /*----------------------------------------------------------->
 	Hexagon Control
@@ -70,12 +66,12 @@ section {
   --big-tb-margin: calc(var(--big-neg-base-size) / 2);
   --big-lr-margin: calc(var(--big-neg-base-size) / 4);
 
-  --small-base-size: 120px;
+  --small-base-size: 240px;
   --small-neg-base-size: calc(var(--small-base-size) * -1);
   --small-tb-margin: calc(var(--small-neg-base-size) / 2);
   --small-lr-margin: calc(var(--small-neg-base-size) / 4);
 }
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   :root{
     --big-base-size: 280px;
     --small-base-size: 100px;
@@ -92,7 +88,7 @@ section {
     --big-base-size: 200px;
     --small-base-size: 70px;
   }
-} 
+}  */
 .hex {
   clip-path: var(--app-clip-hex);
 }
@@ -107,7 +103,12 @@ section {
   width: var(--big-base-size);
   height: var(--big-base-size);
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  font-weight: 700;
   margin: 0 10px;
+
 }
 
 .small-mid-hex {
@@ -182,7 +183,7 @@ header {
   float: right;
 }
 .vertical {
-  width: 400px;
+  width: 300px;
   height: 600px;
 }
 

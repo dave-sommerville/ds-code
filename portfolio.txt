@@ -7,6 +7,10 @@ https://dave-sommerville.github.io/script-scavengers/
 Code Breaker
 https://dave-sommerville.github.io/code-breaker/
 
+Boogle
+
+Hangman
+
 Social Media App
 https://dave-sommerville.github.io/social-media-app/
 
@@ -25,3 +29,11 @@ https://dave-sommerville.github.io/hivemind/
 
 Opal and Onyx
 https://dave-sommerville.github.io/opal-and-onyx/
+
+
+<a href="https://www.flaticon.com/free-icons/desert" title="desert icons">Desert icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/code" title="code icons">Code icons created by HideMaru - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/hangman" title="hangman icons">Hangman icons created by surang - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/boggle" title="boggle icons">Boggle icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/poker" title="poker icons">Poker icons created by Eucalyp - Flaticon</a>
