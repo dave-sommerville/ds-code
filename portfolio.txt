@@ -37,3 +37,5 @@ https://dave-sommerville.github.io/opal-and-onyx/
 <a href="https://www.flaticon.com/free-icons/hangman" title="hangman icons">Hangman icons created by surang - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/boggle" title="boggle icons">Boggle icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/poker" title="poker icons">Poker icons created by Eucalyp - Flaticon</a>
+
+Image by <a href="https://pixabay.com/users/olivier97439-4401064/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6306898">Olivier CORDONIN</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6306898">Pixabay</a>
