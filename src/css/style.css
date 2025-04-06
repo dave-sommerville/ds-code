@@ -21,12 +21,18 @@ body {
 	scroll-behavior: smooth;
   background-color: var(--clr-bg);
 }
+section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /*----------------------------------------------------------->
 	Hero Banner
 <------------------------------------------------------------*/
 header {
-  height: 100svh;
+  height: 70svh;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -41,14 +47,6 @@ h1 {
   span {
     color: var(--clr-primary);
   }
-}
-
-.logo {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 100px;
-  left: 300px;
 }
 
 .css-logo {
@@ -75,6 +73,28 @@ h1 {
   clip-path: var(--app-clip-hex);
   background: #fff url("../img/profile.JPG") no-repeat center center;
   background-size: contain;
+  width: 300px;
+  height: 300px;
+}
+
+.intro {
+  width: 700px;
+}
+
+.display {
+  width: 500px;
+  height: 300px;
+  background: var(--clr-light) url("../img/scavengers.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.horizontal {
+  width: 500px;
+  height: 300px;
+}
+.vertical {
+  width: 125px;
+  height: 250px;
 }
 
 /*----------------------------------------------------------->
@@ -90,7 +110,6 @@ h1 {
 
 .message {
   max-width: 400px;
-
   input, textarea {
     width: 100%;
     border-radius: 10px;
@@ -106,14 +125,25 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  border: solid 3px #012;
+  border-radius: var(--app-border-rad);
+  background-color: var(--clr-drk);
+  width: 700px;
   figure {
-    margin: 20px;
+    margin: 10px;
+    padding: 10px;
     text-align: center;
     font-size: 1.2rem;
+    background-color: #007bff;
+    border-radius: var(--app-border-rad);
   }
   img {
     width: 100px;
   }
+}
+h3 {
+  text-align: center;
+  margin: 50px;
 }
 
 .poll-social {
