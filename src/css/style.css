@@ -15,8 +15,7 @@
     - Unreal city
 */
 body {
-  /*  Add modern mono fonts*/
-	font-family: 'Courier New', Courier, monospace;
+	font-family: "Space Grotesk", "Outfit", "Inter", sans-serif;
 	font-size: 1.8rem;
 	color: var(--clr-text);
 	scroll-behavior: smooth;
@@ -90,20 +89,6 @@ header {
   }
 }
 
-.screenshot {
-  width: 600px;
-  height: 400px;
-  float: right;
-}
-.vertical {
-  width: 300px;
-  height: 600px;
-}
-
-.contact {
-  height: 100svh;
-  align-items: center;
-}
 /*----------------------------------------------------------->
 	Contact Section
 <------------------------------------------------------------*/
