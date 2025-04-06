@@ -3,6 +3,16 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
+- Hover Effect util
+- Rearranging hex content
+- Buttons
+- Content menu
+- Portfolio display containers
+- Contact page layout
+- Icons for Games room 
+  - Along with poll, rubber duckie, maybe one other thing? 
+- Visual content for about section 
+
   - Later Possible Add Ons 
     - Gliitch 
     - User Preferences 
@@ -29,6 +39,97 @@ padding: 25px;
 }
 
 /*----------------------------------------------------------->
+	Hexagon Control
+<------------------------------------------------------------*/
+.white-blur-dark-hex {
+  background: #fefefe url("../img/hexagons-dark.svg") repeat;
+  background-attachment: fixed;
+  filter: blur(4px);
+}
+.dark-bg-orange-hex{
+  background: var(--clr-bg) url("../img/hexagons-orange.svg") repeat;
+  background-attachment: fixed;
+}
+.dark-bg{
+  background-color: var(--clr-bg);
+}
+.orange-bg{
+  background-color: var(--clr-primary);
+}
+
+/*----------------------------------------------------------->
+	Hexagon Control
+<------------------------------------------------------------*/
+:root {
+  --big-base-size: 500px;
+  --big-neg-base-size: calc(var(--big-base-size) * -1);
+  --big-tb-margin: calc(var(--big-neg-base-size) / 2);
+  --big-lr-margin: calc(var(--big-neg-base-size) / 4);
+
+  --small-base-size: 120px;
+  --small-neg-base-size: calc(var(--small-base-size) * -1);
+  --small-tb-margin: calc(var(--small-neg-base-size) / 2);
+  --small-lr-margin: calc(var(--small-neg-base-size) / 4);
+}
+@media (max-width: 1200px) {
+  :root{
+    --big-base-size: 280px;
+    --small-base-size: 100px;
+  }
+}
+@media (max-width: 900px) {
+  :root{
+    --big-base-size: 240px;
+    --small-base-size: 80px;
+  }
+} 
+@media (max-width: 600px) {
+  :root{
+    --big-base-size: 200px;
+    --small-base-size: 70px;
+  }
+}  
+.hex {
+  clip-path: var(--app-clip-hex);
+}
+.small {
+  width: var(--small-base-size);
+  height: var(--small-base-size);
+  text-align: center;
+  margin: 0 5px;
+}
+
+.big {
+  width: var(--big-base-size);
+  height: var(--big-base-size);
+  text-align: center;
+  padding: 40px 0;
+  margin: 0 10px;
+
+  h2 {
+    font-size: 2.8rem;
+    font-weight: 700;  
+  }
+  p {
+    font-size: 2rem;
+  }
+}
+
+.small-mid-hex {
+  width: var(--small-base-size);
+  height: var(--small-base-size);
+  text-align: center;
+  margin: var(--small-tb-margin) var(--small-lr-margin);
+}
+
+.big-mid-hex {
+  width: var(--big-base-size);
+  height: var(--big-base-size);
+  text-align: center;
+  margin: var(--big-tb-margin) var(--big-lr-margin);
+}
+
+/*----------------------------------------------------------->
 	Hero Banner
 <------------------------------------------------------------*/
 header {
@@ -36,7 +137,7 @@ header {
   width: 100%;
   position: relative;
   overflow: hidden;
-  background: var(--clr-bg) url("../img/honeycomb.svg") no-repeat right center;
+  background: var(--clr-bg) url("../img/honeycomb.png") no-repeat right center;
   background-size: cover;
   background-attachment: fixed;
 }

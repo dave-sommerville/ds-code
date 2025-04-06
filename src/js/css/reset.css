@@ -17,6 +17,17 @@ html:focus-within{
     scroll-behavior: smooth; 
 }
 
+a, button {
+	text-decoration: none;
+	font-style: inherit;
+	color: inherit;
+}
+
+button {
+	border: none;
+	outline: none;
+}
+
 a:not([class]){
     text-decoration-skip-ink: auto; 
 }
