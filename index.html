@@ -25,8 +25,8 @@
     <h1>
       <span>D</span>AVE <span>S</span>OMMERVILLE
     </h1>
-    <h2>Writing Thoughts into Reality</h2>
     <div class="css-logo flex">DS</div>
+    <h2>Writing Thoughts into Reality</h2>
     <img src="./src/img/hexagon.svg" class="hexagon-one">
     <img src="./src/img/hexagon.svg" class="hexagon-two">
     <img src="./src/img/hexagon.svg" class="hexagon-three">
@@ -40,34 +40,36 @@
 </header>
   <main class="container">
     <section>
-      <div class="photo"></div>
-      <div class="intro">
-        <p>
-          From sleek front-end design to robust data structures and innovative software, I've gained a wealth of experience during my past year as a full-time Software Development student. 
-        </p>
-        <p>
-          While I'm new to the field, I've built a strong foundation and a growing portfolio that reflects my dedication and progress.
-          In addition to my recent studies, I bring creativity, a strong work ethic, and a knack for unique problem-solving to every project I take on.
-        </p>
-      </div>
-    </section>
-    <section>
-      <div class="list">
-        <p>
-          Check out my work:
-        </p>
-        <ul>
-          <li>Professional to Playful</li>
-          <li>Responsive and Eye Catching Layouts</li>
-          <li>Intuitive and Engaging Interfaces</li>
-        </ul>
-      </div>
-      <a href="">
-        <div class="display">
-          <img src="./src/img/v-scrnshot-social.png" class="cell1">
-          <img src="./src/img/v-scrnshot-opal.png" class="cell2">
+      <div>
+        <div class="photo"></div>
+        <div class="intro">
+          <p>
+            From sleek front-end design to robust data structures and innovative software, I've gained a wealth of experience during my past year as a full-time Software Development student. 
+          </p>
+          <p>
+            While I'm new to the field, I've built a strong foundation and a growing portfolio that reflects my dedication and progress.
+            In addition to my recent studies, I bring creativity, a strong work ethic, and a knack for unique problem-solving to every project I take on.
+          </p>
         </div>
-      </a>
+      </div>
+      <div>
+        <div class="list">
+          <p>
+            Check out my work:
+          </p>
+          <ul>
+            <li>Professional to Playful</li>
+            <li>Responsive and Eye Catching Layouts</li>
+            <li>Intuitive and Engaging Interfaces</li>
+          </ul>
+        </div>
+        <a href="">
+          <div class="display">
+            <img src="./src/img/v-scrnshot-social.png" class="cell1">
+            <img src="./src/img/v-scrnshot-opal.png" class="cell2">
+          </div>
+        </a>
+      </div>
     </section>
     <h3>Games Room</h3>
     <section>
@@ -101,8 +103,7 @@
           <figcaption>Hangman</figcaption>
         </figure>
       </div>
-      <div class="f-col poll-social">
-        <form name="poll" method="POST" data-netlify="true">
+        <form name="poll" method="POST" data-netlify="true" class="poll-social">
           <h4>What game should I add next?</h4>
           <label class="poll-option"><input type="radio" name="feature" value="Dark Mode"> Dark Mode</label><br>
           <label class="poll-option"><input type="radio" name="feature" value="Live Chat"> Live Chat</label><br>
@@ -110,10 +111,9 @@
           <label class="poll-option"><input type="radio" name="feature" value="Other"> Other</label><br>
           <button type="submit">Vote</button>
         </form>  
-      </div>
     </section>    
     <section class="contact">
-      <div class="email flex">
+      <div class="email f-col">
         <form class="message" name="contact" method="POST" data-netlify="true">
           <h4>Send Me a Message</h4>
           <input type="text" name="name" placeholder="NAME" required></label><br><br>

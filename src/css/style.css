@@ -3,28 +3,7 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
-  - Hero Banner 
-    - Element placement
-    - JS positioning/layering 
-    - Finish logo/save image
-  - Responsiveness on sections
-  - About modul 
-  - Portfolio page 
-  - Hangman
-  - Relative sizing on images preview
-  - Games room 
-    - Border
-    - Expanding section
-    - Figcaption formatting 
-    - Poll formatting 
-  - Button
-  - Email formating
-  - Smaller Links 
 
-  - Extra touches 
-    - Rubber duckie
-    - Internet noise
-    - Random facts widget
 I was introduced to the internet in the final years of the 1990s, 
 back when the internet screamed. The web back then was clumsy, 
 quirky, and a little cringey; let's simply say I could relate. 
@@ -60,6 +39,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100svh;
 }
 
 /*----------------------------------------------------------->
@@ -82,7 +62,9 @@ h1 {
     color: var(--clr-primary);
   }
 }
-
+h2 {
+  text-align: center;
+}
 .css-logo {
   width: 300px;
   height: 300px;
@@ -149,9 +131,8 @@ h1 {
 .email {
   justify-content: center;
   height: 700px;
-  width: 700px;
+  width: 100%;
   background-color: var(--clr-drk);
-  clip-path: var(--app-clip-hex);
 }
 
 .message {
@@ -169,7 +150,6 @@ h1 {
 
 .play {
   flex-wrap: wrap;
-  flex: 1;
   justify-content: center;
   align-items: center;
   margin: 0 100px;
@@ -194,19 +174,22 @@ h3 {
   margin-top: 150px;
 }
 
-h4 {
-  margin: 25px;
-}
 .poll-social {
   border: #fff 3px solid;
   border-radius: var(--app-border-rad);
-  background-color: var(--clr-primary);
+  background-color: var(--clr-drk);
   justify-content: center;
-
+  padding: 25px 0;
   align-items: center;
   form {
     background-color: var(--clr-light-bg);
     border-radius: var(--app-border-rad);
+  }
+  h4 {
+    margin-bottom: 25px;
+  }
+  button{
+    margin-left: 30px;
   }
 }
 
@@ -226,7 +209,6 @@ h4 {
 
 .poll-option input[type="radio"]:checked + label,
 .poll-option:has(input[type="radio"]:checked) {
-  background: #007bff;
-  color: white;
-  border-color: #0056b3;
+  background: var(--clr-primary);
+  color: var(--clr-drk);
 }
