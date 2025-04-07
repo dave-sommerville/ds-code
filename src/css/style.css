@@ -3,7 +3,10 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
-
+- Create transition/spacing roots 
+- Create hover utils 
+- Button styling
+- Point utils 
 I was introduced to the internet in the final years of the 1990s, 
 back when the internet screamed. The web back then was clumsy, 
 quirky, and a little cringey; let's simply say I could relate. 
@@ -150,15 +153,19 @@ h3 {
   background-color: var(--clr-drk);
 }
 
+.contact {
+  width: 100%;
+  align-items: center;
+}
+
 .message {
-  max-width: 400px;
   input, textarea {
     width: 100%;
-    border-radius: 10px;
+    border-radius: var(--app-border-rad);
   }
   textarea {
-    max-width: 400px;
-    max-height: 400px;
+    min-width: 800px;
+    min-height: 400px;
     resize: none;
   }
 }
