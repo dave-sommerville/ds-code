@@ -146,19 +146,17 @@ h3 {
 /*----------------------------------------------------------->
 	Contact Section
 <------------------------------------------------------------*/
-.email {
-  justify-content: center;
-  height: 700px;
-  width: 100%;
-  background-color: var(--clr-drk);
-}
-
 .contact {
   width: 100%;
   align-items: center;
 }
 
 .message {
+  margin-bottom: 100px;
+  h4 {
+    text-align: center;
+    margin: 25px 0;
+  }
   input, textarea {
     width: 100%;
     border-radius: var(--app-border-rad);
@@ -190,7 +188,6 @@ h3 {
     width: 80px;
   }
 }
-
 
 .poll-social {
   border: #fff 3px solid;
@@ -230,3 +227,41 @@ h3 {
   background: var(--clr-primary);
   color: var(--clr-drk);
 }
+
+:root {
+  --base-size: 120px;
+  --neg-base-size: calc(var(--base-size) * -1);
+  --tb-margin: calc(var(--neg-base-size) / 2);
+  --lr-margin: calc(var(--neg-base-size) / 4);
+}
+@media (max-width: 1200px) {
+  :root{
+    --base-size: 100px;
+  }
+}
+@media (max-width: 900px) {
+  :root{
+    --base-size: 80px;
+  }
+} 
+@media (max-width: 600px) {
+  :root{
+    --base-size: 60px;
+  }
+} 
+.hex {
+  clip-path: var(--app-clip-hex);
+  width: var(--base-size);
+  height: var(--base-size);
+  line-height: var(--base-size);
+  background-color: var(--clr-primary);
+  font-size: 5rem;
+  color: var(--clr-drk);
+  text-align: center;
+  margin: 0 5px;
+}
+
+.mid-hex {
+  margin: var(--tb-margin) var(--lr-margin);
+}
+
