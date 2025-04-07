@@ -64,6 +64,9 @@
 .m-auto {
   margin: auto;
 }
+.visible {
+  visibility: visible;
+}
 
 .space-between {
   justify-content: space-between;

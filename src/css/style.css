@@ -3,21 +3,27 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
+- Header paralax
+- Cursor animation
+- Nav bar 
+- Return to top button
+- Accent Color 
 - Create transition/spacing roots 
 - Create hover utils 
 - Button styling
 - Point utils 
+- Responsiveness 
 
-  - Later Possible Add Ons 
-    - Gliitch 
-    - User Preferences 
-      - Nickname
-      - Favourite (whatever)
-      - A secret 
-      - Birthday
-        - Horoscope
-      - Site engagement stats 
-    - Unreal city
+- Later Possible Add Ons 
+  - Gliitch 
+  - User Preferences 
+    - Nickname
+    - Favourite (whatever)
+    - A secret 
+    - Birthday
+      - Horoscope
+    - Site engagement stats 
+  - Unreal city
 */
 a {
   text-decoration: none;
@@ -68,13 +74,35 @@ h3 {
 /*----------------------------------------------------------->
 	Hero Banner
 <------------------------------------------------------------*/
+.parallax {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 300px;
+  pointer-events: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-.hexagon-one, .hexagon-two, .hexagon-three {
-  position: absolute;
-  top: 100px;
-  left: 500px;
-  width: 400px;
-  height: 400px;
+.hex-one {
+  background-image: url("../img/hexagon.svg");
+  z-index: 1;
+}
+
+.hex-two {
+  background-image: url("../img/hexagon.svg");
+  z-index: 2;
+}
+
+.hex-three {
+  background-image: url("../img/hexagon.svg");
+  z-index: 3;
+}
+
+.hex-four {
+  background-image: url("../img/hexagon.svg");
+  z-index: 4;
 }
 
 /*----------------------------------------------------------->
@@ -91,7 +119,11 @@ h3 {
   align-items: center;
   justify-content: center;
 } */
-
+main {
+  z-index: 100;
+  position: relative;
+  background-color: var(--clr-bg);
+}
 article {
   width: 100%;
   min-height: 500px;
@@ -268,14 +300,6 @@ article {
 
 .mid-hex {
   margin: var(--tb-margin) var(--lr-margin);
-}
-.duck {
-  align-items: center;
-  width:var(--tb-margin);
-  img {
-    height: calc(var(--tb-margin) - 10px);
-    width: calc(var(--tb-margin) - 10px);
-  }
 }
 
 
