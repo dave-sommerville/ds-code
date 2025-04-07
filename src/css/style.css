@@ -27,7 +27,6 @@ Now, as a web developer, I may still not know my future but I have the tools to 
 */
 a {
   text-decoration: none;
-
 }
 body {
 	font-family: "Space Grotesk", "Outfit", "Inter", sans-serif;
@@ -38,10 +37,7 @@ body {
 }
 
 section {
-  margin-top: 75px;
-  display: flex;
   justify-content: space-between;
-
 }
 
 /*----------------------------------------------------------->
@@ -264,4 +260,22 @@ h3 {
 .mid-hex {
   margin: var(--tb-margin) var(--lr-margin);
 }
+.duck {
+  align-items: center;
+  width:var(--tb-margin);
+  img {
+    height: calc(var(--tb-margin) - 10px);
+    width: calc(var(--tb-margin) - 10px);
+  }
+}
 
+
+footer {
+  padding: 50px;
+  text-align: center;
+  color: var(--clr-light);
+  a {
+    text-decoration: none;
+    color: var(--clr-light);
+  }
+}
