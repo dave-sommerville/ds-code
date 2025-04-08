@@ -3,7 +3,6 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
-- Cursor animation
 - Create spacing roots 
 - Create hover utils 
 - Responsiveness
@@ -57,9 +56,9 @@ article {
 
 .btn {
   width: fit-content;
-  height: 60px;
-  line-height: 60px;
-  padding: 0 25px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 var(--app-spacing);
   border-radius: var(--app-border-rad);
   background-color: var(--clr-primary);
   border: solid 1px var(--clr-light);
@@ -67,6 +66,22 @@ article {
   font-size: 1.6rem;
   font-weight: 600;
 }
+
+@media (max-width: 780px) {
+  .btn {
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2rem;
+  }
+} 
+
+@media (max-width: 480px) {
+  .btn {
+    height: 30px;
+    line-height: 30px;
+    font-size: 1rem;
+  }
+} 
 /*----------------------------------------------------------->
 	Hero Banner
 <------------------------------------------------------------*/
@@ -80,11 +95,13 @@ header {
   background-size: cover;
   background-attachment: fixed;
 }
+
 h1,h2,h3,h4 {
   text-shadow: -1px 1px 2px var(--clr-light-blue);
 }
+
 h1 {
-  font-size: 7rem;
+  font-size: 6.5rem;
   text-align: center;
   span {
     color: var(--clr-primary);
@@ -100,6 +117,7 @@ h2 {
 h3 {
   text-align: center;
   font-family: "IBM Plex Mono", "Noto Sans Mono", monospace;
+  font-size: 3rem;
 }
 
 .cursor {
@@ -270,17 +288,17 @@ h3 {
   border-radius: var(--app-border-rad);
   background-color: var(--clr-drk);
   justify-content: center;
-  padding: 25px 0;
+  padding: var(--app-spacing) 0;
   align-items: center;
   form {
     background-color: var(--clr-light-bg);
     border-radius: var(--app-border-rad);
   }
   h4 {
-    margin-bottom: 25px;
+    margin-bottom: var(--app-spacing)
   }
   button{
-    margin-left: 30px;
+    margin-left: var(--app-spacing);
   }
 }
 
@@ -309,19 +327,18 @@ h3 {
   width: 100%;
   align-items: center;
 }
-
 .message {
   margin-bottom: 100px;
+  width: min(100% - 10svw, 750px);
   h4 {
     text-align: center;
-    margin: 25px 0;
+    margin: var(--app-spacing) 0;
   }
   input, textarea {
     width: 100%;
     border-radius: var(--app-border-rad);
   }
   textarea {
-    min-width: 800px;
     min-height: 400px;
     resize: none;
   }
@@ -330,28 +347,14 @@ h3 {
 /*----------------------------------------------------------->
 	Bottom of page
 <------------------------------------------------------------*/
-
 :root {
   --base-size: 80px;
   --neg-base-size: calc(var(--base-size) * -1);
   --tb-margin: calc(var(--neg-base-size) / 2);
   --lr-margin: calc(var(--neg-base-size) / 4);
+  --app-spacing: 25px;
 }
-@media (max-width: 1200px) {
-  :root{
-    --base-size: 100px;
-  }
-}
-@media (max-width: 900px) {
-  :root{
-    --base-size: 80px;
-  }
-} 
-@media (max-width: 600px) {
-  :root{
-    --base-size: 60px;
-  }
-} 
+
 /*Need to make linked in icon a little smaller*/
 .hex {
   clip-path: var(--app-clip-hex);
@@ -370,6 +373,7 @@ h3 {
 }
 
 
+
 footer {
   height: 100px;
   line-height: 50px;
@@ -380,3 +384,45 @@ footer {
     color: var(--clr-light);
   }
 }
+
+@media(max-width: 1000px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 780px) {
+  :root{
+    --base-size: 60px;
+    --app-spacing: 15px;
+  }
+  .hex {
+    font-size: 3rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+} 
+@media (max-width: 650px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root{
+    --base-size: 40px;
+    --app-spacing: 10px;
+  }
+  .hex {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+} 
