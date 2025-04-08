@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+:root {
+  --app-font-size: 1.6rem;
+}
+body {
+	font-family: "Space Grotesk", "Outfit", "Inter", sans-serif;
+	font-size: var(--app-font-size);
+	color: var(--clr-light);
+	scroll-behavior: smooth;
+  background-color: var(--clr-bg);
+}
+
+header {
+  height: 30svh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  background: var(--clr-drk) url("../img/honeycomb.svg") no-repeat right center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
