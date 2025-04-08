@@ -10,9 +10,6 @@
   - Article flex change
   - Game icon size/poll size
   - Icon area flex change
-  - Btn sizing
-  - Text area email 
-  - Social links 
 - Second Page
 
 - Later Possible Add Ons 
@@ -26,12 +23,22 @@
     - Site engagement stats 
   - Unreal city
 */
+
+:root {
+  --base-size: 80px;
+  --neg-base-size: calc(var(--base-size) * -1);
+  --tb-margin: calc(var(--neg-base-size) / 2);
+  --lr-margin: calc(var(--neg-base-size) / 4);
+  --app-spacing: 25px;
+  --app-font-size: 1.6rem;
+}
+
 a {
   text-decoration: none;
 }
 body {
 	font-family: "Space Grotesk", "Outfit", "Inter", sans-serif;
-	font-size: 1.8rem;
+	font-size: var(--app-font-size);
 	color: var(--clr-light);
 	scroll-behavior: smooth;
   background-color: var(--clr-bg);
@@ -49,6 +56,7 @@ main {
 
 article {
   width: 100%;
+  flex-direction: column;
   min-height: 500px;
   justify-content: space-between;
   align-items: center;
@@ -63,25 +71,10 @@ article {
   background-color: var(--clr-primary);
   border: solid 1px var(--clr-light);
   color: var(--clr-light);
-  font-size: 1.6rem;
+  font-size: var(--app-font-size);
   font-weight: 600;
 }
 
-@media (max-width: 780px) {
-  .btn {
-    height: 40px;
-    line-height: 40px;
-    font-size: 1.2rem;
-  }
-} 
-
-@media (max-width: 480px) {
-  .btn {
-    height: 30px;
-    line-height: 30px;
-    font-size: 1rem;
-  }
-} 
 /*----------------------------------------------------------->
 	Hero Banner
 <------------------------------------------------------------*/
@@ -97,6 +90,7 @@ header {
 }
 
 h1,h2,h3,h4 {
+  pointer-events: none;
   text-shadow: -1px 1px 2px var(--clr-light-blue);
 }
 
@@ -108,6 +102,7 @@ h1 {
     text-shadow: -1px 1px 2px var(--clr-tan);
   }
 }
+
 h2 {
   width: 800px;
   font-size: 5rem;
@@ -118,6 +113,9 @@ h3 {
   text-align: center;
   font-family: "IBM Plex Mono", "Noto Sans Mono", monospace;
   font-size: 3rem;
+}
+h4 {
+  font-size: 4rem;
 }
 
 .cursor {
@@ -251,7 +249,6 @@ h3 {
   height: 120px;
   line-height: 120px;
   text-align: center;
-  font-size: 4rem;
   background: var(--clr-drk) url("../img/honeycomb.svg") no-repeat right center;
   background-size: cover;
   background-attachment: fixed;
@@ -305,7 +302,7 @@ h3 {
 .poll-option {
   display: block;
   height: 30px;
-  font-size: 1.4rem;
+  font-size: var(--app-font-size);
   text-align: center;
   border: 1px solid #ccc;
   transition: var(--app-transition);
@@ -347,13 +344,6 @@ h3 {
 /*----------------------------------------------------------->
 	Bottom of page
 <------------------------------------------------------------*/
-:root {
-  --base-size: 80px;
-  --neg-base-size: calc(var(--base-size) * -1);
-  --tb-margin: calc(var(--neg-base-size) / 2);
-  --lr-margin: calc(var(--neg-base-size) / 4);
-  --app-spacing: 25px;
-}
 
 /*Need to make linked in icon a little smaller*/
 .hex {
@@ -372,8 +362,6 @@ h3 {
   margin: var(--tb-margin) var(--lr-margin);
 }
 
-
-
 footer {
   height: 100px;
   line-height: 50px;
@@ -385,15 +373,22 @@ footer {
   }
 }
 
+
 @media(max-width: 1000px) {
   h1 {
     font-size: 5rem;
   }
 }
+
 @media (max-width: 780px) {
   :root{
     --base-size: 60px;
     --app-spacing: 15px;
+    --app-font-size: 1.4rem;
+  }
+  .btn {
+    height: 40px;
+    line-height: 40px;
   }
   .hex {
     font-size: 3rem;
@@ -407,22 +402,38 @@ footer {
   h3 {
     font-size: 2rem;
   }
+  h4 {
+    font-size: 3rem;
+  }
 } 
 @media (max-width: 650px) {
   h1 {
     font-size: 3rem;
   }
+  .games {
+    flex-direction: column;
+  }
 }
-
 @media (max-width: 480px) {
   :root{
     --base-size: 40px;
     --app-spacing: 10px;
+    --app-font-size: 1.2rem;
+  }
+  .btn {
+    height: 30px;
+    line-height: 30px;
   }
   .hex {
     font-size: 2rem;
   }
   h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h4 {
     font-size: 2.5rem;
   }
 } 
