@@ -3,16 +3,14 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
-- Header paralax
 - Cursor animation
 - Nav bar 
 - Return to top button
-- Accent Color 
-- Create transition/spacing roots 
+- Create spacing roots 
 - Create hover utils 
 - Button styling
-- Point utils 
-- Responsiveness 
+- Responsiveness
+- Second Page
 
 - Later Possible Add Ons 
   - Gliitch 
@@ -53,18 +51,22 @@ header {
   background-size: cover;
   background-attachment: fixed;
 }
-
+h1,h2,h3,h4 {
+  text-shadow: -1px 1px 2px var(--clr-light-blue);
+}
 h1 {
   font-size: 7rem;
   text-align: center;
   span {
     color: var(--clr-primary);
+    text-shadow: -1px 1px 2px var(--clr-tan);
   }
 }
 h2 {
   width: 800px;
   font-size: 5rem;
   margin-top: -25px;
+
 }
 h3 {
   text-align: center;
@@ -72,41 +74,8 @@ h3 {
 }
 
 /*----------------------------------------------------------->
-	Hero Banner
+	Hero Banner - Parallax
 <------------------------------------------------------------*/
-.z1 {
-  z-index: 1;
-}
-.z2 {
-  z-index: 2;
-}
-
-.z3 {
-  z-index: 3;
-}
-
-.z4 {
-  z-index: 4;
-}
-
-.z5 {
-  z-index: 5;
-}
-
-.z6 {
-  z-index: 6;
-}
-
-.z7 {
-  z-index: 7;
-}
-
-.z8 {
-  z-index: 8;
-}
-.z100 {
-  z-index: 100;
-}
 .parallax {
   position: fixed;
   pointer-events: none;
@@ -150,7 +119,6 @@ h3 {
   height: 200px;
   background-image: url("../img/hexagon-solid.svg");
 }
-
 .small-solid-orange-hex-two {
   top: 200px;
   right: 150px;
@@ -158,7 +126,6 @@ h3 {
   height: 200px;
   background-image: url("../img/hexagon-solid.svg");
 }
-
 .large-dark-blur-hex {
   top: 300px;
   right: 600px;
@@ -170,7 +137,7 @@ h3 {
 }
 
 /*----------------------------------------------------------->
-	Hero Banner
+	Articles 
 <------------------------------------------------------------*/
 /* .css-logo {
   width: 300px;
@@ -194,7 +161,6 @@ article {
   justify-content: space-between;
   align-items: center;
 }
-
 .photo {
   clip-path: var(--app-clip-hex);
   background: #fff url("../img/profile.JPG") no-repeat center center;
@@ -203,7 +169,7 @@ article {
   height: 400px;
 }
 
-.intro {
+.text {
   width: 600px;
 }
 
@@ -231,6 +197,9 @@ article {
   right: -50px;
   top: -80px;
 }
+/*----------------------------------------------------------->
+	Titles 
+<------------------------------------------------------------*/
 
 
 .games-title, .contact-title {
@@ -244,30 +213,10 @@ article {
   background-attachment: fixed;
   margin: 50px 0;
 }
-/*----------------------------------------------------------->
-	Contact Section
-<------------------------------------------------------------*/
-.contact {
-  width: 100%;
-  align-items: center;
-}
 
-.message {
-  margin-bottom: 100px;
-  h4 {
-    text-align: center;
-    margin: 25px 0;
-  }
-  input, textarea {
-    width: 100%;
-    border-radius: var(--app-border-rad);
-  }
-  textarea {
-    min-width: 800px;
-    min-height: 400px;
-    resize: none;
-  }
-}
+/*----------------------------------------------------------->
+	Fun and Games 
+<------------------------------------------------------------*/
 
 .play {
   flex-wrap: wrap;
@@ -282,7 +231,7 @@ article {
     color: var(--clr-drk);
     text-align: center;
     font-size: 0.8rem;
-    background-color: #eb9e6e;
+    background-color: var(--clr-light-blue);
     border-radius: var(--app-border-rad);
   }
   img {
@@ -315,8 +264,7 @@ article {
   font-size: 1.4rem;
   text-align: center;
   border: 1px solid #ccc;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
+  transition: var(--app-transition);
 }
 
 .poll-option input[type="radio"] {
@@ -328,6 +276,34 @@ article {
   background: var(--clr-primary);
   color: var(--clr-drk);
 }
+/*----------------------------------------------------------->
+	Contact Section
+<------------------------------------------------------------*/
+.contact {
+  width: 100%;
+  align-items: center;
+}
+
+.message {
+  margin-bottom: 100px;
+  h4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+  input, textarea {
+    width: 100%;
+    border-radius: var(--app-border-rad);
+  }
+  textarea {
+    min-width: 800px;
+    min-height: 400px;
+    resize: none;
+  }
+}
+
+/*----------------------------------------------------------->
+	Bottom of page
+<------------------------------------------------------------*/
 
 :root {
   --base-size: 120px;

@@ -8,8 +8,11 @@
   --clr-drk: #010518;
   --clr-bg: #001522;
   --clr-light: #fefefe;
+  --clr-light-blue: #78cbff;
+  --clr-light-orange: #60d;
   --clr-primary: #f37121;
-  --clr-secondary: #dd6900;
+  --clr-tan: #ffd484;
+
   --app-clip-hex: polygon(
     25% 0, 
     75% 0, 
@@ -41,14 +44,6 @@
   flex-direction: column;
 }
 
-.ease-quick {
-  transition: all 0.3s ease-in-out;
-}
-
-.ease-slow {
-  transition: all 0.8s ease-in-out;
-}
-
 .hidden {
   display: none;
   opacity: 0;
@@ -71,4 +66,38 @@
 
 .space-between {
   justify-content: space-between;
+}
+
+.z1 {
+  z-index: 1;
+}
+.z2 {
+  z-index: 2;
+}
+
+.z3 {
+  z-index: 3;
+}
+
+.z4 {
+  z-index: 4;
+}
+
+.z5 {
+  z-index: 5;
+}
+
+.z6 {
+  z-index: 6;
+}
+
+.z7 {
+  z-index: 7;
+}
+
+.z8 {
+  z-index: 8;
+}
+.z100 {
+  z-index: 100;
 }
