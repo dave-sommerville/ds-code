@@ -22,3 +22,13 @@ header {
   background-attachment: fixed;
 }
 
+footer {
+  height: 100px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--clr-light);
+  a {
+    text-decoration: none;
+    color: var(--clr-light);
+  }
+}
