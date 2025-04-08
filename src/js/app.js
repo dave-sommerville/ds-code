@@ -19,10 +19,10 @@ function listen(event, element, callback) {
 
 const heroBanner = select("header");
 const headerSwitch = heroBanner.offsetHeight;
-
+const cursorAnimation = select(".cursor");
 
 /*----------------------------------------------------------->
-	Preview Blurb Storage 
+	Parallax Controls 
 <----------------------------------------------------------*/
 
 const parallaxLayers = [
@@ -45,3 +45,17 @@ listen("scroll", window, () => {
 });
 
 
+/*----------------------------------------------------------->
+	Parallax Controls 
+<----------------------------------------------------------*/
+
+let isVisible = false; 
+
+setInterval(() => {
+  if(isVisible) {
+    cursorAnimation.classList.remove('visible');
+  } else if(!isVisible) {
+    cursorAnimation.classList.add('visible');
+  }
+  isVisible = !isVisible;
+}, 400);

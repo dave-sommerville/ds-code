@@ -4,12 +4,16 @@
 <------------------------------------------------------------*/
 /*
 - Cursor animation
-- Nav bar 
-- Return to top button
 - Create spacing roots 
 - Create hover utils 
-- Button styling
 - Responsiveness
+  - H1-4 & p sizing
+  - Article flex change
+  - Game icon size/poll size
+  - Icon area flex change
+  - Btn sizing
+  - Text area email 
+  - Social links 
 - Second Page
 
 - Later Possible Add Ons 
@@ -98,6 +102,13 @@ h3 {
   font-family: "IBM Plex Mono", "Noto Sans Mono", monospace;
 }
 
+.cursor {
+  visibility: hidden;
+}
+
+.cursor.visible {
+  visibility: visible;
+}
 /*----------------------------------------------------------->
 	Hero Banner - Parallax
 <------------------------------------------------------------*/
