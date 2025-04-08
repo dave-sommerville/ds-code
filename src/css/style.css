@@ -56,8 +56,7 @@ main {
 
 article {
   width: 100%;
-  flex-direction: column;
-  min-height: 500px;
+  margin: 100px 0;
   justify-content: space-between;
   align-items: center;
 }
@@ -78,6 +77,7 @@ article {
 /*----------------------------------------------------------->
 	Hero Banner
 <------------------------------------------------------------*/
+
 header {
   height: 70svh;
   width: 100%;
@@ -90,7 +90,6 @@ header {
 }
 
 h1,h2,h3,h4 {
-  pointer-events: none;
   text-shadow: -1px 1px 2px var(--clr-light-blue);
 }
 
@@ -104,15 +103,15 @@ h1 {
 }
 
 h2 {
-  width: 800px;
-  font-size: 5rem;
+  width: min(50svw, 800px);
+  font-size: 3.5rem;
   margin-top: -25px;
 
 }
 h3 {
   text-align: center;
   font-family: "IBM Plex Mono", "Noto Sans Mono", monospace;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 h4 {
   font-size: 4rem;
@@ -207,6 +206,7 @@ h4 {
   clip-path: var(--app-clip-hex);
   background: #fff url("../img/profile.JPG") no-repeat center center;
   background-size: contain;
+  aspect-ratio: 1/1;
   width: 400px;
   height: 400px;
 }
@@ -242,7 +242,6 @@ h4 {
 /*----------------------------------------------------------->
 	Titles 
 <------------------------------------------------------------*/
-
 
 .games-title, .contact-title {
   width: 100%;
@@ -334,6 +333,7 @@ h4 {
   input, textarea {
     width: 100%;
     border-radius: var(--app-border-rad);
+    background-color: var(--clr-light-blue);
   }
   textarea {
     min-height: 400px;
@@ -393,19 +393,28 @@ footer {
   .hex {
     font-size: 3rem;
   }
+  .play {
+    figure {
+      width: 70px;
+      height: 110px;
+      font-size: 0.7rem;
+    }
+  }
   h1 {
     font-size: 4rem;
   }
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-top: -10px;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   h4 {
     font-size: 3rem;
   }
-} 
+}
+
 @media (max-width: 650px) {
   h1 {
     font-size: 3rem;
@@ -413,7 +422,15 @@ footer {
   .games {
     flex-direction: column;
   }
+  article {
+    flex-direction: column;
+    margin: 0 0 50px 0;
+  }
+  .photo, .display {
+    margin: 50px 0;
+  }
 }
+
 @media (max-width: 480px) {
   :root{
     --base-size: 40px;
@@ -431,7 +448,11 @@ footer {
     font-size: 2.5rem;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    margin: 0;
+  }
+  h3 {
+    font-size: 1.2rem;
   }
   h4 {
     font-size: 2.5rem;
