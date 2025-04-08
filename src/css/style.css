@@ -38,6 +38,31 @@ section {
   justify-content: space-between;
 }
 
+main {
+  z-index: 1000;
+  position: relative;
+  background-color: var(--clr-bg);
+}
+
+article {
+  width: 100%;
+  min-height: 500px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  width: fit-content;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 25px;
+  border-radius: var(--app-border-rad);
+  background-color: var(--clr-primary);
+  border: solid 1px var(--clr-light);
+  color: var(--clr-light);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
 /*----------------------------------------------------------->
 	Hero Banner
 <------------------------------------------------------------*/
@@ -137,7 +162,7 @@ h3 {
 }
 
 /*----------------------------------------------------------->
-	Articles 
+	Article - Content 
 <------------------------------------------------------------*/
 /* .css-logo {
   width: 300px;
@@ -150,17 +175,7 @@ h3 {
   align-items: center;
   justify-content: center;
 } */
-main {
-  z-index: 1000;
-  position: relative;
-  background-color: var(--clr-bg);
-}
-article {
-  width: 100%;
-  min-height: 500px;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .photo {
   clip-path: var(--app-clip-hex);
   background: #fff url("../img/profile.JPG") no-repeat center center;
@@ -306,7 +321,7 @@ article {
 <------------------------------------------------------------*/
 
 :root {
-  --base-size: 120px;
+  --base-size: 80px;
   --neg-base-size: calc(var(--base-size) * -1);
   --tb-margin: calc(var(--neg-base-size) / 2);
   --lr-margin: calc(var(--neg-base-size) / 4);
@@ -326,13 +341,14 @@ article {
     --base-size: 60px;
   }
 } 
+/*Need to make linked in icon a little smaller*/
 .hex {
   clip-path: var(--app-clip-hex);
   width: var(--base-size);
   height: var(--base-size);
   line-height: var(--base-size);
   background-color: var(--clr-primary);
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--clr-drk);
   text-align: center;
   margin: 0 5px;
@@ -344,7 +360,8 @@ article {
 
 
 footer {
-  padding: 50px;
+  height: 100px;
+  line-height: 50px;
   text-align: center;
   color: var(--clr-light);
   a {
