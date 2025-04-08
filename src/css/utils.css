@@ -20,6 +20,7 @@
   ); 
   --app-border-rad: 6px;
   --app-spacing: 25px;
+  --app-transition: all 0.3s ease-in-out;
 }
 
 /*----------------------------------------------------------->

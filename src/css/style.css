@@ -74,49 +74,99 @@ h3 {
 /*----------------------------------------------------------->
 	Hero Banner
 <------------------------------------------------------------*/
+.z1 {
+  z-index: 1;
+}
+.z2 {
+  z-index: 2;
+}
+
+.z3 {
+  z-index: 3;
+}
+
+.z4 {
+  z-index: 4;
+}
+
+.z5 {
+  z-index: 5;
+}
+
+.z6 {
+  z-index: 6;
+}
+
+.z7 {
+  z-index: 7;
+}
+
+.z8 {
+  z-index: 8;
+}
+.z100 {
+  z-index: 100;
+}
 .parallax {
   position: fixed;
-
   pointer-events: none;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.hex-one {
-  top: 100px;
+.large-orange-hex {
+  top: 200px;
   left: 50px;
+  width: 700px;
+  height: 600px;
+  background-image: url("../img/hexagon.svg");
+}
+
+.med-dark-hex {
+  top: 300px;
+  left: 100px;
+  width: 350px;
+  height: 300px;
+  background-image: url("../img/hexagon-dark.svg");
+}
+.med-orange-hex-two {
+  top: 400px;
+  right: 500px;
   width: 350px;
   height: 300px;
   background-image: url("../img/hexagon.svg");
-  z-index: 1;
 }
-
-.hex-two {
-  top: 200px;
-  left: 700px;
+.med-orange-hex-one {
+  top: 500px;
+  right: 100px;
+  width: 350px;
+  height: 300px;
+  background-image: url("../img/hexagon.svg");
+}
+.small-solid-orange-hex-one {
+  top: 500px;
+  left: 300px;
   width: 230px;
   height: 200px;
-  background-image: url("../img/hexagon.svg");
-  z-index: 2;
+  background-image: url("../img/hexagon-solid.svg");
 }
 
-.hex-three {
-  top: 400px;
-  left: 700px;
-  width: 680px;
-  height: 600px;
-  filter: blur(5px) opacity(0.4);
-  background-image: url("../img/hexagon.svg");
-  z-index: 3;
+.small-solid-orange-hex-two {
+  top: 200px;
+  right: 150px;
+  width: 230px;
+  height: 200px;
+  background-image: url("../img/hexagon-solid.svg");
 }
 
-.hex-four {
-  top: 400px;
-  right: 0;
-  width: 350px;
-  height: 300px;
-  background-image: url("../img/hexagon.svg");
-  z-index: 4;
+.large-dark-blur-hex {
+  top: 300px;
+  right: 600px;
+  width: 710px;
+  height: 640px;
+  filter: blur(4px) opacity(0.95) brightness(0.7);
+  background-image: url("../img/hexagon-dark.svg");
+  z-index: 150;
 }
 
 /*----------------------------------------------------------->
@@ -134,7 +184,7 @@ h3 {
   justify-content: center;
 } */
 main {
-  z-index: 100;
+  z-index: 1000;
   position: relative;
   background-color: var(--clr-bg);
 }

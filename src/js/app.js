@@ -26,10 +26,13 @@ const headerSwitch = heroBanner.offsetHeight;
 <----------------------------------------------------------*/
 
 const parallaxLayers = [
-  {selector: ".hex-one", speed: 0.2},
-  {selector: ".hex-two", speed: 0.4},
-  {selector: ".hex-three", speed: 0.6},
-  {selector: ".hex-four", speed: 0.8}
+  {selector: ".large-orange-hex", speed: 0.4},
+  {selector: ".med-orange-hex-one", speed: 0.6},
+  {selector: ".med-orange-hex-two", speed: 0.1},
+  {selector: ".med-dark-hex", speed: 0.5},
+  {selector: ".small-solid-orange-hex-one", speed: 2},
+  {selector: ".small-solid-orange-hex-two", speed: -0.8},
+  {selector: ".large-dark-blur-hex", speed: 1.8}
 ];
 
 listen("scroll", window, () => {
