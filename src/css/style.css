@@ -221,20 +221,12 @@ h4 {
   background: var(--clr-light) url("../img/scavengers.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
-}
-
-.cell1, .cell2 {
-  width: 180px;
-  height: 320px;
-}
-
-.cell1 {
-  position: absolute;
-  bottom: -75px;
-  left: -50px;
+  margin: 50px;
 }
 
 .cell2 {
+  width: 180px;
+  height: 320px;
   position: absolute;
   right: -50px;
   top: -80px;
@@ -413,12 +405,6 @@ footer {
   h4 {
     font-size: 3rem;
   }
-}
-
-@media (max-width: 650px) {
-  h1 {
-    font-size: 3rem;
-  }
   .games {
     flex-direction: column;
   }
@@ -426,9 +412,19 @@ footer {
     flex-direction: column;
     margin: 0 0 50px 0;
   }
+  .art-col-reverse {
+    flex-direction: column-reverse;
+  }
   .photo, .display {
     margin: 50px 0;
   }
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 3rem;
+  }
+
 }
 
 @media (max-width: 480px) {
