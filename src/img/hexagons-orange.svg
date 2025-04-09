@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="84" height="147" viewBox="0 0 84 147">
-  <g fill-rule="evenodd">
-    <g id="hexagons" fill="#fe521d" fill-rule="nonzero">
-      <path d="M41.97 27.75l39 22.5v45l-39 22.5L3 95.25v-45l38.97-22.5zM9 53.7v38.1l32.97 19.02 33-19.03V53.7l-33-19.02L9 53.7zM0 45l38.94-22.5V0h-6v19.05L0 38.07v5.4zm0 56.25L38.94 123v24h-6v-20.55L0 106.25v-5.4zM45 0v22.5L83.97 45H84v-5.4h-.01L51 19.05V0h-6zm0 147v-24l38.97-22.5H84v5.4h-.01L51 123V147h-6z"/>
-    </g>
-  </g>
-</svg>
