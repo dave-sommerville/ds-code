@@ -3,25 +3,21 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
-- Create spacing roots 
-- Create hover utils 
-- Responsiveness
-  - H1-4 & p sizing
-  - Article flex change
-  - Game icon size/poll size
-  - Icon area flex change
-- Second Page
-
-- Later Possible Add Ons 
-  - Gliitch 
-  - User Preferences 
-    - Nickname
-    - Favourite (whatever)
-    - A secret 
-    - Birthday
-      - Horoscope
-    - Site engagement stats 
-  - Unreal city
+- Create hover utils / transitions 
+- Portfolio page 
+  - Screenshot gathering and formatting 
+  - General formatting
+  - Header 
+- Fix header image 
+- Hangman
+  - Format the modal
+  - Format the asci
+  - Close button
+  - Organize the script
+  - Game errors
+    - Counts every guess as a fail
+    - No trigger for a full body
+    - No winning condition
 */
 
 :root {
@@ -221,7 +217,12 @@ h4 {
   background: var(--clr-light) url("../img/scavengers.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
-  margin: 50px;
+  margin: 75px;
+  transition: var(--app-transition);
+}
+
+.display:hover {
+  transform: scale(1.02);
 }
 
 .cell2 {
@@ -281,6 +282,11 @@ h4 {
   form {
     background-color: var(--clr-light-bg);
     border-radius: var(--app-border-rad);
+  }
+  span {
+    text-decoration: line-through;
+    filter: opacity(0.7);
+    margin-right: -7px;
   }
   h4 {
     margin-bottom: var(--app-spacing)

@@ -41,6 +41,21 @@
 </header>
 <main>
   <section class="container f-col">
+    <dialog>
+      <div class="hangman-display flex">
+        <div class="gallows-container">
+          <p class="gallows"></p>
+        </div>
+        <div>
+          <p>Phrase to Guess:</p>
+          <p class="word-display"></p>
+          <p></p>
+          <p class="wrong-letters"></p>
+          <input class="letter-guess hidden">
+          <button class="hangman-start btn-style">
+            Start Game
+          </button>
+    </dialog>
     <article class="art-col flex">
       <div class="photo"></div>
       <div class="text">
@@ -58,11 +73,12 @@
     <article class="flex art-col-reverse">
       <div class="text">
         <p>
-          From sleek front-end design to robust data structures and innovative software, I've gained a wealth of experience during my past year as a full-time Software Development student. 
+          This past year, as a Software Development student at MITT, I have learned the tools to shape the internet myself. 
+          From sleek front-end design to robust data structures and innovative software, I've gained a wealth of knowledge. 
         </p>
         <p>
-          While I'm new to the field, I've built a strong foundation and a growing portfolio that reflects my dedication and progress.
-          In addition to my recent studies, I bring creativity, a strong work ethic, and a knack for unique problem-solving to every project I take on.
+          While I'm new to the field, I've been busy putting that knowledge to use. 
+          I've built a strong foundation and a growing portfolio that reflects my dedication and progress.
         </p>
       </div>
       <a href="">
@@ -79,11 +95,10 @@
     </a>
     <div class="text">
       <p>
-        From sleek front-end design to robust data structures and innovative software, I've gained a wealth of experience during my past year as a full-time Software Development student. 
+        In addition to my recent studies, I bring creativity, a strong work ethic, and a knack for unique problem-solving to every project I take on.
       </p>
       <p>
-        While I'm new to the field, I've built a strong foundation and a growing portfolio that reflects my dedication and progress.
-        In addition to my recent studies, I bring creativity, a strong work ethic, and a knack for unique problem-solving to every project I take on.
+        I am currently open and seeking work, however I'm also interested in inspiration or collaboration. Please enjoy my work and drop a message if you have anything to say.
       </p>
     </div>
   </article>
@@ -117,21 +132,17 @@
           <figcaption>Boogle</figcaption>
         </figure>
       </a>
-      <figure class="pointer">
+      <figure class="pointer hangman">
         <img src="./src/img/hangman.png">
         <figcaption>Hangman</figcaption>
       </figure>
-      <figure class="pointer">
-        <img src="./src/img/extra.png">
-        <figcaption>Extras</figcaption>
-      </figure>
     </div>
     <form name="poll" method="POST" data-netlify="true" class="poll-social">
-      <h5>What game should I add next?</h5>
-      <label class="poll-option pointer"><input type="radio" name="feature" value="Dark Mode"> Dark Mode</label><br>
-      <label class="poll-option pointer"><input type="radio" name="feature" value="Live Chat"> Live Chat</label><br>
-      <label class="poll-option pointer"><input type="radio" name="feature" value="User Analytics"> User Analytics</label><br>
-      <label class="poll-option" pointer><input type="radio" name="feature" value="Other"> Other</label><br>
+      <h5>What game should I <span>ripoff</span> create next?</h5>
+      <label class="poll-option pointer"><input type="radio" name="feature" value="Dark Mode">MineMopper</label><br>
+      <label class="poll-option pointer"><input type="radio" name="feature" value="Live Chat">Ship-Battle</label><br>
+      <label class="poll-option pointer"><input type="radio" name="feature" value="User Analytics">DS Paint</label><br>
+      <label class="poll-option" pointer><input type="radio" name="feature" value="Other">Whack a Hole</label><br>
       <button type="submit" class="pointer btn">Vote</button>
     </form>  
   </section>

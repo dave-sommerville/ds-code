@@ -79,11 +79,11 @@ const hangingMan = [
 
 
 // Gotta change to utility functions 
-const hangmanBlanksDisplay = document.querySelector('.word-display');
-const gallowsDisplay = document.querySelector('.gallows');
-const wrongGuessDisplay = document.querySelector('.wrong-letters');
-const inputElement = document.querySelector('.letter-guess');
-const outputElement = document.getElementById('output');
+const hangmanBlanksDisplay = select('.word-display');
+const gallowsDisplay = select('.gallows');
+const wrongGuessDisplay = select('.wrong-letters');
+const inputElement = select('.letter-guess');
+const outputElement = select('output');
 const  hangmanStart = select('.hangman-start');
 
 const hangmanPhrases = [
