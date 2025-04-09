@@ -3,6 +3,10 @@
 :root {
   --app-font-size: 1.6rem;
 }
+a {
+  text-decoration: none;
+  color: var(--clr-light);
+}
 body {
 	font-family: "Space Grotesk", "Outfit", "Inter", sans-serif;
 	font-size: var(--app-font-size);
