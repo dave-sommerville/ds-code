@@ -4,10 +4,6 @@
 <------------------------------------------------------------*/
 /*
 - Create hover utils / transitions 
-- Portfolio page 
-  - Screenshot gathering and formatting 
-  - General formatting
-  - Header 
 - Fix header image 
 - Hangman
   - Format the modal
@@ -214,11 +210,19 @@ h4 {
 .display {
   width: 500px;
   height: 300px;
-  background: var(--clr-light) url("../img/scavengers.jpg") no-repeat center center;
-  background-size: cover;
   position: relative;
   margin: 75px;
   transition: var(--app-transition);
+}
+
+.display.one {
+  background: var(--clr-light) url("../img/01-blackjack.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.display.two {
+  background: var(--clr-light) url("../img/05-opal-and-onyx.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .display:hover {
