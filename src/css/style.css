@@ -17,7 +17,7 @@
 */
 
 :root {
-  --base-size: 80px;
+  --base-size: 70px;
   --neg-base-size: calc(var(--base-size) * -1);
   --tb-margin: calc(var(--neg-base-size) / 2);
   --lr-margin: calc(var(--neg-base-size) / 4);
@@ -48,7 +48,7 @@ main {
 
 article {
   width: 100%;
-  margin: 100px 0;
+  margin-top: 75px;
   justify-content: space-between;
   align-items: center;
 }
@@ -131,6 +131,7 @@ h4 {
   left: 50px;
   width: 700px;
   height: 600px;
+  filter: opacity(0.7);
   background-image: url("../img/hexagon.svg");
 }
 
@@ -211,7 +212,6 @@ h4 {
   width: 500px;
   height: 300px;
   position: relative;
-  margin: 75px;
   transition: var(--app-transition);
 }
 
@@ -229,13 +229,6 @@ h4 {
   transform: scale(1.02);
 }
 
-.cell2 {
-  width: 180px;
-  height: 320px;
-  position: absolute;
-  right: -50px;
-  top: -80px;
-}
 /*----------------------------------------------------------->
 	Titles 
 <------------------------------------------------------------*/
@@ -327,7 +320,9 @@ h4 {
 .message {
   margin-bottom: 100px;
   width: min(100% - 10svw, 750px);
-  h4 {
+  h5 {
+    font-size: var(--app-font-size);
+    font-weight: 600;
     text-align: center;
     margin: var(--app-spacing) 0;
   }
@@ -337,7 +332,7 @@ h4 {
     background-color: var(--clr-light-blue);
   }
   textarea {
-    min-height: 400px;
+    min-height: 30svh;
     resize: none;
   }
 }
@@ -345,18 +340,28 @@ h4 {
 /*----------------------------------------------------------->
 	Bottom of page
 <------------------------------------------------------------*/
-
-/*Need to make linked in icon a little smaller*/
+.m-auto {
+  margin: -25px auto;
+}
+.hover {
+  transition: var(--app-transition);
+}
+.hover:hover {
+  filter: brightness(0.8) saturate(1.3);
+}
 .hex {
   clip-path: var(--app-clip-hex);
   width: var(--base-size);
   height: var(--base-size);
   line-height: var(--base-size);
   background-color: var(--clr-primary);
-  font-size: 4rem;
+  font-size: 3.6rem;
   color: var(--clr-drk);
   text-align: center;
   margin: 0 5px;
+  .fa-linkedin-in {
+    font-size: 3.2rem;
+  }
 }
 
 .mid-hex {
@@ -364,7 +369,7 @@ h4 {
 }
 
 footer {
-  height: 100px;
+  height: 15svh;
   line-height: 50px;
   text-align: center;
   color: var(--clr-light);
@@ -393,6 +398,9 @@ footer {
   }
   .hex {
     font-size: 3rem;
+    .fa-linkedin-in {
+      font-size: 2.8rem;
+    }
   }
   .play {
     figure {
@@ -448,6 +456,9 @@ footer {
   }
   .hex {
     font-size: 2rem;
+    .fa-linkedin-in {
+      font-size: 1.6rem;
+    }
   }
   h1 {
     font-size: 2.5rem;
@@ -461,5 +472,12 @@ footer {
   }
   h4 {
     font-size: 2.5rem;
+  }
+  footer {
+    font-size: 1rem;
+    p {
+      margin: 0;
+      line-height: 40px;
+    }
   }
 } 

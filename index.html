@@ -80,13 +80,13 @@
           I've built a strong foundation and a growing portfolio that reflects my dedication and progress.
         </p>
       </div>
-      <a href="">
+      <a href="./portfolio.html">
         <div class="display one pointer">
         </div>
       </a>
     </article>
   <article class="flex art-col">
-    <a href="">
+    <a href="./portfolio.html">
       <div class="display two pointer">
       </div>
     </a>
@@ -105,42 +105,46 @@
   </section>
   <section class="container games flex">
     <div class="play flex">
-      <a class="pointer" href="https://dave-sommerville.github.io/blackjack/">
+      <a class="pointer hover" href="https://dave-sommerville.github.io/blackjack/">
         <figure>
           <img src="./src/img/black-jack.png">
           <figcaption>Blackjack</figcaption>
         </figure>
       </a>
-      <a class="pointer" href="https://dave-sommerville.github.io/script-scavengers/">
+      <a class="pointer hover" href="https://dave-sommerville.github.io/script-scavengers/">
         <figure>
           <img src="./src/img/desert.png">
           <figcaption>Script Scavengers</figcaption>
         </figure>
       </a>
-      <a class="pointer" href="https://dave-sommerville.github.io/code-breaker/">
+      <a class="pointer hover" href="https://dave-sommerville.github.io/code-breaker/">
         <figure>
           <img src="./src/img/terminal.png">
           <figcaption>Code Breakers</figcaption>
         </figure>
       </a>
-      <a class="pointer" href="https://dave-sommerville.github.io/boogle/">
+      <a class="pointer hover" href="https://dave-sommerville.github.io/boogle/">
         <figure>
           <img src="./src/img/boggle.png">
           <figcaption>Boogle</figcaption>
         </figure>
       </a>
-      <figure class="pointer hangman hidden">
+      <figure class="pointer hover hangman hidden">
         <img src="./src/img/hangman.png">
         <figcaption>Hangman</figcaption>
       </figure>
     </div>
     <form name="poll" method="POST" data-netlify="true" class="poll-social">
       <h5>What game should I <span>ripoff</span> create next?</h5>
-      <label class="poll-option pointer"><input type="radio" name="feature" value="Dark Mode">MineMopper</label><br>
-      <label class="poll-option pointer"><input type="radio" name="feature" value="Live Chat">Ship-Battle</label><br>
-      <label class="poll-option pointer"><input type="radio" name="feature" value="User Analytics">DS Paint</label><br>
-      <label class="poll-option" pointer><input type="radio" name="feature" value="Other">Whack a Hole</label><br>
-      <button type="submit" class="pointer btn">Vote</button>
+      <label class="poll-option pointer hover">
+        <input type="radio" name="feature" value="Dark Mode">MineMopper</label><br>
+      <label class="poll-option pointer hover">
+        <input type="radio" name="feature" value="Live Chat">Ship-Battle</label><br>
+      <label class="poll-option pointer hover">
+        <input type="radio" name="feature" value="User Analytics">DS Paint</label><br>
+      <label class="poll-option pointer hover" pointer>
+        <input type="radio" name="feature" value="Other">Whack a Hole</label><br>
+      <button type="submit" class="pointer btn hover">Vote</button>
     </form>  
   </section>
   <section class="contact-title">
@@ -148,31 +152,31 @@
   </section>   
   <section class="container contact f-col">
     <form class="message" name="contact" method="POST" data-netlify="true">
-      <h4>Send Me a Message</h4>
+      <h5>Send Me a Message</h5>
       <input type="text" name="name" placeholder="NAME" required></label><br><br>
       <input type="email" name="email" placeholder="EMAIL" required></label><br><br>
       <textarea name="message" rows="6" placeholder="SAY SOMETHING" required></textarea></label><br><br>
-      <button type="submit" class="btn pointer">Send Message</button>
+      <button type="submit" class="btn pointer hover">Send Message</button>
     </form>
     <div class="flex m-auto">
       <a
         target="_blank"
-        href="https://bsky.app/profile/ds-code.bsky.social">
-        <div class="hex pointer">
+        href="https://mastodon.social/@ds_code">
+        <div class="hex pointer hover">
           <i class="fa-brands fa-mastodon"></i>
         </div>
       </a>
       <a 
         target="_blank"
         href="https://www.linkedin.com/in/dave-sommerville-2abb50326/">
-        <div class="hex pointer mid-hex">
+        <div class="hex pointer hover mid-hex">
           <i class="fa-brands fa-linkedin-in"></i>
         </div>
       </a>
       <a 
         target="_blank"
         href="https://github.com/dave-sommerville">
-        <div class="hex">
+        <div class="hex hover pointer">
           <i class="fa-brands fa-github"></i>
         </div>
       </a>
@@ -180,13 +184,13 @@
   </section>
 <footer>
   <p>
-    DS Code | &copy;2025 Dave Sommerville | 
-    <a href="mailto: dave.r.sommerville@outlook.com">dave.r.sommerville@outlook.com</a>
-  </p>
-  <p>
-    <a href="#page-top">
+    <a class="hover" href="#page-top">
       <i class="fa-solid fa-arrow-up"></i>
     </a>
+  </p>
+  <p>
+    DS Code | &copy;2025 Dave Sommerville | 
+    <a href="mailto: dave.r.sommerville@outlook.com">dave.r.sommerville@outlook.com</a>
   </p>
 </footer>
 </main>

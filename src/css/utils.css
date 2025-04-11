@@ -56,10 +56,6 @@
   cursor: pointer;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .space-between {
   justify-content: space-between;
 }
