@@ -42,6 +42,9 @@
   <section class="container f-col">
     <dialog>
       <div class="hangman-display flex">
+        <div class="top-bar">
+          <i class="fa-solid fa-rectangle-xmark"></i>
+        </div>
         <div class="gallows-container">
           <p class="gallows"></p>
         </div>
@@ -129,7 +132,7 @@
           <figcaption>Boogle</figcaption>
         </figure>
       </a>
-      <figure class="pointer hover hangman hidden">
+      <figure class="pointer hover hangman">
         <img src="./src/img/hangman.png">
         <figcaption>Hangman</figcaption>
       </figure>
@@ -145,20 +148,20 @@
       <label class="poll-option pointer hover" pointer>
         <input type="radio" name="feature" value="Other">Whack a Hole</label><br>
       <button type="submit" class="pointer btn hover">Vote</button>
-    </form>  
+    
   </section>
   <section class="contact-title">
     <h4 class="container">REACH OUT</h4>
   </section>   
   <section class="container contact f-col">
-    <form class="message" name="contact" method="POST" data-netlify="true">
+    <div class="message" name="contact" method="POST" data-netlify="true">
       <h5>Send Me a Message</h5>
       <input type="text" name="name" placeholder="NAME" required></label><br><br>
       <input type="email" name="email" placeholder="EMAIL" required></label><br><br>
       <textarea name="message" rows="6" placeholder="SAY SOMETHING" required></textarea></label><br><br>
       <button type="submit" class="btn pointer hover">Send Message</button>
-    </form>
-    <div class="flex m-auto">
+    </div>
+    <div class="flex">
       <a
         target="_blank"
         href="https://mastodon.social/@ds_code">
@@ -185,12 +188,11 @@
 <footer>
   <p>
     <a class="hover" href="#page-top">
-      <i class="fa-solid fa-arrow-up"></i>
-    </a>
+      <i class="fa-solid fa-arrow-up"></i>  
   </p>
   <p>
     DS Code | &copy;2025 Dave Sommerville | 
-    <a href="mailto: dave.r.sommerville@outlook.com">dave.r.sommerville@outlook.com</a>
+    <a class="pointer" href="mailto: dave.r.sommerville@outlook.com">dave.r.sommerville@outlook.com</a>
   </p>
 </footer>
 </main>

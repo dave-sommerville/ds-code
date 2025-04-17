@@ -59,6 +59,9 @@
 .space-between {
   justify-content: space-between;
 }
+.pos-rel {
+  position: relative;
+}
 
 .z1 {
   z-index: 1;

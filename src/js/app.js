@@ -76,6 +76,7 @@ const wrongGuessDisplay = select('.wrong-letters');
 const inputElement = select('.letter-guess');
 const outputElement = select('output');
 const  hangmanStart = select('.hangman-start');
+const closeButton = select('.fa-rectangle-xmark');
 
 const hangingMan = [
   `  +---+\n||\n||\n||\n||\n||\n=========`,
@@ -170,4 +171,7 @@ const icon = select('.hangman');
 const popOut = select('dialog');
 listen("click", icon, () =>{
   popOut.showModal();
+});
+listen("click", closeButton, ()=> {
+  popOut.close();
 });

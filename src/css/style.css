@@ -179,6 +179,21 @@ h4 {
   background-image: url("../img/hexagon-dark.svg");
   z-index: 150;
 }
+/*----------------------------------------------------------->
+	Dialog
+<------------------------------------------------------------*/
+dialog {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  background-color: #232363;
+  .fa-rectangle-xmark {
+    position: absolute;
+    top: -10px;
+    right: 0;
+  }
+}
 
 /*----------------------------------------------------------->
 	Article - Content 
@@ -318,7 +333,8 @@ h4 {
   align-items: center;
 }
 .message {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  margin-top: -25px;
   width: min(100% - 10svw, 750px);
   h5 {
     font-size: var(--app-font-size);
@@ -336,6 +352,7 @@ h4 {
     resize: none;
   }
 }
+
 
 /*----------------------------------------------------------->
 	Bottom of page
@@ -372,6 +389,7 @@ footer {
   height: 15svh;
   line-height: 50px;
   text-align: center;
+  margin-top: -25px;
   color: var(--clr-light);
   a {
     text-decoration: none;
@@ -475,6 +493,7 @@ footer {
   }
   footer {
     font-size: 1rem;
+  
     p {
       margin: 0;
       line-height: 40px;
