@@ -76,7 +76,7 @@ const wrongGuessDisplay = select('.wrong-letters');
 const inputElement = select('.letter-guess');
 const outputElement = select('output');
 const  hangmanStart = select('.hangman-start');
-const closeButton = select('.fa-rectangle-xmark');
+const closeButton = select('.exit-game');
 
 const hangingMan = [
   `  +---+\n||\n||\n||\n||\n||\n=========`,

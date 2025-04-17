@@ -41,22 +41,29 @@
 <main>
   <section class="container f-col">
     <dialog>
-      <div class="hangman-display flex">
-        <div class="top-bar">
-          <i class="fa-solid fa-rectangle-xmark"></i>
+      <div class="hangman-display f-col">
+        <div class="top-bar flex">
+          <div class="drag-bar"></div>
+          <div class="exit-game">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
         </div>
-        <div class="gallows-container">
-          <p class="gallows"></p>
-        </div>
-        <div>
-          <p>Phrase to Guess:</p>
-          <p class="word-display"></p>
-          <p></p>
-          <p class="wrong-letters"></p>
-          <input class="letter-guess hidden">
+        <div class="game-wrapper">
+          <div class="gallows-container">
+            <p class="gallows"></p>
+          </div>
+          <div>
+            <p>Phrase to Guess:</p>
+            <p class="word-display"></p>
+            <p></p>
+            <p class="wrong-letters"></p>
+            <input class="letter-guess hidden">
+          </div>
           <button class="hangman-start btn-style">
             Start Game
           </button>
+        </div>
+      </div>
     </dialog>
     <article class="art-col flex">
       <div class="photo"></div>
