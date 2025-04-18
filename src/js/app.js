@@ -136,6 +136,7 @@ let mixedLetterBlanks = [];
 let wrongGuesses = [];
 let hangPhrase = '';
 let phraseArr = [];
+let gameIsRunning = false;
 
 function arrayOfBlanks() {
   return phraseArr.map(char => (char === ' ' ? ' ' : '_'));
@@ -186,11 +187,18 @@ function wrongGuess(char) {
   }
 }
 
+function resetGame() {
+  wrongGuessDisplay.innerText = '';
+  mixedLetterBlanks = [];
+  wrongGuesses = [];
+  hangPhrase = '';
+  phraseArr = [];
+}
+
 function startHangmanGame() {
   hangPhrase = getRandomElement(hangmanPhrases);
   console.log(hangPhrase);
   phraseArr = hangPhrase.split('');
-  console.log(phraseArr);
   mixedLetterBlanks = arrayOfBlanks();
   console.log(mixedLetterBlanks)
   updateHangDisplay();
@@ -202,6 +210,7 @@ function startHangmanGame() {
 }
 
 function startHangman() {
+  gameIsRunning = true;
   removeBigFont();
   removeClass(inputElement, 'hidden');
   addClass(hangmanStart, 'hidden');
@@ -214,18 +223,17 @@ function endHangman(result) {
   addClass(inputElement, 'hidden');
   removeClass(hangmanStart, 'hidden');
   hangmanStart.focus();
-  wrongGuessDisplay.innerText = '';
   gameTitle.innerText = result;
-  mixedLetterBlanks = [];
-  wrongGuesses = [];
-  hangPhrase = '';
-  phraseArr = [];
+  gameIsRunning = false;
+  resetGame();
 }
+
 function removeBigFont(){
   if (gameTitle.classList.contains("big-font")) {
     removeClass(gameTitle, "big-font");
   }
 }
+
 function addBigFont(){
   if (!gameTitle.classList.contains("big-font")) {
     addClass(gameTitle, "big-font");
