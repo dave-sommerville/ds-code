@@ -34,11 +34,11 @@ const hangmanBlanksDisplay = select('.word-display');
 const gallowsDisplay = select('.gallows');
 const wrongGuessDisplay = select('.wrong-letters');
 const inputElement = select('.letter-guess');
-const outputElement = select('output');
 const  hangmanStart = select('.hangman-start');
 const closeButton = select('.exit-game');
 const icon = select('.hangman');
 const popOut = select('dialog');
+const gameTitle = select('.game-title');
 
 /*----------------------------------------------------------->
 	Parallax Controls 
@@ -131,63 +131,71 @@ const hangmanPhrases = [
   "Life is a journey",
   "Home sweet home"
 ];
+let mixedLetterBlanks = [];
 let wrongGuesses = [];
+let hangPhrase = '';
+let phraseArr = [];
 
-function arrayOfBlanks(randArr) {
-  return randArr.map(char => (char === ' ' ? ' ' : '_'));
+function arrayOfBlanks() {
+  return phraseArr.map(char => (char === ' ' ? ' ' : '_'));
 }
 
 
-function updateHangDisplay(blankArr, dudArr) {
-  hangmanBlanksDisplay.innerText = blankArr.join('');
-  gallowsDisplay.innerText = hangingMan[dudArr.length]; 
-  wrongGuessDisplay.innerText = dudArr.join(', ');
+function updateHangDisplay() {
+  hangmanBlanksDisplay.innerText = mixedLetterBlanks.join('');
+  gallowsDisplay.innerText = hangingMan[wrongGuesses.length]; 
+  wrongGuessDisplay.innerText = wrongGuesses.join(', ');
 }
 
-function userGuess(arrOne, arrTwo, dudArr) {
+function userGuess() {
   const inputValue = inputElement.value.toLowerCase();
   inputElement.value = ''; 
 
   if (!/^[a-zA-Z]$/.test(inputValue)) {
-    outputElement.textContent = 'Please enter a single letter!';
+    wrongGuessDisplay.textContent = 'Please enter a single letter!';
     return;
   }
-  if(!checkLetter(inputValue, arrOne, arrTwo)) {
-    wrongGuess(inputValue, dudArr);
-    if(dudArr.length >= 5) {
-      // Trigger end game function 
+  if(!checkLetter(inputValue)) {
+    wrongGuess(inputValue);
+    if(wrongGuesses.length >= 5) {
+      endHangman("You lose!");
+      return;
     }
   }
-  updateHangDisplay(arrTwo, dudArr);
+  updateHangDisplay();
+  if(!mixedLetterBlanks.includes('_')) {
+    endHangman("You win!");
+  }
 }
 
-function checkLetter(char, arrayOne, arrayTwo) {
+function checkLetter(char) {
   let found = false;
-  for (let i = 0; i < arrayOne.length; i++) {
-    if (arrayOne[i].toLowerCase() === char) {
-      arrayTwo[i] = arrayOne[i]; 
+  for (let i = 0; i < phraseArr.length; i++) {
+    if (phraseArr[i].toLowerCase() === char) {
+      mixedLetterBlanks[i] = phraseArr[i]; 
       found = true;
     }
   }
   return found;
 }
 
-function wrongGuess(char, dudArr) {
-  if (!dudArr.includes(char)) {
-    dudArr.push(char);
+function wrongGuess(char) {
+  if (!wrongGuesses.includes(char)) {
+    wrongGuesses.push(char);
   }
 }
 
 function startHangmanGame() {
-  let hangPhrase = getRandomElement(hangmanPhrases);
+  hangPhrase = getRandomElement(hangmanPhrases);
   console.log(hangPhrase);
-  let arrayOne = hangPhrase.split('');
-  let arrayTwo = arrayOfBlanks(arrayOne);
-  updateHangDisplay(arrayTwo, wrongGuesses);
-
+  phraseArr = hangPhrase.split('');
+  console.log(phraseArr);
+  mixedLetterBlanks = arrayOfBlanks();
+  console.log(mixedLetterBlanks)
+  updateHangDisplay();
   inputElement.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
-      userGuess(arrayOne, arrayTwo, wrongGuesses);
+      userGuess();
     }
   });
 }
@@ -198,11 +206,25 @@ function startHangman() {
   startHangmanGame();
 }
 
+function endHangman(result) {
+
+  addClass(inputElement, 'hidden');
+  removeClass(hangmanStart, 'hidden');
+  wrongGuessDisplay.innerText = '';
+  gameTitle.innerText = result;
+  mixedLetterBlanks = [];
+  wrongGuesses = [];
+  hangPhrase = '';
+  phraseArr = [];
+}
+
 listen('click', hangmanStart, () =>{
   startHangman();
 });
 listen("click", icon, () =>{
   popOut.showModal();
+  gallowsDisplay.innerText = hangingMan[6];
+  gameTitle.innerText = 'HANGMAN';
 });
 listen("click", closeButton, ()=> {
   popOut.close();

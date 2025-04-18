@@ -4,16 +4,13 @@
 <------------------------------------------------------------*/
 /*
 - Create hover utils / transitions 
-- Fix header image 
+- Fix header image
+- Text responsiveness 
 - Hangman
-  - Format the modal
-  - Format the asci
-  - Close button
-  - Organize the script
-  - Game errors
-    - Counts every guess as a fail
-    - No trigger for a full body
-    - No winning condition
+  - Focus button/input on end and begining 
+  - Add dragability 
+  - Change Hangman font-size after start
+  - Further styling
 */
 
 :root {
