@@ -34,7 +34,7 @@ body {
 	font-size: var(--app-font-size);
 	color: var(--clr-light);
 	scroll-behavior: smooth;
-  background-color: var(--clr-bg);
+  background-color: var(--clr-drk);
 }
 
 section {
@@ -77,9 +77,6 @@ header {
   position: relative;
   overflow: hidden;
   align-items: center;
-  background: var(--clr-drk) url("../img/honeycomb.svg") no-repeat right center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 h1,h2,h3,h4 {
@@ -120,6 +117,16 @@ h4 {
 /*----------------------------------------------------------->
 	Hero Banner - Parallax
 <------------------------------------------------------------*/
+.hero-banner {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  z-index: -100;
+}
 .parallax {
   position: fixed;
   pointer-events: none;
