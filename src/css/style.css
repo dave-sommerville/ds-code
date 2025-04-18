@@ -226,6 +226,9 @@ dialog {
   line-height: 60px;
   text-align: center;
 }
+.word-display {
+  letter-spacing: 2px;
+}
 .letter-guess, .hangman-start {
   height: 50px;
   width: 70px;
