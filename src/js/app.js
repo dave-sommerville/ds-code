@@ -30,6 +30,15 @@ function getRandomElement(arr) {
 const heroBanner = select("header");
 const headerSwitch = heroBanner.offsetHeight;
 const cursorAnimation = select(".cursor");
+const hangmanBlanksDisplay = select('.word-display');
+const gallowsDisplay = select('.gallows');
+const wrongGuessDisplay = select('.wrong-letters');
+const inputElement = select('.letter-guess');
+const outputElement = select('output');
+const  hangmanStart = select('.hangman-start');
+const closeButton = select('.exit-game');
+const icon = select('.hangman');
+const popOut = select('dialog');
 
 /*----------------------------------------------------------->
 	Parallax Controls 
@@ -70,13 +79,6 @@ setInterval(() => {
   isVisible = !isVisible;
 }, 400);
 
-const hangmanBlanksDisplay = select('.word-display');
-const gallowsDisplay = select('.gallows');
-const wrongGuessDisplay = select('.wrong-letters');
-const inputElement = select('.letter-guess');
-const outputElement = select('output');
-const  hangmanStart = select('.hangman-start');
-const closeButton = select('.exit-game');
 
 const hangingMan = [
   `++---+
@@ -129,6 +131,7 @@ const hangmanPhrases = [
   "Life is a journey",
   "Home sweet home"
 ];
+let wrongGuesses = [];
 
 function arrayOfBlanks(randArr) {
   return randArr.map(char => (char === ' ' ? ' ' : '_'));
@@ -149,11 +152,12 @@ function userGuess(arrOne, arrTwo, dudArr) {
     outputElement.textContent = 'Please enter a single letter!';
     return;
   }
-
-  let isAbsent = true;  
-  checkLetter(inputValue, arrOne, arrTwo, isAbsent);
-  wrongGuess(inputValue, dudArr, isAbsent);
-
+  if(!checkLetter(inputValue, arrOne, arrTwo)) {
+    wrongGuess(inputValue, dudArr);
+    if(dudArr.length >= 5) {
+      // Trigger end game function 
+    }
+  }
   updateHangDisplay(arrTwo, dudArr);
 }
 
@@ -168,24 +172,11 @@ function checkLetter(char, arrayOne, arrayTwo) {
   return found;
 }
 
-function wrongGuess(char, dudArr, isAbsent) {
-  if (isAbsent && !dudArr.includes(char)) {
+function wrongGuess(char, dudArr) {
+  if (!dudArr.includes(char)) {
     dudArr.push(char);
   }
 }
-let wrongGuesses = [];
-
-
-function startHangman() {
-  removeClass(inputElement, 'hidden');
-  addClass(hangmanStart, 'hidden');
-  startHangmanGame();
-}
-
-
-listen('click', hangmanStart, () =>{
-  startHangman();
-});
 
 function startHangmanGame() {
   let hangPhrase = getRandomElement(hangmanPhrases);
@@ -201,8 +192,15 @@ function startHangmanGame() {
   });
 }
 
-const icon = select('.hangman');
-const popOut = select('dialog');
+function startHangman() {
+  removeClass(inputElement, 'hidden');
+  addClass(hangmanStart, 'hidden');
+  startHangmanGame();
+}
+
+listen('click', hangmanStart, () =>{
+  startHangman();
+});
 listen("click", icon, () =>{
   popOut.showModal();
 });
