@@ -3,8 +3,6 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
-- Create hover utils / transitions 
-- Fix header image
 - Text responsiveness 
 - Hangman
   - Focus button/input on end and begining 
@@ -121,6 +119,7 @@ h4 {
   position: fixed;
   top: 0;
   bottom: 0;
+  right: 0;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -261,6 +260,7 @@ dialog {
   aspect-ratio: 1/1;
   width: 400px;
   height: 400px;
+  margin-right: var(--app-spacing);
 }
 
 .text {
@@ -272,6 +272,7 @@ dialog {
   height: 300px;
   position: relative;
   transition: var(--app-transition);
+  margin: 0 var(--app-spacing);
 }
 
 .display.one {
@@ -503,7 +504,17 @@ footer {
   h1 {
     font-size: 3rem;
   }
-
+  .photo {
+    width: 80svw;
+    height: 80svw;
+  }
+  .display {
+    width: 85svw;
+    height: 51svw;
+  }
+  .text {
+    width: 80svw;
+  }
 }
 
 @media (max-width: 480px) {
