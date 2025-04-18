@@ -41,28 +41,28 @@
 </header>
 <main>
   <section class="container f-col">
-    <dialog>
+    <div class="pop-out hidden">
       <div class="hangman-display f-col">
         <div class="top-bar flex">
           <div class="drag-bar"></div>
-          <div class="exit-game">
+          <div class="exit-game pointer">
             <i class="fa-solid fa-xmark"></i>
           </div>
         </div>
         <div class="game-wrapper f-col">
-          <p class="game-title"></p>
+          <p class="game-title big-font"></p>
           <p class="word-display"></p>
           <div class="gallows-container">
             <p class="gallows"></p>
           </div>
             <p class="wrong-letters"></p>
             <input class="letter-guess hidden">
-          <button class="hangman-start btn-style">
+          <button class="hangman-start pointer hover btn-style">
             Start
           </button>
         </div>
       </div>
-    </dialog>
+    </div>
     <article class="art-col flex">
       <div class="photo"></div>
       <div class="text">

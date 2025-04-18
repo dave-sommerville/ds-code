@@ -34,11 +34,12 @@ const hangmanBlanksDisplay = select('.word-display');
 const gallowsDisplay = select('.gallows');
 const wrongGuessDisplay = select('.wrong-letters');
 const inputElement = select('.letter-guess');
-const  hangmanStart = select('.hangman-start');
+const hangmanStart = select('.hangman-start');
 const closeButton = select('.exit-game');
 const icon = select('.hangman');
-const popOut = select('dialog');
+const popOut = select('.pop-out');
 const gameTitle = select('.game-title');
+const pinkPony = select('.drag-bar');
 
 /*----------------------------------------------------------->
 	Parallax Controls 
@@ -152,7 +153,7 @@ function userGuess() {
   inputElement.value = ''; 
 
   if (!/^[a-zA-Z]$/.test(inputValue)) {
-    wrongGuessDisplay.textContent = 'Please enter a single letter!';
+    wrongGuessDisplay.textContent = 'Enter a single letter';
     return;
   }
   if(!checkLetter(inputValue)) {
@@ -201,15 +202,18 @@ function startHangmanGame() {
 }
 
 function startHangman() {
+  removeBigFont();
   removeClass(inputElement, 'hidden');
   addClass(hangmanStart, 'hidden');
+  inputElement.focus();
   startHangmanGame();
+  gameTitle.innerText = 'PHRASE';
 }
 
 function endHangman(result) {
-
   addClass(inputElement, 'hidden');
   removeClass(hangmanStart, 'hidden');
+  hangmanStart.focus();
   wrongGuessDisplay.innerText = '';
   gameTitle.innerText = result;
   mixedLetterBlanks = [];
@@ -217,15 +221,50 @@ function endHangman(result) {
   hangPhrase = '';
   phraseArr = [];
 }
+function removeBigFont(){
+  if (gameTitle.classList.contains("big-font")) {
+    removeClass(gameTitle, "big-font");
+  }
+}
+function addBigFont(){
+  if (!gameTitle.classList.contains("big-font")) {
+    addClass(gameTitle, "big-font");
+  }
+}
+
+let offsetX = 0; 
+let offsetY = 0;
+let isDragging = false;
+
+listen("mousedown", pinkPony, (e) => {
+  isDragging = true;
+  offsetX = e.clientX - popOut.offsetLeft;
+  offsetY = e.clientY - popOut.offsetTop;
+});
+
+listen("mousemove", document, (e) =>{
+  if(!isDragging) return;
+  pinkPony.style.cursor = "grabbing"
+  popOut.style.left = `${e.clientX - offsetX}px`;
+  popOut.style.top = `${e.clientY - offsetY}px`;
+});
+
+listen("mouseup", document, () => {
+  isDragging = false;
+  pinkPony.style.cursor = "";
+});
 
 listen('click', hangmanStart, () =>{
   startHangman();
 });
 listen("click", icon, () =>{
-  popOut.showModal();
+  removeClass(popOut, 'hidden');
   gallowsDisplay.innerText = hangingMan[6];
   gameTitle.innerText = 'HANGMAN';
+  document.body.style.overflow = "hidden";
 });
 listen("click", closeButton, ()=> {
-  popOut.close();
+  addClass(popOut, 'hidden');
+  document.body.style.overflow = "";
+  addBigFont();
 });
