@@ -37,6 +37,7 @@ main {
 }
 h2 {
   font-size: 3rem;
+  margin: var(--app-spacing) 0;
 }
 section {
     width: 100%;
@@ -50,13 +51,14 @@ section {
   }
 }
 p {
-  margin: 50px 0;
+  margin: var(--app-spacing) 0;
 }
 .btn {
   width: fit-content;
   height: 50px;
   line-height: 50px;
   padding: 0 var(--app-spacing);
+  margin-top: var(--app-spacing);
   border-radius: var(--app-border-rad);
   background-color: var(--clr-primary);
   border: solid 1px var(--clr-light);
@@ -77,4 +79,8 @@ footer {
     text-decoration: none;
     color: var(--clr-light);
   }
+}
+.hover:hover {
+  transform: scale(1.1);
+  filter: brightness(0.8) saturate(1.3);
 }
