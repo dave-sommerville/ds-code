@@ -3,16 +3,13 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
-- Print and add CV
 - Update README
-- Hero banner buttons 
 - More prominent links for portfolio 
 - Some fixes on portfolio page
   - Spacing on top
   - View CV/Github repos 
   - Hover zoom for images 
-- Hangman
-  - Responsiveness
+
 
 */
 
@@ -300,6 +297,7 @@ h4 {
   width: 500px;
   height: 300px;
   position: relative;
+  border-radius: var(--app-border-rad);
   transition: var(--app-transition);
   margin: 0 var(--app-spacing);
 }

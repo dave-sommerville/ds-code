@@ -44,10 +44,29 @@ section {
     align-items: center;
   div {
     width: min(100% - 10svh, 600px);
- }
+  }
+  img {
+    border-radius: var(--app-border-rad);
+  }
 }
 p {
   margin: 50px 0;
+}
+.btn {
+  width: fit-content;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 var(--app-spacing);
+  border-radius: var(--app-border-rad);
+  background-color: var(--clr-primary);
+  border: solid 1px var(--clr-light);
+  color: var(--clr-light);
+  font-size: var(--app-font-size);
+  font-weight: 600;
+}
+.tiny {
+  font-size: 0.6rem;
+  width: 40px;
 }
 footer {
   height: 100px;
