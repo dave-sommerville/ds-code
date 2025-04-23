@@ -130,6 +130,19 @@ h4 {
   object-position: center;
   z-index: -100;
 }
+.btn-wrapper {
+  margin-top: 50px;
+  z-index: 1000;
+  a {
+    width: 150px;
+    margin: 5px;
+    text-align: center;
+  }
+}
+.btn.secondary {
+  background-color: var(--clr-light);
+  color: var(--clr-primary);
+}
 .parallax {
   position: fixed;
   pointer-events: none;
@@ -198,7 +211,7 @@ h4 {
   height: fit-content;
   position: fixed;
   top: 100px;
-  bottom: 100px;
+  left: 100px;
   z-index: 1000;
   background-color: #9c9ca7;
   color: #012;
@@ -562,6 +575,15 @@ footer {
     p {
       margin: 0;
       line-height: 40px;
+    }
+  }
+  .pop-out {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    .game-wrapper {
+      height: 400px;
     }
   }
 } 
