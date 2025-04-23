@@ -3,11 +3,16 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
+- Print and add CV
+- Hero banner buttons 
+- More prominent links for portfolio 
 - Some fixes on portfolio page
+  - Spacing on top
+  - View CV/Github repos 
+  - Hover zoom for images 
 - Hangman
-  - Focus button/input on end and begining 
-  - Change Hangman font-size after start
-  - Further styling
+  - Responsiveness
+
 */
 
 :root {
@@ -415,12 +420,7 @@ h4 {
 .m-auto {
   margin: -25px auto;
 }
-.hover {
-  transition: var(--app-transition);
-}
-.hover:hover {
-  filter: brightness(0.8) saturate(1.3);
-}
+
 .hex {
   clip-path: var(--app-clip-hex);
   width: var(--base-size);

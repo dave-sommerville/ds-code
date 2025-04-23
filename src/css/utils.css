@@ -55,7 +55,13 @@
 .pointer {
   cursor: pointer;
 }
-
+.hover {
+  transition: var(--app-transition);
+}
+.hover:hover {
+  transform: scale(1.02);
+  filter: brightness(0.8) saturate(1.3);
+}
 .space-between {
   justify-content: space-between;
 }
