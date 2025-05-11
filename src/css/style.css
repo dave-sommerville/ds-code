@@ -3,11 +3,16 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
+- SEO Related
+  - Identify potential keywords and total pages
+  - Remember to only focus on unique keywords per page
+  - Add more description to titles 
+  - Improve upon metadata throughout structure
+  - Consider media embedded with rich meta data 
+  - Edit image names to use seo as well as adding alt text to all
+  - Research more into Google Console, Schema.org, Good Analytics, XML site maps and robots.txt
 - Update README
 - More prominent links for portfolio 
-- Some fixes on portfolio page
-  - Spacing on top
-  - View CV/Github repos 
 */
 
 :root {
@@ -192,7 +197,7 @@ h4 {
 .large-dark-blur-hex {
   top: 300px;
   right: 600px;
-  width: 710px;
+  width: 750px;
   height: 640px;
   filter: blur(4px) opacity(0.95) brightness(0.7);
   background-image: url("../img/hexagon-dark.svg");
@@ -313,6 +318,18 @@ h4 {
   transform: scale(1.02);
 }
 
+.portfolio-link {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: var(--app-spacing);
+  a {
+      text-decoration: none;
+        color: #fff;
+
+  }
+}
 /*----------------------------------------------------------->
 	Titles 
 <------------------------------------------------------------*/
