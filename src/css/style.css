@@ -297,12 +297,12 @@ h4 {
 }
 
 .display.one {
-  background: var(--clr-light) url("../img/01-blackjack.jpg") no-repeat center center;
+  background: var(--clr-light) url("../img/blackjack-dave-sommerville-github.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .display.two {
-  background: var(--clr-light) url("../img/05-opal-and-onyx.jpg") no-repeat center center;
+  background: var(--clr-light) url("../img/opal-and-onyx-dave-sommerville-github.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -432,6 +432,19 @@ h4 {
 }
 
 
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+.icon.px {
+  width: 60px;
+  height: 60px;
+}
+.icon.li {
+  width: 40px;
+  height: 40px;
+}
 /*----------------------------------------------------------->
 	Bottom of page
 <------------------------------------------------------------*/
@@ -443,15 +456,11 @@ h4 {
   clip-path: var(--app-clip-hex);
   width: var(--base-size);
   height: var(--base-size);
-  line-height: var(--base-size);
   background-color: var(--clr-primary);
-  font-size: 3.6rem;
+  justify-content: center;
+  align-items: center;
   color: var(--clr-drk);
-  text-align: center;
   margin: 0 5px;
-  .fa-linkedin-in {
-    font-size: 3.2rem;
-  }
 }
 
 .mid-hex {
