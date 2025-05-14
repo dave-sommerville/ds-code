@@ -166,14 +166,15 @@
     </div>
     <form name="poll" method="POST" data-netlify="true" class="poll-social">
       <h5>What game should I <span>ripoff</span> create next?</h5>
+      <input type="hidden" name="form-name" value="contact">
       <label class="poll-option pointer hover">
-        <input type="radio" name="feature" value="Dark Mode">MineMopper</label><br>
+        <input type="radio" name="feature" value="MineMopper">MineMopper</label><br>
       <label class="poll-option pointer hover">
-        <input type="radio" name="feature" value="Live Chat">Ship-Battle</label><br>
+        <input type="radio" name="feature" value="Ship-Battle">Ship-Battle</label><br>
       <label class="poll-option pointer hover">
-        <input type="radio" name="feature" value="User Analytics">DS Paint</label><br>
+        <input type="radio" name="feature" value="DS Paint">DS Paint</label><br>
       <label class="poll-option pointer hover" pointer>
-        <input type="radio" name="feature" value="Other">Whack a Hole</label><br>
+        <input type="radio" name="feature" value="Whack a Hole">Whack a Hole</label><br>
       <button type="submit" class="pointer btn hover">Vote</button>
     </form>
   </section>
@@ -181,13 +182,14 @@
     <h4 class="container">REACH OUT</h4>
   </section>   
   <section class="container contact f-col" id="email">
-    <div class="message" name="contact" method="POST" data-netlify="true">
+    <form class="message" name="contact" method="POST" data-netlify="true">
       <h5>Send Me a Message</h5>
-      <input type="text" name="name" placeholder="NAME" required></label><br><br>
-      <input type="email" name="email" placeholder="EMAIL" required></label><br><br>
+      <input type="hidden" name="form-name" value="contact">
+      <input type="text" name="name" placeholder="NAME" required><br><br>
+      <input type="email" name="email" placeholder="EMAIL" required><br><br>
       <textarea name="message" rows="6" placeholder="SAY SOMETHING" required></textarea></label><br><br>
       <button type="submit" class="btn pointer hover">Send Message</button>
-    </div>
+    </form>
     <div class="flex">
       <a
         target="_blank"
