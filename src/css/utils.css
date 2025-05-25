@@ -9,8 +9,9 @@
   --clr-bg: #001522;
   --clr-light: #fefefe;
   --clr-light-blue: #bad6ff;
-  --clr-light-orange: #60d;
+  --clr-blue: #60d;
   --clr-primary: #f37121;
+  --clr-hover: #e96240;
   --clr-tan: #ffd484;
   --app-spacing: 25px;
   --app-clip-hex: polygon(
@@ -55,12 +56,20 @@
 .pointer {
   cursor: pointer;
 }
-.hover {
+.image-hover {
   transition: var(--app-transition);
 }
-.hover:hover {
+.image-hover:hover {
   transform: scale(1.1);
   filter: brightness(0.8) saturate(1.3);
+}
+
+.hover {
+    transition: var(--app-transition);
+}
+.hover:hover, .hover.secondary:hover {
+  background-color: var(--clr-hover);
+  color: var(--clr-blue);
 }
 .center {
   justify-content: center;
