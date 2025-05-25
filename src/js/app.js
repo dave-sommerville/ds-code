@@ -130,8 +130,21 @@ const hangmanPhrases = [
   "Quick brown fox",
   "Jump over the fence",
   "Life is a journey",
-  "Home sweet home"
+  "Home sweet home",
+  "Time heals all wounds",
+  "Better late than never",
+  "Lost in the moment",
+  "Sky full of stars",
+  "Catch me if you can",
+  "Dreams come true",
+  "Keep it simple",
+  "Live and let live",
+  "Under the weather",
+  "Break the silence",
+  "Chasing the wind",
+  "Eyes on the prize"
 ];
+
 let mixedLetterBlanks = [];
 let wrongGuesses = [];
 let hangPhrase = '';

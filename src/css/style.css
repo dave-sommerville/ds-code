@@ -246,11 +246,18 @@ h4 {
 .word-display {
   letter-spacing: 2px;
 }
-.letter-guess, .hangman-start {
+.hangman-start {
   height: 50px;
-  width: 70px;
+  width: 90px; 
   border: solid 2px #10103b;
-  background-color: #ce2c16;
+  background-color: var(--clr-tan);
+}
+.letter-guess {
+  height: 70px;
+  width: 90px;
+  padding-left: var(--app-spacing);
+  border: solid 2px #10103b;
+  background-color: var(--clr-light);
 }
 .letter-guess:focus, .hangman-start:focus {
   outline: none;
@@ -418,7 +425,6 @@ h4 {
     resize: none;
   }
 }
-
 
 .icon {
   width: 50px;
