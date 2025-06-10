@@ -479,7 +479,12 @@ footer {
     font-size: 5rem;
   }
 }
-
+@media(max-width: 900px) {
+  .small-hide {
+    display: none;
+    opacity: 0;
+  }
+}
 @media (max-width: 780px) {
   :root{
     --base-size: 60px;
