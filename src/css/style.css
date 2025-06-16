@@ -356,12 +356,22 @@ h4 {
     font-size: 0.8rem;
     background-color: var(--clr-light-blue);
     border-radius: var(--app-border-rad);
+
   }
   img {
     width: 80px;
   }
 }
-
+.dungeon {
+  position: relative;
+  div {
+    position: absolute;
+    top: -28px;
+    right: 28px;
+    color: #ce2c16;
+    font-weight: 500;
+  }
+}
 .poll-social {
   border: #fff 3px solid;
   border-radius: var(--app-border-rad);
