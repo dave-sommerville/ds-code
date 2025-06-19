@@ -27,69 +27,141 @@
   <link rel="stylesheet" href="./src/css/reset.css" media="all">
   <link rel="stylesheet" href="./src/css/utils.css" media="all">
   <link rel="stylesheet" href="./src/css/portfolio.css" media="all">
-  <script src="./src/js/app.js" defer></script>  
+  <script src="./src/js/portfolio.js" defer></script>  
 </head>
 <body>
   <header class="flex">
     <h1>DS-CODE PORTFOLIO</h1>
   </header>
   <main class="container f-col center">
-    <section class="folio-links f-col">
+    <!-- <section class="folio-links f-col">
       <a target="_blank" href="https://github.com/dave-sommerville?tab=repositories" class="btn">
         Github Portfolio<i class="fa-brands fa-square-github"></i>
       </a>
       <a href="./src/data/cv.pdf" target="_blank" class="btn">
         My CV<i class="fa-solid fa-file"></i>
       </a>
+    </section> -->
+    <section class="control-btns">
+      <button class="design-btn btn">Design</button>
+      <button class="game-btn btn">Games</button>
     </section>
-    <h2>Games</h2>
-    <section class="f-col">
-      <div>
+    <section class="info-display">
+      <div class="desktop-arrows">
+        <button class="arrow-btn left-btn">&#8592;</button>
+        <button class="arrow-btn right-btn">&#8594;</button>
+      </div>
+      <div class="mobile-arrows">
+        <button class="arrow-btn left-btn-mobile">&#8592;</button>
+        <button class="arrow-btn right-btn-mobile">&#8594;</button>
+      </div>
+      <figure>
+        <img class="portfolio-preview" src="">
+      </figure>
+      <div class="text-box">
+        <h4 class="portfolio-title"></h4>
+        <p class="portfolio-description"></p>
+      </div>
+    </section>
+    <section class="releases ">
+      <article>
+        <figure>
+          <div class="eyeframe"></div>
+        </figure>
+        <h4>
+          
+        </h4>
+        <p>
+
+        </p>
+      </article>
+            <article>
+        <figure>
+          <div class="eyeframe"></div>
+        </figure>
+        <h4>
+
+        </h4>
+        <p>
+          
+        </p>
+      </article>
+    </section>
+  </main>
+  <footer class="container">
+    <p>
+      DS Code | &copy;2025 Dave Sommerville | 
+      <a href="mailto: dave.r.sommerville@outlook.com" class="pointer hover">dave.r.sommerville@outlook.com</a>
+    </p>
+    <p>
+      <a href="#page-top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </p>
+  </footer>
+
+    <!-- <h2>Fun and Games</h2>
+    <section class="play">
+      <div class="card-container">
+        <div class="card">
           <a
-            class="pointer hover"
-            target="_blank" 
-            href="https://dave-sommerville.github.io/blackjack/">
-          <img src="./src/img/blackjack-dave-sommerville-github.jpg">
-          <p>
-            Blackjack
-          </p>
-        </a>
+          class="pointer hover"
+          target="_blank" 
+          href="https://dave-sommerville.github.io/blackjack/">
+            <img src="./src/img/blackjack-dave-sommerville-github.jpg">
+            <h4>
+              Blackjack
+            </h4>
+          </a>
         </div>
-        <div>
+        <div class="card">
           <a
-            class="pointer hover"
-            target="_blank" 
-            href="https://dave-sommerville.github.io/script-scavengers/">
-          <img src="./src/img/script-scavengers-dave-sommerville-github.jpg">
-          <p>
-            Script Scavengers
-          </p>
-        </a>
-      </div>
-      <div>
+          class="pointer hover"
+          target="_blank" 
+          href="https://dave-sommerville.github.io/script-scavengers/">
+            <img src="./src/img/script-scavengers-dave-sommerville-github.jpg">
+            <h4>
+              Script Scavengers
+            </h4>
+          </a>
+        </div>
+        <div class="card">
           <a
-            class="pointer hover"
-            target="_blank" 
-            href="https://dave-sommerville.github.io/code-breaker/">
-          <img src="./src/img/code-breaker-dave-sommerville-github.jpg">
-          <p>
-            Code Breaker
-          </p>
-        </a>
-      </div>
-      <div>
+          class="pointer hover"
+          target="_blank" 
+          href="https://dave-sommerville.github.io/code-breaker/">
+            <img src="./src/img/code-breaker-dave-sommerville-github.jpg">
+            <h4>
+              Code Breaker
+            </h4>
+          </a>
+        </div>
+        <div class="card">
           <a
             class="pointer hover"
             target="_blank"
             href="https://dave-sommerville.github.io/boogle/">
-          <img src="./src/img/boogle-dave-sommerville-github.jpg">
-          <p>
-            Boogle
-          </p>
+            <img src="./src/img/boogle-dave-sommerville-github.jpg">
+            <h4>
+              Boogle
+            </h4>
+          </a>
         </div>
+        <div class="card">
+          <a 
+          class="pointer hover"
+          target="_blank"
+          href="https://dave-sommerville.github.io/social-media-app/">
+          <img src="./src/img/me-myself-and-eye-dave-sommerville-github.jpg">
+          <h4>
+            Me, Myself, & Eye: Social Media project
+          </h4>
+          </a>
+        </div>
+      </div>
     </section>
     <h2>Collaborations</h2>
-    <section class="f-col">
+    <section class="design">
       <div>
           <a
             class="pointer hover"
@@ -113,71 +185,6 @@
         </a>
       </div>
     </section>
-    <h2>C#</h2>
-    <section class="f-col">
-      <div>
-          <a 
-            class="pointer hover"
-            target="_blank"
-            href="https://github.com/dave-sommerville/haunted-house">
-          <img src="./src/img/haunted-house-dave-sommerville-github.jpg">
-          <p>
-            Haunted House: Console Adventure 
-            <a href="https://dave-sommerville.github.io/ds-code-releases/Releases/Haunted-House.zip" target="_blank">
-              <i class="fa-solid fa-folder-open"></i>
-              <span class="tiny">Download</span> 
-            </a>
-          </p>
-        </a>
-      </div>
-      <div>
-          <a
-            class="pointer hover"
-            target="_blank"
-            href="https://github.com/dave-sommerville/Case_Collector">
-          <img src="./src/img/case-collectors-dave-sommerville-github.jpg">
-          <p>
-            Case Collectors
-          </p>
-        </a>
-      </div>
-    </section>
-    <h2>Misc. Frontend</h2>
-    <section class="f-col">
-      <div>
-          <a 
-            class="pointer hover"
-            target="_blank"
-            href="https://dave-sommerville.github.io/social-media-app/">
-          <img src="./src/img/me-myself-and-eye-dave-sommerville-github.jpg">
-          <p>
-            Me, Myself, & Eye: Social Media project
-          </p>
-        </a>
-      </div>
-      <div>
-          <a
-            class="pointer hover"
-            target="_blank"
-            href="https://dave-sommerville.github.io/switches-and-styles/">
-          <img src="./src/img/switches-dave-sommerville-github.jpg">
-          <p>
-            Switches and Control Tutorial
-          </p>
-        </a>
-      </div>
-    </section>
-  </main>
-  <footer class="container">
-    <p>
-      DS Code | &copy;2025 Dave Sommerville | 
-      <a href="mailto: dave.r.sommerville@outlook.com" class="pointer hover">dave.r.sommerville@outlook.com</a>
-    </p>
-    <p>
-      <a href="#page-top">
-        <i class="fa-solid fa-arrow-up"></i>
-      </a>
-    </p>
-  </footer>
+    <h2>Releases</h2> -->
 </body>
 </html>

@@ -40,6 +40,25 @@ const icon = select('.hangman');
 const popOut = select('.pop-out');
 const gameTitle = select('.game-title');
 const pinkPony = select('.drag-bar');
+const leftButton = select('#leftBtn');
+const rightButton = select('#rightBtn');
+const leftButtonMobile = select('#leftBtnMobile');
+const rightButtonMobile = select('#rightBtnMobile');
+
+const scrollContainer = select('#scrollContainer');
+const cards = select('.card');
+let currentIndex = 0;
+function scrollToCard(index) {
+  if(index < 0 || index >= cards.length) return;
+  currentindex = index;
+  const card = cards[index];
+  card.scrollIntoView({behavior: "smooth", inline: "center", block: "nearest"});
+}
+
+listen("click", leftButton, () => scrollToCard(currentIndex - 1));
+listen("click", rightButton, () => scrollToCard(currentIndex + 1));
+listen("click", leftButtonMobile, () => scrollToCard(currentIndex - 1));
+listen("click", rightButtonMobile, () => scrollToCard(currentIndex + 1));
 
 /*----------------------------------------------------------->
 	Parallax Controls 
