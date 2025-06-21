@@ -33,7 +33,7 @@
   <header class="flex">
     <h1>DS-CODE PORTFOLIO</h1>
   </header>
-  <main class="container f-col center">
+  <main class="f-col center">
     <!-- <section class="folio-links f-col">
       <a target="_blank" href="https://github.com/dave-sommerville?tab=repositories" class="btn">
         Github Portfolio<i class="fa-brands fa-square-github"></i>
@@ -42,49 +42,54 @@
         My CV<i class="fa-solid fa-file"></i>
       </a>
     </section> -->
-    <section class="control-btns">
-      <button class="design-btn btn">Design</button>
-      <button class="game-btn btn">Games</button>
-    </section>
-    <section class="info-display">
-      <div class="desktop-arrows">
-        <button class="arrow-btn left-btn">&#8592;</button>
-        <button class="arrow-btn right-btn">&#8594;</button>
-      </div>
-      <div class="mobile-arrows">
-        <button class="arrow-btn left-btn-mobile">&#8592;</button>
-        <button class="arrow-btn right-btn-mobile">&#8594;</button>
-      </div>
-      <figure>
-        <img class="portfolio-preview" src="">
-      </figure>
-      <div class="text-box">
-        <h4 class="portfolio-title"></h4>
-        <p class="portfolio-description"></p>
+    <section class="container">
+      <div class="control-btns">
+        <button class="design-btn btn pointer ">Design</button>
+        <button class="game-btn btn pointer ">Games</button>
+        <button class="releases-btn btn pointer ">Releases</button>
       </div>
     </section>
-    <section class="releases ">
-      <article>
+    <section class="info-display hidden container">
+      <button class="arrow-btn left-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <button class="arrow-btn right-btn">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+      <img class="portfolio-preview" src="./src/img/dungeon.png">
+      <h4 class="portfolio-title">Test</h4>
+      <p class="portfolio-description">Some text here</p>
+    </section>
+    <section class="releases">
+      <article class="flex">
         <figure>
-          <div class="eyeframe"></div>
+          <img src="./src/img/blackjackgif.gif" class="eyeframe">
         </figure>
-        <h4>
-          
-        </h4>
-        <p>
-
-        </p>
+        <div class="release-text f-col">
+          <h4>
+            The Deck
+          </h4>
+          <p>
+            Open Source JavaScript object with SVG resource
+          </p>
+          <a href="">Download Zip</a>
+          <a href="">View Repo</a>
+        </div>
       </article>
-            <article>
+      <article class="flex">
+        <div class="release-text f-col">
+          <h4>
+            Dungeons of Draegmor - Beta
+          </h4>
+          <p>
+            Text Based Console App
+          </p>
+          <a href="">Download Zip</a>
+          <a href="">View Repo</a>
+        </div>
         <figure>
-          <div class="eyeframe"></div>
+          <img src="./src/img/dungeongif.gif" class="eyeframe">
         </figure>
-        <h4>
-
-        </h4>
-        <p>
-          
-        </p>
       </article>
     </section>
   </main>
@@ -93,12 +98,9 @@
       DS Code | &copy;2025 Dave Sommerville | 
       <a href="mailto: dave.r.sommerville@outlook.com" class="pointer hover">dave.r.sommerville@outlook.com</a>
     </p>
-    <p>
-      <a href="#page-top">
-        <i class="fa-solid fa-arrow-up"></i>
-      </a>
-    </p>
   </footer>
+</body>
+</html>
 
     <!-- <h2>Fun and Games</h2>
     <section class="play">
@@ -186,5 +188,3 @@
       </div>
     </section>
     <h2>Releases</h2> -->
-</body>
-</html>
