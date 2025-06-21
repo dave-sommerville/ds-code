@@ -126,6 +126,12 @@ main {
 .info-display.expanded {
   height: 580px;
 }
+.portfolio-wrapper {
+  transition: var(--app-transition);
+}
+.portfolio-wrapper.fade-out {
+  opacity: 0;
+}
 .portfolio-preview {
   width: 300px;
   height: 200px;
