@@ -26,13 +26,46 @@ header {
   position: relative;
   overflow: hidden;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
     background: var(--clr-drk) url("../img/honeycomb.svg") no-repeat right center;
   background-size: cover;
+  transition: var(--app-transition);
+  .title-change {
+    width: 300px;
+    display: inline-block;
+    transition: var(--app-transition);
+  }
+}
+.orange-text {
+  color: var(--clr-primary);
+  transition: var(--app-transition);
+  clip-path: var(--app-clip-hex);
+}
+.not-mini {
+  transition: var(--app-transition);
+}
+header.mini {
+  height: 10svh;
+  div.f-col {
+    flex-direction: row;
+  }
+  div.center {
+    justify-content: space-between;
+  }
+  .title-change {
+    overflow: hidden;
+    width: 0;
+  }
+  .orange-text {
+    transition: var(--app-transition);
+    background-color: var(--clr-primary);
+    color: #fefefe;
+    clip-path: var(--app-clip-hex);
+  }
 }
 
 h1 {
-  width: 100%;
+  display: block;
   font-size: 4rem;
 }
 h2 {
@@ -44,40 +77,37 @@ main {
   width: 100%;
   
 }
-.orange-text {
-  color: var(--clr-primary);
-}
  .pointer {
   cursor: pointer;
  }
-
 .btn {
   align-items: center;
   background-clip: padding-box;
   background-color: var(--clr-primary);
   border: 1px solid transparent;
-  border-radius: .25rem;
+  border-radius: var(--app-border-rad);
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
   color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
+  font-size: 1.2rem;
   font-weight: 600;
   justify-content: center;
   line-height: 1.25;
   margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  padding: 6.5px;
   position: relative;
   text-decoration: none;
-  transition: all 250ms;
+  transition: var(--app-transition);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: baseline;
   width: auto;
+  i {
+    font-size: 1.4rem;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
 }
 
 .btn:hover {
@@ -108,11 +138,25 @@ main {
 .play {
   position: relative;
 }
-.control-btns {
-  width: 400px;
+.control-box {
+  width: 500px;
+  height: 60px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+.control-box::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 60px;
+  top: 0;
+  right: 0;
+  background-color: #b6b4b442;
+  backdrop-filter: blur(7px);
+  border-radius: var(--app-border-rad);
 }
 .info-display {
   height: 0;
@@ -133,8 +177,8 @@ main {
   opacity: 0;
 }
 .portfolio-preview {
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   border-radius: var(--app-border-rad);
   margin-bottom: var(--app-spacing);
 }

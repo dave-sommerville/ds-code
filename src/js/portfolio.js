@@ -33,6 +33,9 @@ const designButton = select('.design-btn');
 const gameButton = select('.game-btn');
 const releasesButton = select('.releases-btn');
 
+const header = select('header');
+const btnWrap= select('.control-box'); 
+const returnMenu = select('.not-mini');
 class Portfolio {
   #imgUrl ='';
   #title = '';
@@ -161,6 +164,9 @@ function switchView() {
     addClass(infoDisplay, 'expanded');
   }
 }
+
+listen("click", btnWrap, () => {addClass(header, 'mini')});
+listen("click", returnMenu, () => {removeClass(header, 'mini')});
 
 
 listen("click", gameButton, () => {
