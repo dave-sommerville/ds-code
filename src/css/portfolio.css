@@ -109,7 +109,11 @@ main {
     line-height: 25px;
   }
 }
-
+.cv {
+  font-size: 0.8rem;
+  color: var(--clr-primary);
+  margin-left: -25px;
+}
 .btn:hover {
   background-color: #fb8332;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
