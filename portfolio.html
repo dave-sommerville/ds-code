@@ -30,8 +30,18 @@
   <script src="./src/js/portfolio.js" defer></script>  
 </head>
 <body>
-  <header class="flex">
-    <h1>DS-CODE PORTFOLIO</h1>
+  <header class="f-col">
+    <h1>
+      <span class="orange-text">
+        DS
+      </span>
+      -CODE PORTFOLIO
+    </h1>
+    <div class="control-btns">
+      <button class="design-btn btn pointer ">Design</button>
+      <button class="game-btn btn pointer ">Games</button>
+      <button class="releases-btn btn pointer ">Releases</button>
+    </div>
   </header>
   <main class="f-col center">
     <!-- <section class="folio-links f-col">
@@ -42,14 +52,7 @@
         My CV<i class="fa-solid fa-file"></i>
       </a>
     </section> -->
-    <section class="container">
-      <div class="control-btns">
-        <button class="design-btn btn pointer ">Design</button>
-        <button class="game-btn btn pointer ">Games</button>
-        <button class="releases-btn btn pointer ">Releases</button>
-      </div>
-    </section>
-    <section class="info-display hidden container">
+    <section class="info-display expanded f-col">
       <button class="arrow-btn left-btn">
         <i class="fa-solid fa-arrow-left"></i>
       </button>
@@ -60,7 +63,8 @@
       <h4 class="portfolio-title">Test</h4>
       <p class="portfolio-description">Some text here</p>
     </section>
-    <section class="releases">
+    <section class="releases container">
+      <h2>Releases</h2>
       <article class="flex">
         <figure>
           <img src="./src/img/blackjackgif.gif" class="eyeframe">
@@ -79,8 +83,9 @@
       <article class="flex">
         <div class="release-text f-col">
           <h4>
-            Dungeons of Draegmor - Beta
+            Dungeons of Draegmor
           </h4>
+          <h5 class="orange-text">Beta</h5>
           <p>
             Text Based Console App
           </p>

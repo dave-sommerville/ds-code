@@ -8,21 +8,29 @@ function listen(event, element, callback) {
   return element.addEventListener(event, callback);
 }
 
+function removeClass(element, customClass) {
+  element.classList.remove(customClass);
+  return element;
+}
+
+function addClass(element, customClass) {
+  element.classList.add(customClass);
+  return element;
+}
+
 const leftButton = select('.left-btn');
 const rightButton = select('.right-btn');
-const leftButtonMobile = select('.left-btn-mobile');
-const rightButtonMobile = select('.right-btn-mobile');
-
-const cardContainer = select('.card-container');
-const cards = cardContainer.querySelectorAll(".card");
 
 
+const infoDisplay = select('.info-display');
 const portfolioPreview = select('.portfolio-preview');
 const portfolioTitle = select('.portfolio-title');
 const portfolioDescription = select('.portfolio-description');
+const releasesSection = select('.releases');
 
 const designButton = select('.design-btn');
-const gameButton = select('game-btn');
+const gameButton = select('.game-btn');
+const releasesButton = select('.releases-btn');
 
 class Portfolio {
   #imgUrl ='';
@@ -52,12 +60,14 @@ class Portfolio {
     return this.#description;
   }
 }
-const designItems = [];
+const blackjack = new Portfolio("./src/img/blackjack-dave-sommerville-github.jpg", "Blackjack", "My online version of the popular card game Blackjack");
+const scriptScavengers = new Portfolio("", "", "");
+const designItems = [blackjack, scriptScavengers];
 const gameItems = [];
-const portfolioItems = [];
+let portfolioItems;
 
 
-function displayPortfolioItem(portfolioItems, index) {
+function displayPortfolioItem(index) {
   let item = portfolioItems[index];
   portfolioPreview.src= item.imgUrl;
   portfolioDescription.textContent = item.description;
@@ -65,6 +75,7 @@ function displayPortfolioItem(portfolioItems, index) {
 }
 
 let currentIndex = 0;
+let totalEntries = 2;
 
 function adjustIndex(index, operator) {
   if(operator === '+') {
@@ -74,34 +85,40 @@ function adjustIndex(index, operator) {
   } else {
     console.log("Please enter a + or -");
   }
+  // if (index >= (totalEntries)) {
+  //   index = 0;
+  // }
   return index;
 }
-/*  When design or game selected, class added to info-display and it gets populated by selected button, releases has class removed if present*/ 
-/*  When releases selected class is added to release section and removed from info display if present 
 
-*/
-listen("click", designButton, () => portfolioItems = designItems);
-listen("click", gameButton, () => portfolioItems = gameItems);
-
+listen("click", gameButton, () => {
+    if(releasesSection.classList.contains('expanded')) {
+    removeClass(releasesSection, 'expanded');
+  }
+  if(!infoDisplay.classList.contains('expanded')) {
+    addClass(infoDisplay, 'expanded');
+  }
+  portfolioItems = designItems;
+  displayPortfolioItem(currentIndex);
+  return portfolioItems;
+});
+listen("click", releasesButton, () => {
+  if(!releasesSection.classList.contains('expanded')) {
+    addClass(releasesSection, 'expanded');
+  }
+  if(infoDisplay.classList.contains('expanded')) {
+    removeClass(infoDisplay, 'expanded');
+  }
+});
 
 listen("click", leftButton, () => {
   currentIndex = adjustIndex(currentIndex, '-');
-  displayPortfolioItem(portfolioItems, currentIndex);
+  displayPortfolioItem(currentIndex);
 });
 
 listen("click", rightButton, () => {
   currentIndex = adjustIndex(currentIndex, '+');
-  displayPortfolioItem(portfolioItems, currentIndex);
-
+  displayPortfolioItem(currentIndex);
 });
-listen("click", leftButtonMobile, () => {
-  currentIndex = adjustIndex(currentIndex, '-');
-  displayPortfolioItem(portfolioItems, currentIndex);
 
-});
-listen("click", rightButtonMobile, () =>{
-  currentIndex = adjustIndex(currentIndex, '+');
-  displayPortfolioItem(portfolioItems, currentIndex);
-
-});
 
