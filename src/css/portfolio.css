@@ -59,7 +59,7 @@ header.mini {
   .orange-text {
     transition: var(--app-transition);
     background-color: var(--clr-primary);
-    color: #fefefe;
+    color: var(--clr-drk);
     clip-path: var(--app-clip-hex);
   }
 }

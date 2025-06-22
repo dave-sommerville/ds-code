@@ -4,26 +4,6 @@
 <------------------------------------------------------------*/
 /*
 - Add G Tags to game icons at very least
-- Make nicer links for GitHub, CV, Realeases 
-- Portfolio page
-  - Scroll container, small image previews (maybe enlarge with active?) with title inside anchor tag
-    - Fun and Games
-      - Boogle
-      - Blackjack
-      - Social Media
-      - Code Breaker
-      - Script Scavengers
-    - Design
-      - HiveMind
-      - Oynx and Opal
-      - Fake Store
-      - Cactus Theatre
-- Releases 
-  - Detail element, mid sized videos next to clickable title and brief description
-    - Dungeon Crawler Beta
-    - The Deck
-    - Potion Brewery 
-
 
   - Tutorial (Later addition)
     - Switches and controls
@@ -75,7 +55,7 @@ article {
   justify-content: space-between;
   align-items: center;
 }
-
+/* 
 .btn {
   width: fit-content;
   height: 50px;
@@ -87,6 +67,35 @@ article {
   color: var(--clr-light);
   font-size: var(--app-font-size);
   font-weight: 600;
+} */
+.btn {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: var(--clr-primary);
+  border: 1px solid transparent;
+  border-radius: var(--app-border-rad);
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  padding: 6.5px;
+  position: relative;
+  text-decoration: none;
+  transition: var(--app-transition);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  i {
+    font-size: 1.4rem;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
 }
 
 /*----------------------------------------------------------->
@@ -94,7 +103,7 @@ article {
 <------------------------------------------------------------*/
 
 header {
-  height: 70svh;
+  height: 100svh;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -108,6 +117,7 @@ h1,h2,h3,h4 {
 h1 {
   font-size: 6.5rem;
   text-align: center;
+  margin-top: 6.5rem;
   span {
     color: var(--clr-primary);
     text-shadow: -1px 1px 2px var(--clr-tan);
@@ -151,7 +161,7 @@ h4 {
   z-index: -100;
 }
 .btn-wrapper {
-  margin-top: 50px;
+  margin: auto;
   z-index: 1000;
   a {
     width: 150px;
