@@ -27,6 +27,7 @@ const portfolioWrapper = select('.portfolio-wrapper');
 const portfolioPreview = select('.portfolio-preview');
 const portfolioTitle = select('.portfolio-title');
 const portfolioDescription = select('.portfolio-description');
+const infoLink = select('.info-link');
 const releasesSection = select('.releases');
 
 const designButton = select('.design-btn');
@@ -36,12 +37,16 @@ const releasesButton = select('.releases-btn');
 const header = select('header');
 const btnWrap= select('.control-box'); 
 const returnMenu = select('.not-mini');
+
+const infoTitle = select('.info-title');
+
+
 class Portfolio {
   #imgUrl ='';
   #title = '';
   #description = '';
   #linkUrl = '';
-  constructor(img, title, desc,link) {
+  constructor(img, title, desc, link) {
     this.imgUrl = img;
     this.title = title;
     this.description = desc;
@@ -69,7 +74,7 @@ class Portfolio {
     return this.#description;
   }
   get linkUrl() {
-    return this.#description;
+    return this.#linkUrl;
   }
 }
 const blackjack = new Portfolio(
@@ -131,6 +136,7 @@ function displayPortfolioItem(index) {
   portfolioPreview.src= item.imgUrl;
   portfolioDescription.textContent = item.description;
   portfolioTitle.textContent = item.title;
+  infoLink.href = item.linkUrl;
 }
 
 let currentIndex = 0;
@@ -172,9 +178,10 @@ listen("click", returnMenu, () => {removeClass(header, 'mini')});
 listen("click", gameButton, () => {
   addClass(portfolioWrapper, 'fade-out');
   setTimeout(() => {
-  switchView();
-  portfolioItems = gameItems;
-  displayPortfolioItem(currentIndex);
+    infoTitle.textContent = "Fun and Games";
+    switchView();
+    portfolioItems = gameItems;
+    displayPortfolioItem(currentIndex);
     displayPortfolioItem(currentIndex);
     removeClass(portfolioWrapper, 'fade-out');
   }, 300);
@@ -184,6 +191,7 @@ listen("click", gameButton, () => {
 listen("click", designButton, () => {
   addClass(portfolioWrapper, 'fade-out');
   setTimeout(() => {
+  infoTitle.textContent = "Design Examples";
   switchView();
   portfolioItems = designItems;
   displayPortfolioItem(currentIndex);
