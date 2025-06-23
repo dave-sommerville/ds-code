@@ -46,6 +46,9 @@ header {
 }
 header.mini {
   height: 10svh;
+  h1 {
+    font-size: 3rem;
+  }
   div.f-col {
     flex-direction: row;
   }
@@ -118,9 +121,6 @@ main {
 .btn:hover {
   background-color: #fb8332;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-}
-
-.btn:hover {
   transform: translateY(-1px);
 }
 
@@ -173,22 +173,24 @@ main {
   transition: var(--app-transition);
 }   
 .info-display.expanded {
-  height: 700px;
+  height: 650px;
 }
 .portfolio-wrapper {
-  height: 700px;
+  height: 650px;
+  position: relative;
   transition: var(--app-transition);
 }
 .info-title {
   font-size: 2rem;
   margin: 25px 0;
 }
+
 .portfolio-wrapper.fade-out {
   opacity: 0;
 }
 .portfolio-preview {
   width: 400px;
-  height: 300px;
+  height: 270px;
   border-radius: var(--app-border-rad);
   margin-bottom: var(--app-spacing);
 }
@@ -198,7 +200,7 @@ main {
   margin-bottom: var(--app-spacing);
 }
 .portfolio-description {
-  width: 500px;
+  width: 400px;
   font-size: 1.6rem;
   margin-bottom: 25px;
 }
@@ -207,16 +209,16 @@ main {
   height: 60px;
   width: 60px;
   text-align: center;
-  top: 20svh;
+  bottom: 40svh;
   justify-content: space-between;
   align-items: center;
   position: absolute;
 }
 .left-btn {
-  left: 10svw;
+  left: 8svw;
 }
 .right-btn {
-  right: 10svw;
+  right: 8svw;
 }
 .releases {
   height: 0;
@@ -250,7 +252,7 @@ main {
 }
 article {
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
   padding: 25px;
   margin-bottom: 10svh;
   border-radius: var(--app-border-rad);
@@ -292,16 +294,32 @@ footer {
     color: var(--clr-light);
   }
 }
-    
-    
-@media (max-width: 600px) {
-
+@media (max-width: 830px) {
+  .info-link {
+    position: absolute;
+    bottom: 0;
+  }
+  .portfolio-description {
+    font-size: 1.2rem;
+  }
+  .left-btn, .right-btn {
+    bottom: 0;
+  }
+  .left-btn {
+    left: 7svw;
+  }
+  .right-btn {
+    right: 7svw;
+  }
+  article.flex {
+    flex-direction: column;
+  }
   header {
         height: 30svh;
     div.f-col {
     flex-direction: column;
     }
-
+  
   }
   header.mini {
     height: 20svh;
@@ -309,8 +327,27 @@ footer {
     flex-direction: column;
     }
   }
+  .releases.expanded {
+    height: 1600px;
+  }
+  footer {
+    font-size: 1rem;
+  }
+}
+    
+@media (max-width: 600px) {
+
   .control-box {
     width: 100%;
+    .btn {
+    font-size: 1rem;
+    }
+    .i {
+      font-size: 1.2rem;
+    }
+  }
+  .control-box.btn {
+    
   }
   .control-box::before {
     width: 100%;
@@ -318,4 +355,14 @@ footer {
   footer {
     font-size: 0.6rem;
   }
+}
+@media (max-width: 480px) {
+  .portfolio-preview {
+    width: 370px;
+    height: 250px;
+  }
+  .portfolio-description {
+    width: 370px;
+  }
+  
 }
