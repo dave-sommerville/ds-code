@@ -80,7 +80,7 @@ class Portfolio {
 const blackjack = new Portfolio(
   "./src/img/blackjack-dave-sommerville-github.jpg", 
   "Blackjack", 
-  "My online version of the popular card game Blackjack. It features deal animations and a persistant player bank.", 
+  "My online version of Blackjack, featuring deal animations and a persistant player bank.", 
   "https://dave-sommerville.github.io/blackjack/"
 );
 
@@ -123,7 +123,7 @@ const opalOnyx = new Portfolio(
 const hiveMind = new Portfolio(
   "./src/img/hivemind-dave-sommerville-github.jpg", 
   "HiveMind", 
-  "Collaboration project creating our own version of a social media site. Also where the obsession with hexagons started for me.", 
+  "Collaboration project creating our own version of a social media site.", 
   "https://dave-sommerville.github.io/hivemind/"
 );
 
@@ -133,11 +133,20 @@ let portfolioItems;
 
 function displayPortfolioItem(index) {
   let item = portfolioItems[index];
-  portfolioPreview.src= item.imgUrl;
-  portfolioDescription.textContent = item.description;
-  portfolioTitle.textContent = item.title;
-  infoLink.href = item.linkUrl;
+
+  // Preload the image
+  const img = new Image();
+  img.src = item.imgUrl;
+
+  img.onload = () => {
+    // Only update when the new image is ready
+    portfolioPreview.src = item.imgUrl;
+    portfolioDescription.textContent = item.description;
+    portfolioTitle.textContent = item.title;
+    infoLink.href = item.linkUrl;
+  };
 }
+
 
 let currentIndex = 0;
 
