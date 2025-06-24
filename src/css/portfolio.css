@@ -190,7 +190,7 @@ main {
 }
 .portfolio-preview {
   width: 400px;
-  height: 270px;
+  height: 237px;
   border-radius: var(--app-border-rad);
   margin-bottom: var(--app-spacing);
 }
@@ -362,7 +362,7 @@ footer {
 @media (max-width: 480px) {
   .portfolio-preview {
     width: 370px;
-    height: 250px;
+    height: 219px;
   }
   .portfolio-description {
     width: 370px;

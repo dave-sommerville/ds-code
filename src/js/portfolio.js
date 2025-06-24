@@ -146,13 +146,27 @@ function displayPortfolioItem(index) {
     infoLink.href = item.linkUrl;
   };
 }
+function createHiddenPreloadContainer() {
+  const div = document.createElement("div");
+  div.id = "preload-container";
+  div.style.display = "none";
+  document.body.appendChild(div);
+  return div;
+}
 
 function preloadAllImages(items) {
+  const preloadContainer = select('#preload-container') || createHiddenPreloadContainer();
   items.forEach(item => {
     const img = new Image();
     img.src = item.imgUrl;
+    preloadContainer.appendChild(img);
   });
 }
+
+
+
+
+
 
 // Call this once when your app starts
 preloadAllImages(designItems);
