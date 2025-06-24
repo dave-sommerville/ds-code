@@ -147,6 +147,16 @@ function displayPortfolioItem(index) {
   };
 }
 
+function preloadAllImages(items) {
+  items.forEach(item => {
+    const img = new Image();
+    img.src = item.imgUrl;
+  });
+}
+
+// Call this once when your app starts
+preloadAllImages(designItems);
+preloadAllImages(gameItems);
 
 let currentIndex = 0;
 

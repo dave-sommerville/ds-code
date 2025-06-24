@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  height: 30svh;
+  height: 400px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -45,7 +45,7 @@ header {
   transition: var(--app-transition);
 }
 header.mini {
-  height: 10svh;
+  height: 100px;
   h1 {
     font-size: 3rem;
   }
@@ -315,14 +315,14 @@ footer {
     flex-direction: column;
   }
   header {
-        height: 30svh;
+        height: 400px;
     div.f-col {
     flex-direction: column;
     }
   
   }
   header.mini {
-    height: 20svh;
+    height: 200px;
     div.f-col {
     flex-direction: column;
     }
