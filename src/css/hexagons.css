@@ -11,6 +11,8 @@
   --small-neg-base-size: calc(var(--small-base-size) * -1);
   --small-tb-margin: calc(var(--small-neg-base-size) / 2);
   --small-lr-margin: calc(var(--small-neg-base-size) / 4);
+
+  --small-btm-margin: calc(var(--small-base-size) / 16);
 }
 @media (max-width: 1200px) {
   :root{
@@ -29,10 +31,18 @@
     --big-base-size: 200px;
     --small-base-size: 70px;
   }
-}  
+}
+body {
+  background-color: #010518;
+}
 .hex {
   clip-path: var(--app-clip-hex);
+  background-color: #f37121;
 }
+.hex-margin {
+  margin-bottom: var(--small-btm-margin);
+}
+
 .small {
   width: var(--small-base-size);
   height: var(--small-base-size);
