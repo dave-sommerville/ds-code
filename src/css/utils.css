@@ -68,8 +68,8 @@
     transition: var(--app-transition);
 }
 .hover:hover, .hover.secondary:hover {
-  background-color: var(--clr-hover);
   color: var(--clr-blue);
+  transform: scale(1.008);
 }
 .center {
   justify-content: center;

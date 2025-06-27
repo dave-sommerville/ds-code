@@ -3,8 +3,6 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
-- Add G Tags to game icons at very least
-
   - Tutorial (Later addition)
     - Switches and controls
     - Hexagons
@@ -622,7 +620,9 @@ footer {
   footer {
     font-size: 1.2rem;
   }
-
+  .games-title, .contact-title {
+    background-attachment: scroll;
+  }
 }
 
 @media (max-width: 480px) {
