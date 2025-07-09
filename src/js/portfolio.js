@@ -126,8 +126,14 @@ const hiveMind = new Portfolio(
   "Collaboration project creating our own version of a social media site.", 
   "https://dave-sommerville.github.io/hivemind/"
 );
+const cactusTheatre = new Portfolio(
+  "./src/img/cactus-theatre-dave-sommerville-github.jpg", 
+  "Cactus Theatre Co", 
+  "Promotional website for Winnipeg Fringe Festival", 
+  "https://cactus-theatre-co.ca"
+);
 
-const designItems = [opalOnyx, hiveMind, meMyself];
+const designItems = [opalOnyx, cactusTheatre, hiveMind, meMyself];
 const gameItems = [blackjack, scriptScavengers, codeBreaker, booogle];
 let portfolioItems;
 
