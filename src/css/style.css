@@ -3,6 +3,25 @@
 	Main Page Settings 
 <------------------------------------------------------------*/
 /*
+  - Improve style of hero banner
+  - Stylize navbar
+    - DS Code Hex
+    - Highlight the current menu
+    - Story, Work, Play, Contact (Hero banner links to work and contact, scrolling leads to Story)
+  - Add scrolling transition to story section
+  - Design play room
+  - Add marqee of languages to Story portion
+  - Add large Checkout my work button
+  - Install Lite Server
+  - Break up file structure and reorganize
+  - Steal portfolio container from portfolio
+    - Add highlighted GitHub Repos and Resume
+  - Add category property to the portfolio objects and allow for filtered searching
+  - Design game room
+  - Reduce amout of text
+
+
+  - Add Easter Eggs
   - Tutorial (Later addition)
     - Switches and controls
     - Hexagons
@@ -240,6 +259,20 @@ h4 {
   background-image: url("../img/hexagon-dark.svg");
   z-index: 150;
 }
+
+.nav-wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+
+}
+.nav-wrapper.visible {
+  height: 100px;
+
+}
+
 /*----------------------------------------------------------->
 	Hangman
 <------------------------------------------------------------*/

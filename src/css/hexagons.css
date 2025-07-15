@@ -7,7 +7,7 @@
   --big-tb-margin: calc(var(--big-neg-base-size) / 2);
   --big-lr-margin: calc(var(--big-neg-base-size) / 4);
 
-  --small-base-size: 120px;
+  --small-base-size: 200px;
   --small-neg-base-size: calc(var(--small-base-size) * -1);
   --small-tb-margin: calc(var(--small-neg-base-size) / 2);
   --small-lr-margin: calc(var(--small-neg-base-size) / 4);
@@ -16,20 +16,20 @@
 }
 @media (max-width: 1200px) {
   :root{
-    --big-base-size: 280px;
-    --small-base-size: 100px;
+    --big-base-size: 240px;
+    --small-base-size: 160px;
   }
 }
 @media (max-width: 900px) {
   :root{
-    --big-base-size: 240px;
-    --small-base-size: 80px;
+    --big-base-size: 200px;
+    --small-base-size: 120px;
   }
 } 
 @media (max-width: 600px) {
   :root{
-    --big-base-size: 200px;
-    --small-base-size: 70px;
+    --big-base-size: 140px;
+    --small-base-size: 80px;
   }
 }
 body {
